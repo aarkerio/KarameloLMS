@@ -1,4 +1,0 @@
---HTML--
-<b>basic</b>
---EXPECT--
-<b>basic</b>

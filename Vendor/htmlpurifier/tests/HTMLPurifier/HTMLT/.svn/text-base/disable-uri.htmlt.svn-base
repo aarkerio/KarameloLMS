@@ -1,5 +1,0 @@
---INI--
-URI.Disable = true
---HTML--
-<img src="foobar" />
---EXPECT--

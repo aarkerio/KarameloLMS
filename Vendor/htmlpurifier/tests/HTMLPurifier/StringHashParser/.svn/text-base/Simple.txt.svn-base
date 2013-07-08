@@ -1,9 +1,0 @@
-Namespace.Directive
-TYPE: string
-CHAIN-ME: 2
---DESCRIPTION--
-Multiline
-stuff
---EMPTY--
---FOR-WHO--
-Single multiline

@@ -1,4 +1,0 @@
---HTML--
-<span id="moon">foobar</span>
---EXPECT--
-<span>foobar</span>

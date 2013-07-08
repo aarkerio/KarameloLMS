@@ -1,4 +1,0 @@
-<?php
-die(debug($data));
-
-?>
