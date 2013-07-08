@@ -1,0 +1,154 @@
+
+* { padding: 0; margin: 0; }
+
+html, body { 
+    height: 100%;
+    margin: 0;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+a:link, a:visited { 
+      color: #c37a4e;
+      text-decoration:none;
+      font-size:9pt;
+   }
+                    
+a:hover { color: #1566A7;}
+
+p{margin:10px 0;}
+
+.title_section{margin:15px 0; color: #000;font-size:22pt;}
+
+#bounds { 
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -140px; /* -50px = .page-footer height */
+  }      
+#navigation { 
+    position:absolute;
+    top:2px;
+    left:700px;
+}            
+#header{
+       position: relative; 
+       width: 1280px;
+       height: 286px;
+       vertical-align:bottom;
+       margin: 0 auto;
+       background: url(/img/styles/gray/header-bg.gif) no-repeat center center;
+ }
+
+#header h1 a:link, #header h1 a:visited { 
+                color: #c37a4e;
+                text-decoration:none;
+                font: 17pt 'Georgia', Verdana, arial, sans-serif;
+                font-variant:small-caps;
+                font-weight:bold;
+                margin:12px;
+        }
+.quote{color:#fff;margin:6px;} 
+
+img{border:0;}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+
+ul#menu_nav { 
+              padding: 0;
+              margin: 0;
+              background-color: #c0c0c0;
+              color: #fff;
+              float: left;
+              width: auto;
+}
+             
+ul#menu_nav li a { 
+  padding: 4px;
+  background-color: #c0c0c0;
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  border-bottom: solid 1px #fff;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+ }                   
+ul#menu_nav li a:hover { 
+                         color: #000;
+                         background-color: #fff;
+ }
+ul#menu_nav li {  display: inline; }
+
+
+#rightcolumn { 
+ display: inline;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 195px;
+ float: right;
+}
+#leftcolumn { 
+ float: left;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 683px;
+ display: inline;
+ position: relative;
+}
+#footer { 
+ width: 1280px;
+ height:150px;
+ clear: both;
+ color: #333;
+ background: #ABBEBE;
+ margin: 0;
+ padding: 10px;
+ background: url(/img/styles/gray/footer-repeat.gif) no-repeat center center;
+}
+
+.clear { clear: both; background: none; }
+
+.titentry {  
+     margin: 22px 6px 6px 0;
+     padding:5px;
+     font-size: 15pt;
+     color: #426674;
+     border-bottom: 2px solid gray;
+     font-weight: bolder;
+     text-align: left;
+}
+            
+.body_entry{ 
+    color:#000;
+ }
+.plink { 
+     margin:5px 0 5px 0;
+ }
+
+.temas { 
+     margin-top:15px;
+     text-align:center;
+     color:#426674;
+     font-size:14pt;
+     border-bottom:1px solid black;
+ }
+
+/* Message by flash CakePHP stuff */
+.message
+{ 
+      position:absolute;
+      top:20px;
+      left:800px;
+      width:200px;
+      font-size:7pt;
+      font-weight:bold;
+      color:white;
+      border: solid 1px orange;
+      padding:2px;
+      background-color:#66cc00;
+      text-align:center;
+ }

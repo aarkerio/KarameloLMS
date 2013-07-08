@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>10. Installing Extra Packages</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12303"></a>10.&nbsp;
+        <span class="abbrev">4.6</span><a name="x1-810004.6"></a>Installing Extra Packages
+    </h2></div></div></div><p>   Most LaTeX installations come with a large set of pre-installed style
+        packages, but many more are available on the net. The main place to look for
+        style packages on the Internet is CTAN (<em><span class="remark">http://www.ctan.org/</span></em>).
+    </p><p>
+           Packages such as <a name="dx1-81001"></a><a name="dx1-81002"></a><span class="sf">geometry</span>, <a name="dx1-81003"></a><a name="dx1-81004"></a><span class="sf">hyphenat</span>, and many others are typically made up
+        of two files: a file with the extension <span class="tt">.ins</span> and another with the extension <span class="tt">.dtx</span>.
+        There will often be a <span class="tt">readme.txt</span> with a brief description of the package. You
+        should of course read this file first.
+    </p><p>   In any event, once you have copied the package files onto your machine, you
+        still have to process them in a way that (a) tells your TE X&nbsp;distribution about the
+        new style package and (b) gives you the documentation. Here&#8217;s how you do the
+        first part:
+    </p><p>
+    </p><div class="orderedlist"><ol type="1"><li><a name="x1-81006x1"></a><p>
+                Run LaTeX on the <span class="tt">.ins</span> file. This will extract a <a name="dx1-81007"></a><span class="tt">.sty</span> file.
+            </p></li><li><a name="x1-81009x2"></a><p>
+                Move  the  <a name="dx1-81010"></a><span class="tt">.sty</span> file  to  a  place  where  your  distribution  can  find
+                it.  Usually  this  is  in  your  
+                <span class="tt">
+                    &#8230;/<span class="emphasis"><em>localtexmf</em></span>/tex/latex
+                </span>
+                subdirectory
+                (Windows or OS/2 users should feel free to change the direction of the
+                slashes).
+            </p></li><li><a name="x1-81012x3"></a><p>Refresh your distribution&#8217;s file-name database. The command depends
+                on the LaTeXdistribution you use: teTeX, fpTeX &#8211; <span class="tt">texhash</span>; web2c &#8211;
+                <span class="tt">maktexlsr</span>; MikTeX &#8211; <span class="tt">initexmf -update-fndb</span> or use the GUI.
+            </p></li></ol></div><p>
+        Now you can extract the documentation from the <span class="tt">.dtx</span> file:
+    </p><p>
+    </p><div class="orderedlist"><ol type="1"><li><a name="x1-81014x1"></a><p>
+                Run  LaTeX&nbsp;on  the  <span class="tt">.dtx</span> file.  This  will  generate  a  <span class="tt">.dvi</span> file.  Note
+                that  you  may  have  to  run  LaTeX&nbsp;several  times  before  it  gets  the
+                cross-references right.
+            </p></li><li><a name="x1-81016x2"></a><p>
+                Check to see if LaTeX&nbsp;has produced a <span class="tt">.idx</span> file among the various
+                files you now have. If you do not see this file, then you may proceed
+                to step&nbsp;??.
+                
+                
+                
+            </p></li><li><a name="x1-81018x3"></a><p>In order to generate the index, type the following:
+                
+                <span class="tt">
+                    makeindex -s gind.ist <span class="it">name</span>
+                </span>
+                (where <span class="it">name</span> stands for the main-file name without any extension).
+            </p></li><li><a name="x1-81020x4"></a><p>
+                Run LaTeX&nbsp;on the <span class="tt">.dtx</span> file once again.
+            </p></li><li><a name="x1-81022x5"></a><p>
+                Last but not least, make a <span class="tt">.ps</span> or <span class="tt">.pdf</span> file to increase your reading
+                pleasure.
+            </p></li></ol></div><p>
+           Sometimes you will see that a <span class="tt">.glo</span> (glossary) file has been produced. Run the
+        following command between step&nbsp;?? and&nbsp;??:
+    </p><p>
+        <span class="tt">
+            makeindex -s gglo.ist -o <span class="it">name</span>.gls <span class="it">name</span>.glo
+        </span>
+    </p><p>
+        Be sure to run LaTeX&nbsp;on the <span class="tt">.dtx</span> one last time before moving on to
+        step&nbsp;??.
+    </p><p>
+    </p></div></body>
+</html>

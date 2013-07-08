@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.11. Environments</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6822"></a>4.11.&nbsp;
+                <span class="abbrev">2.11</span><a name="x1-540002.11"></a>Environments
+            </h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se11.html#d0e6890">4.11.1. 
+                    <span class="abbrev">2.11.1</span>Itemize, Enumerate, and Description
+                </a></span></dt><dt><span class="section"><a href="se4se11.html#d0e6969">4.11.2. 
+                    <span class="abbrev">2.11.2</span>Flushleft, Flushright, and Center
+                </a></span></dt><dt><span class="section"><a href="se4se11.html#d0e7061">4.11.3. 
+                    <span class="abbrev">2.11.3</span>Quote, Quotation, and Verse
+                </a></span></dt><dt><span class="section"><a href="se4se11.html#d0e7145">4.11.4. 
+                    <span class="abbrev">2.11.4</span>Abstract
+                </a></span></dt><dt><span class="section"><a href="se4se11.html#d0e7188">4.11.5. 
+                    <span class="abbrev">2.11.5</span>Printing Verbatim
+                </a></span></dt><dt><span class="section"><a href="se4se11.html#d0e7317">4.11.6. 
+                    <span class="abbrev">2.11.6</span>Tabular
+                </a></span></dt></dl></div><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-54001"></a><a name="dx1-54002"></a><span class="tt">\begin</span><em><span class="remark">{</span></em><span class="emphasis"><em>environment</em></span><em><span class="remark">}</span></em>  <span class="emphasis"><em>text</em></span>   <a name="dx1-54003"></a><a name="dx1-54004"></a><span class="tt">\end</span><em><span class="remark">{</span></em><span class="emphasis"><em>environment</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                Where <span class="emphasis"><em>environment</em></span> is the name of the environment. Environments can be nested
+                within each other as long as the correct nesting order is maintained.
+            </p><p>
+                <em><span class="remark">\begin{aaa}...\begin{bbb}...\end{bbb}...\end{aaa}</span></em>
+            </p><p>In the following sections all important environments are explained.
+            </p><p>
+            </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6890"></a>4.11.1.&nbsp;
+                    <span class="abbrev">2.11.1</span><a name="x1-550002.11.1"></a>Itemize, Enumerate, and Description
+                </h4></div></div></div><p>
+                       The <a name="dx1-55001"></a><a name="dx1-55002"></a><span class="tt">itemize</span> environment is suitable for simple lists, the <a name="dx1-55003"></a><a name="dx1-55004"></a><span class="tt">enumerate</span>
+                    environment for enumerated lists, and the <a name="dx1-55005"></a><a name="dx1-55006"></a><span class="tt">description</span> environment for
+                    descriptions. <a name="dx1-55007"></a><a name="dx1-55008"></a>
+                    
+                    
+                    
+                    &nbsp;\flushleft
+                    &nbsp;\begin{enumerate}
+                    &nbsp;\item&nbsp;You&nbsp;can&nbsp;mix&nbsp;the&nbsp;list
+                    &nbsp;environments&nbsp;to&nbsp;your&nbsp;taste:
+                    &nbsp;\begin{itemize}
+                    &nbsp;\item&nbsp;But&nbsp;it&nbsp;might&nbsp;start&nbsp;to
+                    &nbsp;look&nbsp;silly.
+                    &nbsp;\item[-]&nbsp;With&nbsp;a&nbsp;dash.
+                    &nbsp;\end{itemize}
+                    &nbsp;\item&nbsp;Therefore&nbsp;remember:
+                    &nbsp;\begin{description}
+                    &nbsp;\item[Stupid]&nbsp;things&nbsp;will&nbsp;not
+                    &nbsp;become&nbsp;smart&nbsp;because&nbsp;they&nbsp;are
+                    &nbsp;in&nbsp;a&nbsp;list.
+                    &nbsp;\item[Smart]&nbsp;things,&nbsp;though,
+                    &nbsp;can&nbsp;be&nbsp;presented&nbsp;beautifully
+                    &nbsp;in&nbsp;a&nbsp;list.
+                    &nbsp;\end{description}
+                    &nbsp;\end{enumerate}                    
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                            </p><div class="orderedlist"><ol type="1"><li><a name="x1-55010x1"></a><p>You can mix the list environments to
+                                        your taste:
+                                    </p><div class="itemizedlist"><ul type="disc"><li><p>But
+                                                it
+                                                might
+                                                start
+                                                to
+                                                look
+                                                silly.
+                                            </p></li><li><p>With
+                                                a
+                                                dash.
+                                            </p></li></ul></div></li><li><a name="x1-55012x2"></a><p>Therefore remember:
+                                    </p><div class="variablelist"><dl><dt><span class="term">
+                                                Stupid 
+                                            </span></dt><dd><p>things
+                                                    will
+                                                    not
+                                                    become
+                                                    smart
+                                                    because
+                                                    they
+                                                    are
+                                                    in
+                                                    a
+                                                    list.
+                                                </p></dd><dt><span class="term">
+                                                Smart 
+                                            </span></dt><dd><p>things,
+                                                    though,
+                                                    can
+                                                    be
+                                                    presented
+                                                    beautifully
+                                                    in
+                                                    a
+                                                    list.
+                                                </p></dd></dl></div></li></ol></div></dd></dl></div><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6969"></a>4.11.2.&nbsp;
+                    <span class="abbrev">2.11.2</span><a name="x1-560002.11.2"></a>Flushleft, Flushright, and Center
+                </h4></div></div></div><p>
+                       The environments <a name="dx1-56001"></a><a name="dx1-56002"></a><span class="tt">flushleft</span> and <a name="dx1-56003"></a><a name="dx1-56004"></a><span class="tt">flushright</span> generate paragraphs that are
+                    either left- or <a name="dx1-56005"></a>right-aligned. <a name="dx1-56006"></a>The <a name="dx1-56007"></a><a name="dx1-56008"></a><span class="tt">center</span> environment generates centred text. If
+                    you do not issue <a name="dx1-56009"></a><a name="dx1-56010"></a><span class="tt">\\</span> to specify line breaks, LaTeX will automatically determine
+                    line breaks.
+                    &nbsp;\begin{flushleft}
+                    &nbsp;This&nbsp;text&nbsp;is\\&nbsp;left-aligned.
+                    &nbsp;\LaTeX{}&nbsp;is&nbsp;not&nbsp;trying&nbsp;to&nbsp;make
+                    &nbsp;each&nbsp;line&nbsp;the&nbsp;same&nbsp;length.
+                    &nbsp;\end{flushleft}                    
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="blockquote"><blockquote class="blockquote"><p> This text is
+                                </p><p>left-aligned. LaTeX is not trying to make
+                                    each line the same length.
+                                </p></blockquote></div></dd></dl></div>&nbsp;\begin{flushright}&nbsp;This&nbsp;text&nbsp;is&nbsp;right-\\aligned.&nbsp;\LaTeX{}&nbsp;is&nbsp;not&nbsp;trying&nbsp;to&nbsp;make&nbsp;each&nbsp;line&nbsp;the&nbsp;same&nbsp;length.&nbsp;\end{flushright}                   <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="blockquote"><blockquote class="blockquote"><p> This text is right-
+                                </p><p>aligned. LaTeX is not trying to make
+                                    each line the same length.
+                                </p></blockquote></div></dd></dl></div>&nbsp;\begin{center}&nbsp;At&nbsp;the&nbsp;centre\\of&nbsp;the&nbsp;earth&nbsp;\end{center}                       <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                            </p><div class="section" lang="en"><div class="titlepage"><div><div><h6 class="title"><a name="d0e7047"></a>1.&nbsp;</h6></div></div></div><p> At the centre
+                                </p><p>of the earth</p></div></dd></dl></div><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7061"></a>4.11.3.&nbsp;
+                    <span class="abbrev">2.11.3</span><a name="x1-570002.11.3"></a>Quote, Quotation, and Verse
+                </h4></div></div></div><p>
+                       The <a name="dx1-57001"></a><a name="dx1-57002"></a><span class="tt">quote</span> environment is useful for quotes, important phrases and
+                    examples.
+                    &nbsp;A&nbsp;typographical&nbsp;rule&nbsp;of&nbsp;thumb
+                    &nbsp;for&nbsp;the&nbsp;line&nbsp;length&nbsp;is:
+                    &nbsp;\begin{quote}
+                    &nbsp;On&nbsp;average,&nbsp;no&nbsp;line&nbsp;should
+                    &nbsp;be&nbsp;longer&nbsp;than&nbsp;66&nbsp;characters.
+                    &nbsp;\end{quote}
+                    &nbsp;This&nbsp;is&nbsp;why&nbsp;\LaTeX{}&nbsp;pages&nbsp;have
+                    &nbsp;such&nbsp;large&nbsp;borders&nbsp;by&nbsp;default
+                    &nbsp;and&nbsp;also&nbsp;why&nbsp;multicolumn&nbsp;print
+                    &nbsp;is&nbsp;used&nbsp;in&nbsp;newspapers.             
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>A typographical rule of thumb for the line
+                                length is:
+                            </p><p>On average, no line should be
+                                longer than 66 characters.
+                            </p><p>This is why LaTeX pages have such
+                                large borders by default and also why
+                                multicolumn print is used in newspapers.
+                            </p></dd></dl></div><p>
+                       There are two similar environments: the <a name="dx1-57003"></a><a name="dx1-57004"></a><span class="tt">quotation</span> and the <a name="dx1-57005"></a><a name="dx1-57006"></a><span class="tt">verse</span>
+                    environments. The <span class="tt">quotation</span> environment is useful for longer quotes going over
+                    several paragraphs, because it indents the first line of each paragraph. The <span class="tt">verse</span>
+                    environment is useful for poems where the line breaks are important. The lines
+                    are separated by issuing a <a name="dx1-57007"></a><a name="dx1-57008"></a><span class="tt">\\</span> at the end of a line and an empty line after each
+                    verse.
+                    
+                    
+                    
+                    &nbsp;I&nbsp;know&nbsp;only&nbsp;one&nbsp;English&nbsp;poem&nbsp;by
+                    &nbsp;heart.&nbsp;It&nbsp;is&nbsp;about&nbsp;Humpty&nbsp;Dumpty.
+                    &nbsp;\begin{flushleft}
+                    &nbsp;\begin{verse}
+                    &nbsp;Humpty&nbsp;Dumpty&nbsp;sat&nbsp;on&nbsp;a&nbsp;wall:\\
+                    &nbsp;Humpty&nbsp;Dumpty&nbsp;had&nbsp;a&nbsp;great&nbsp;fall.\\
+                    &nbsp;All&nbsp;the&nbsp;King&#8217;s&nbsp;horses&nbsp;and&nbsp;all
+                    &nbsp;the&nbsp;King&#8217;s&nbsp;men\\
+                    &nbsp;Couldn&#8217;t&nbsp;put&nbsp;Humpty&nbsp;together
+                    &nbsp;again.
+                    &nbsp;\end{verse}
+                    &nbsp;\end{flushleft}                    
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>I know only one English poem by heart. It is
+                                about Humpty Dumpty. 
+                            </p><div class="blockquote"><blockquote class="blockquote"><p>
+                                    Humpty
+                                    Dumpty
+                                    sat
+                                    on
+                                    a
+                                    wall:
+                                </p><p>Humpty
+                                    Dumpty
+                                    had
+                                    a
+                                    great
+                                    fall.
+                                </p><p>All
+                                    the
+                                    King&#8217;s
+                                    horses
+                                    and
+                                    all
+                                    the
+                                    King&#8217;s
+                                    men
+                                </p><p>Couldn&#8217;t
+                                    put
+                                    Humpty
+                                    together
+                                    again.
+                                </p></blockquote></div></dd></dl></div><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7145"></a>4.11.4.&nbsp;
+                    <span class="abbrev">2.11.4</span><a name="x1-580002.11.4"></a>Abstract
+                </h4></div></div></div><p>   In scientific publications it is customary to start with an abstract which gives
+                    
+                    
+                    
+                    the reader a quick overview of what to expect. LaTeX provides the <a name="dx1-58001"></a><a name="dx1-58002"></a><span class="tt">abstract</span>
+                    environment for this purpose. Normally <a name="dx1-58003"></a><a name="dx1-58004"></a><span class="tt">abstract</span> is used in documents typeset
+                    with the article document class.
+                    &nbsp;\begin{abstract}
+                    &nbsp;The&nbsp;abstract&nbsp;abstract.
+                    &nbsp;\end{abstract}                     
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                            </p><div class="section" lang="en"><div class="titlepage"><div><div><h6 class="title"><a name="d0e7175"></a>1.&nbsp;</h6></div></div></div><p></p><p>The abstract abstract.
+                                </p></div></dd></dl></div><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7188"></a>4.11.5.&nbsp;
+                    <span class="abbrev">2.11.5</span><a name="x1-590002.11.5"></a>Printing Verbatim
+                </h4></div></div></div><p>
+                       Text that is enclosed between <em><span class="remark">\begin{</span></em><a name="dx1-59001"></a><a name="dx1-59002"></a><span class="tt">verbatim</span><em><span class="remark">}</span></em> and <em><span class="remark">\end{verbatim}</span></em> will
+                    be directly printed, as if typed on a typewriter, with all line breaks and spaces,
+                    without any LaTeX command being executed.
+                </p><p>   Within a paragraph, similar behavior can be accessed with
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-59003"></a><a name="dx1-59004"></a><span class="tt">\verb</span><em><span class="remark">+</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">+</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                    The <em><span class="remark">+</span></em> is just an example of a delimiter character. You can use any character
+                    except letters, <em><span class="remark">*</span></em> or space. Many LaTeX examples in this booklet are typeset with
+                    this command.
+                    &nbsp;The&nbsp;\verb|\ldots|&nbsp;command&nbsp;\ldots
+                    &nbsp;
+                    &nbsp;\begin{verbatim}
+                    &nbsp;10&nbsp;PRINT&nbsp;"HELLO&nbsp;WORLD&nbsp;";
+                    &nbsp;20&nbsp;GOTO&nbsp;10
+                    &nbsp;\end{verbatim}                     
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                                The <em><span class="remark">\ldots</span></em> command &#8230;
+                            </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;PRINT&nbsp;"HELLO&nbsp;WORLD&nbsp;";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;GOTO&nbsp;10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div></dd></dl></div>&nbsp;\begin{verbatim*}&nbsp;the&nbsp;starred&nbsp;version&nbsp;of&nbsp;the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verbatim&nbsp;environment&nbsp;emphasizes&nbsp;the&nbsp;spaces&nbsp;&nbsp;&nbsp;in&nbsp;the&nbsp;text&nbsp;\end{verbatim*}                    <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                            </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&#9251;starred&#9251;version&#9251;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&#9251;&#9251;&#9251;&#9251;&#9251;&#9251;verbatim<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;environment&#9251;emphasizes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&#9251;spaces&#9251;&#9251;&#9251;in&#9251;the&#9251;text<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p></p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div></dd></dl></div><p>
+                       The <a name="dx1-59005"></a><a name="dx1-59006"></a><span class="tt">\verb</span> command can be used in a similar fashion with a star:
+                    &nbsp;\verb*|like&nbsp;&nbsp;&nbsp;this&nbsp;:-)&nbsp;|           
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>
+                                <em><span class="remark">like&#9251;&#9251;&#9251;this&#9251;:-)&#9251;</span></em> 
+                            </p></dd></dl></div><p>
+                       The <span class="tt">verbatim</span> environment and the <em><span class="remark">\verb</span></em> command may not be used within
+                    parameters of other commands.
+                </p><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7317"></a>4.11.6.&nbsp;
+                    <span class="abbrev">2.11.6</span><a name="x1-600002.11.6"></a>Tabular
+                </h4></div></div></div><p>
+                       The <a name="dx1-60001"></a><a name="dx1-60002"></a><span class="tt">tabular</span> environment can be used to typeset beautiful <a name="dx1-60003"></a>tables with
+                    optional horizontal and vertical lines. LaTeX determines the width of the
+                    columns automatically.
+                </p><p>
+                       The <span class="emphasis"><em>table spec</em></span> argument of the
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\begin{tabular}[</span></em><span class="emphasis"><em>pos</em></span><em><span class="remark">]{</span></em><span class="emphasis"><em>table spec</em></span><em><span class="remark">}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                    command defines the format of the table. Use an <span class="tt">l</span> for a column of left-aligned
+                    text, <span class="tt">r</span> for right-aligned text, and <span class="tt">c</span> for centred text; 
+                    <span class="tt">
+                        p{<span class="emphasis"><em>width</em></span>}
+                    </span>
+                    for a
+                    column containing justified text with line breaks, and <span class="tt">|</span> for a vertical
+                    line.
+                </p><p>   If the text in a column is too wide for the page, LaTeX won&#8217;t automatically
+                    wrap it. Using 
+                    <span class="tt">
+                        p{<span class="emphasis"><em>width</em></span>}
+                    </span>
+                    you can define a special type of column which will
+                    wrap-around the text as in a normal paragraph.
+                    
+                    
+                    
+                </p><p>
+                       The <span class="emphasis"><em>pos</em></span> argument specifies the vertical position of the table relative to the
+                    baseline of the surrounding text. Use either of the letters <span class="tt">t</span>, <span class="tt">b</span> and <span class="tt">c</span> to specify
+                    table alignment at the top, bottom or center.
+                </p><p>
+                       Within a <span class="tt">tabular</span> environment, <span class="tt">&amp;</span> jumps to the next column, <a name="dx1-60004"></a><a name="dx1-60005"></a><span class="tt">\\</span> starts a new
+                    line and <a name="dx1-60006"></a><a name="dx1-60007"></a><span class="tt">\hline</span> inserts a horizontal line. You can add partial lines by using the
+                    <a name="dx1-60008"></a><a name="dx1-60009"></a><span class="tt">\cline</span><span class="tt">{</span><span class="emphasis"><em>j</em></span><span class="tt">-</span><span class="emphasis"><em>i</em></span><span class="tt">}</span>, where j and i are the column numbers the line should extend
+                    over.
+                </p><p>
+                       <a name="dx1-60010"></a>
+                    &nbsp;\begin{tabular}{|r|l|}
+                    &nbsp;\hline
+                    &nbsp;7C0&nbsp;&amp;&nbsp;hexadecimal&nbsp;\\
+                    &nbsp;3700&nbsp;&amp;&nbsp;octal&nbsp;\\&nbsp;\cline{2-2}
+                    &nbsp;11111000000&nbsp;&amp;&nbsp;binary&nbsp;\\
+                    &nbsp;\hline&nbsp;\hline
+                    &nbsp;1984&nbsp;&amp;&nbsp;decimal&nbsp;\\
+                    &nbsp;\hline
+                    &nbsp;\end{tabular}                      
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="right">
+                                                <p> 7C0</p>
+                                            </td><td align="left">
+                                                <p>hexadecimal</p>
+                                            </td></tr><tr><td align="right">
+                                                <p> 3700</p>
+                                            </td><td align="left">
+                                                <p>octal          </p>
+                                            </td></tr><tr><td align="right">
+                                                <p>11111000000</p>
+                                            </td><td align="left">
+                                                <p>binary        </p>
+                                            </td></tr><tr><td align="right">
+                                                <p> 1984</p>
+                                            </td><td align="left">
+                                                <p>decimal      </p>
+                                            </td></tr><tr><td align="right">
+                                                <p> </p>
+                                            </td><td class="auto-generated">&nbsp;</td></tr></tbody></table></div></dd></dl></div>&nbsp;\begin{tabular}{|p{4.7cm}|}&nbsp;\hline&nbsp;Welcome&nbsp;to&nbsp;Boxy&#8217;s&nbsp;paragraph.&nbsp;We&nbsp;sincerely&nbsp;hope&nbsp;you&#8217;ll&nbsp;all&nbsp;enjoy&nbsp;the&nbsp;show.\\&nbsp;\hline&nbsp;\end{tabular}                      <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="char">
+                                                <p>Welcome to Boxy&#8217;s paragraph.
+                                                    We  sincerely  hope  you&#8217;ll  all
+                                                    enjoy the show.                    
+                                                </p>
+                                            </td></tr><tr><td align="char">
+                                                <p> </p>
+                                            </td></tr></tbody></table></div></dd></dl></div><p>
+                       The column separator can be specified with the <span class="tt">@{...}</span> construct. This
+                    command kills the inter-column space and replaces it with whatever is between
+                    the curly braces. One common use for this command is explained below in the
+                    decimal alignment problem. Another possible application is to suppress leading
+                    space in a table with <span class="tt">@{}</span>.
+                    &nbsp;\begin{tabular}{@{}&nbsp;l&nbsp;@{}}
+                    &nbsp;\hline
+                    &nbsp;no&nbsp;leading&nbsp;space\\
+                    &nbsp;\hline
+                    &nbsp;\end{tabular}                      
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                                <p>no leading space</p>
+                                            </td></tr><tr><td align="left">
+                                                <p> </p>
+                                            </td></tr></tbody></table></div></dd></dl></div>&nbsp;\begin{tabular}{l}&nbsp;\hline&nbsp;leading&nbsp;space&nbsp;left&nbsp;and&nbsp;right\\&nbsp;\hline&nbsp;\end{tabular}                      <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                                <p>leading space left and right</p>
+                                            </td></tr><tr><td align="left">
+                                                <p> </p>
+                                            </td></tr></tbody></table></div></dd></dl></div><p>
+                       <a name="dx1-60011"></a>Since there is no built-in way to align numeric columns to a decimal
+                    point,<a name="x1-60012f17"></a>
+                    <sup>[<a name="d0e7604" href="#ftn.d0e7604">26</a>]</sup>
+                    we can &#8220;cheat&#8221; and do it by using two columns: a right-aligned integer and a
+                    left-aligned fraction. The <em><span class="remark">@{.}</span></em> command in the <em><span class="remark">\begin{tabular}</span></em> line replaces
+                    the normal inter-column spacing with just a &#8220;.&#8221;, giving the appearance
+                    of a single, decimal-point-justified column. Don&#8217;t forget to replace the
+                    decimal point in your numbers with a column separator (<em><span class="remark">&amp;</span></em>)! A column label
+                    can be placed above our numeric &#8220;column&#8221; by using the <a name="dx1-60015"></a><a name="dx1-60016"></a><span class="tt">\multicolumn</span>
+                    command.
+                    &nbsp;\begin{tabular}{c&nbsp;r&nbsp;@{.}&nbsp;l}
+                    &nbsp;Pi&nbsp;expression&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;
+                    &nbsp;\multicolumn{2}{c}{Value}&nbsp;\\
+                    &nbsp;\hline
+                    &nbsp;$\pi$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;3&amp;1416&nbsp;&nbsp;\\
+                    &nbsp;$\pi^{\pi}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;36&amp;46&nbsp;&nbsp;&nbsp;\\
+                    &nbsp;$(\pi^{\pi})^{\pi}$&nbsp;&amp;&nbsp;80662&amp;7&nbsp;\\
+                    &nbsp;\end{tabular}                      
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><tbody><tr><td align="center">
+                                                <p>Pi expression</p>
+                                            </td><td align="right">
+                                                <p></p>
+                                            </td><td class="auto-generated">&nbsp;</td></tr><tr><td align="center">
+                                                <p>
+                                                     
+                                                    <img src="lshort-base76x.png">
+                                                </p>
+                                            </td><td align="right">
+                                                <p> 3.</p>
+                                            </td><td align="left">
+                                                <p>1416</p>
+                                            </td></tr><tr><td align="center">
+                                                <p>
+                                                     
+                                                    <img src="lshort-base77x.png">
+                                                </p>
+                                            </td><td align="right">
+                                                <p> 36.</p>
+                                            </td><td align="left">
+                                                <p>46   </p>
+                                            </td></tr><tr><td align="center">
+                                                <p>
+                                                     
+                                                    <img src="lshort-base78x.png">
+                                                </p>
+                                            </td><td align="right">
+                                                <p>80662.</p>
+                                            </td><td align="left">
+                                                <p>7</p>
+                                            </td></tr><tr><td align="center">
+                                                <p> </p>
+                                            </td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td></tr></tbody></table></div></dd></dl></div>&nbsp;\begin{tabular}{|c|c|}&nbsp;\hline&nbsp;\multicolumn{2}{|c|}{Ene}&nbsp;\\&nbsp;\hline&nbsp;Mene&nbsp;&amp;&nbsp;Muh!&nbsp;\\&nbsp;\hline&nbsp;\end{tabular}                      <div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p></p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="center">
+                                                <p></p>
+                                            </td><td class="auto-generated">&nbsp;</td></tr><tr><td align="center">
+                                                <p>Mene</p>
+                                            </td><td align="center">
+                                                <p>Muh!</p>
+                                            </td></tr><tr><td align="center">
+                                                <p> </p>
+                                            </td><td class="auto-generated">&nbsp;</td></tr></tbody></table></div></dd></dl></div><p>   Material typeset with the tabular environment always stays together on one
+                    page. If you want to typeset long tables, you might want to use the <a name="dx1-60017"></a><a name="dx1-60018"></a><span class="sf">longtable</span>
+                    environments.
+                </p><p>
+                </p></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e7604" href="#d0e7604">26</a>] </sup>
+                            If the &#8216;tools&#8217; bundle is installed on your system, have a look at the <a name="dx1-60013"></a><a name="dx1-60014"></a><span class="sf">dcolumn</span> package.
+                        </p></div></div></div></body>
+</html>

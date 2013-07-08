@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>7. Indexing</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11651"></a>7.&nbsp;
+        <span class="abbrev">4.3</span><a name="x1-780004.3"></a>Indexing
+    </h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se7se1.html">7.1. </a></span></dt></dl></div><p>
+           A very useful feature of many books is their <a name="dx1-78001"></a>index. With LaTeX and the support program
+        <span class="tt">makeindex</span>,<a name="x1-78002f5"></a>
+        <sup>[<a name="d0e11668" href="#ftn.d0e11668">39</a>]</sup>
+        an index can be generated quite easily. This introduction will only explain the
+        basic index generation commands. For a more in-depth view, please refer to <span class="emphasis"><em>The
+            LaTeX Companion
+        </em></span>
+        &nbsp;[<span class="citation">[?]</span>]. <a name="dx1-78003"></a><a name="dx1-78004"></a>
+    </p><p>
+           To enable the indexing feature of LaTeX, the <a name="dx1-78005"></a><a name="dx1-78006"></a><span class="sf">makeidx</span> package must be loaded
+        in the preamble with:
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <em><span class="remark">\usepackage{makeidx}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>and the special indexing commands must be enabled by putting the
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-78007"></a><a name="dx1-78008"></a><span class="tt">\makeindex</span>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>command into the input file preamble.
+    </p><p>   The content of the index is specified with
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-78009"></a><a name="dx1-78010"></a><span class="tt">\index</span><em><span class="remark">{</span></em><span class="emphasis"><em>key</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+        commands, where <span class="emphasis"><em>key</em></span> is the index entry. You enter the index commands at the
+        points in the text that you want the final index entries to point to. Table&nbsp;??
+        explains the syntax of the <span class="emphasis"><em>key</em></span> argument with several examples.
+        
+        
+        
+        
+        
+        
+        </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                <a name="x1-780112"></a>Table&nbsp;4.2
+            </b></p></div><p>Index Key Syntax Examples.</p></blockquote></div><p>
+    </p><p>
+           When the input file is processed with LaTeX, each <em><span class="remark">\index</span></em> command writes
+        an appropriate index entry, together with the current page number, to a special
+        file. The file has the same name as the LaTeX input file, but a different
+        extension (<em><span class="remark">.idx</span></em>). This <a name="dx1-78012"></a><span class="tt">.idx</span> file can then be processed with the <span class="tt">makeindex</span>
+        program.
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <span class="tt">makeindex</span> <span class="emphasis"><em>filename</em></span>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+           The <span class="tt">makeindex</span> program generates a sorted index with the same base file
+        name, but this time with the extension <a name="dx1-78013"></a><span class="tt">.ind</span>. If now the LaTeX input file is
+        processed again, this sorted index gets included into the document at the point
+        where LaTeX finds
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-78014"></a><a name="dx1-78015"></a><span class="tt">\printindex</span>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+           The <a name="dx1-78016"></a><a name="dx1-78017"></a><span class="sf">showidx</span> package that comes with LaTeX2
+        <img src="lshort-base182x.png">
+        prints out all index entries in
+        the left margin of the text. This is quite useful for proofreading a document and
+        verifying the index.
+    </p><p>
+           Note that the <a name="dx1-78018"></a><a name="dx1-78019"></a><span class="tt">\index</span> command can affect your layout if not used
+        carefully.
+        &nbsp;My&nbsp;Word&nbsp;\index{Word}.&nbsp;As&nbsp;opposed
+        &nbsp;to&nbsp;Word\index{Word}.&nbsp;Note&nbsp;the
+        &nbsp;position&nbsp;of&nbsp;the&nbsp;full&nbsp;stop.         
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>
+                    My Word <a name="dx1-78020"></a>. As opposed to Word<a name="dx1-78021"></a>. Note the
+                    position of the full stop. 
+                </p></dd></dl></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e11668" href="#d0e11668">39</a>] </sup>On systems not necessarily supporting filenames longer than 8&nbsp;characters, the program may
+                be called <span class="tt">makeidx</span>.
+            </p></div></div></div></body>
+</html>

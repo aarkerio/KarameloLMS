@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf
+END
+load_font.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/load_font.php
+END
+dompdf_config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/dompdf_config.inc.php
+END
+LICENSE.LGPL
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/LICENSE.LGPL
+END
+dompdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/dompdf.php
+END

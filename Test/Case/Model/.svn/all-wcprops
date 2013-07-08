@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Case/Model
+END
+AnnotationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Case/Model/AnnotationTest.php
+END
+ReportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/ReportTest.php
+END
+NewsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2980/trunk/app/Test/Case/Model/NewsTest.php
+END
+UserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/UserTest.php
+END
+ChatTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2976/trunk/app/Test/Case/Model/ChatTest.php
+END
+TestTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/TestTest.php
+END
+PermanentClassTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/2959/trunk/app/Test/Case/Model/PermanentClassTest.php
+END
+MessageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2980/trunk/app/Test/Case/Model/MessageTest.php
+END
+ForumTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/ForumTest.php
+END
+VclassroomTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2971/trunk/app/Test/Case/Model/VclassroomTest.php
+END
+HelpTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/HelpTest.php
+END
+TreasureTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/TreasureTest.php
+END
+AcquaintanceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Case/Model/AcquaintanceTest.php
+END
+NewsletterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2980/trunk/app/Test/Case/Model/NewsletterTest.php
+END
+QuoteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Case/Model/QuoteTest.php
+END
+WebquestTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/WebquestTest.php
+END
+SubjectTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2983/trunk/app/Test/Case/Model/SubjectTest.php
+END
+EntryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2970/trunk/app/Test/Case/Model/EntryTest.php
+END
+KnetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2982/trunk/app/Test/Case/Model/KnetTest.php
+END
+ShareTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/ShareTest.php
+END
+LessonTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/LessonTest.php
+END
+WikiTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2982/trunk/app/Test/Case/Model/WikiTest.php
+END
+EcourseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Case/Model/EcourseTest.php
+END
+RecoverTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2983/trunk/app/Test/Case/Model/RecoverTest.php
+END
+ParticipationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/ParticipationTest.php
+END
+FaqTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2967/trunk/app/Test/Case/Model/FaqTest.php
+END
+GapTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Case/Model/GapTest.php
+END

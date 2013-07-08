@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.5. International Language Support</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4022"></a>4.5.&nbsp;
+                <span class="abbrev">2.5</span><a name="x1-420002.5"></a>International Language Support
+            </h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e4257">4.5.1. </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e4577">4.5.2. 
+                    <span class="abbrev">2.5.1</span>Support for Portuguese
+                </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e4699">4.5.3. 
+                    <span class="abbrev">2.5.2</span>Support for French
+                </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e4940">4.5.4. 
+                    <span class="abbrev">2.5.3</span>Support for German
+                </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e5158">4.5.5. 
+                    <span class="abbrev">2.5.4</span>Support for Korean
+                </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e5337">4.5.6. 
+                    <span class="abbrev">2.5.5</span>Writing in Greek
+                </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e5523">4.5.7. 
+                    <span class="abbrev">2.5.6</span>Support for Cyrillic
+                </a></span></dt></dl></div><p>
+                   <a name="dx1-42001"></a>When you write documents in <a name="dx1-42002"></a>languages other than English, there are three
+                areas where LaTeX has to be configured appropriately:
+            </p><p>
+            </p><div class="orderedlist"><ol type="1"><li><a name="x1-42004x1"></a><p>
+                        All automatically generated text strings<a name="x1-42005f3"></a>
+                        <sup>[<a name="d0e4047" href="#ftn.d0e4047">11</a>]</sup>
+                        have to be adapted to the new language. For many languages, these
+                        changes can be accomplished by using the <a name="dx1-42006"></a><a name="dx1-42007"></a><span class="sf">babel</span> package by Johannes
+                        Braams.
+                    </p></li><li><a name="x1-42009x2"></a><p>LaTeX needs to know the hyphenation rules for the new language.
+                        Getting hyphenation rules into LaTeX is a bit more tricky. It means
+                        rebuilding the format file with different hyphenation patterns enabled.
+                        Your <span class="emphasis"><em>Local Guide</em></span>&nbsp;[<span class="citation">[?]</span>] should give more information on this.
+                    </p></li><li><a name="x1-42011x3"></a><p>Language specific typographic rules. In French for example, there is a
+                        mandatory space before each colon character (:).
+                    </p></li></ol></div><p>
+                   If your system is already configured appropriately, you can activate the <a name="dx1-42012"></a><a name="dx1-42013"></a><span class="sf">babel</span>
+                package by adding the command
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42014"></a><a name="dx1-42015"></a><span class="tt">\usepackage</span><em><span class="remark">[</span></em><span class="emphasis"><em>language</em></span><em><span class="remark">]{babel}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                after the <em><span class="remark">\documentclass</span></em> command. A list of the <span class="emphasis"><em>language</em></span>s built into your
+                LaTeX system will be displayed every time the compiler is started. Babel will
+                automatically activate the appropriate hyphenation rules for the language you
+                choose. If your LaTeX format does not support hyphenation in the language of
+                your choice, babel will still work but will disable hyphenation, which has quite a
+                negative effect on the appearance of the typeset document.
+            </p><p>
+                   <span class="sf">Babel</span> also specifies new commands for some languages, which simplify the
+                input of special characters. The <a name="dx1-42016"></a>German language, for example, contains a lot
+                of umlauts (&auml;&ouml;&uuml;). With <span class="sf">babel</span>, you can enter an &ouml; by typing <em><span class="remark">"o</span></em> instead
+                of&nbsp;<em><span class="remark">\"o</span></em>.
+                
+                
+                
+            </p><p>   If you call babel with multiple languages
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42017"></a><a name="dx1-42018"></a><span class="tt">\usepackage</span><em><span class="remark">[</span></em><span class="emphasis"><em>languageA</em></span><em><span class="remark">,</span></em><span class="emphasis"><em>languageB</em></span><em><span class="remark">]{babel}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>then the last language in the option list will be active (i.e. languageB). You can
+                to use the command
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42019"></a><a name="dx1-42020"></a><span class="tt">\selectlanguage</span><em><span class="remark">{</span></em><span class="emphasis"><em>languageA</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>to change the active language.
+            </p><p>   Most of the modern computer systems allow you to input letter of national
+                alphabets directly from the keyboard. In order to handle variety of input
+                encoding used for different groups of languages and/or on different computer
+                platforms LaTeX employs the <a name="dx1-42021"></a><a name="dx1-42022"></a><span class="sf">inputenc</span> package:
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42023"></a><a name="dx1-42024"></a><span class="tt">\usepackage</span><em><span class="remark">[</span></em><span class="emphasis"><em>encoding</em></span><em><span class="remark">]{inputenc}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>   When using this package, you should consider that other people might not be
+                able to display your input files on their computer, because they use a different
+                encoding. For example, the German umlaut &auml; on OS/2 is encoded as
+                132, on Unix systems using ISO-LATIN&nbsp;1 it is encoded as 228, while in
+                Cyrillic encoding cp1251 for Windows this letter does not exist at all;
+                therefore you should use this feature with care. The following encodings
+                may come in handy, depending on the type of system you are working
+                on<a name="x1-42025f4"></a>
+                <sup>[<a name="d0e4244" href="#ftn.d0e4244">12</a>]</sup>
+            </p><p>
+            </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e4257"></a>4.5.1.&nbsp;</h4></div></div></div><p> </p><div class="informaltable"><table border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><tbody><tr><td align="left">
+                                    <p>Operating  </p>
+                                </td><td align="right">
+                                    <p></p>
+                                </td><td class="auto-generated">&nbsp;</td></tr><tr><td align="left">
+                                    <p>system      </p>
+                                </td><td align="right">
+                                    <p>western Latin</p>
+                                </td><td align="right">
+                                    <p> Cyrillic</p>
+                                </td></tr><tr><td align="left">
+                                    <p>Mac          </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42026"></a><a name="dx1-42027"></a><a name="dx1-42028"></a><span class="tt">applemac</span>
+                                    </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42029"></a><a name="dx1-42030"></a><a name="dx1-42031"></a><span class="tt">macukr</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>Unix         </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42032"></a><a name="dx1-42033"></a><a name="dx1-42034"></a><span class="tt">latin1</span>
+                                    </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42035"></a><a name="dx1-42036"></a><a name="dx1-42037"></a><span class="tt">koi8-ru</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>Windows   </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42038"></a><a name="dx1-42039"></a><a name="dx1-42040"></a><span class="tt">ansinew</span>
+                                    </p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42041"></a><a name="dx1-42042"></a><a name="dx1-42043"></a><span class="tt">cp1251</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>DOS, OS/2</p>
+                                </td><td align="right">
+                                    <p>
+                                         <a name="dx1-42044"></a><a name="dx1-42045"></a><a name="dx1-42046"></a><span class="tt">cp850</span>
+                                    </p>
+                                </td><td align="right">
+                                    <p>
+                                        <a name="dx1-42047"></a><a name="dx1-42048"></a><a name="dx1-42049"></a><span class="tt">cp866nav</span>
+                                    </p>
+                                </td></tr></tbody></table></div></div><p>   If you have a multilingual document with conflicting input encodings, you
+                might want to switch to unicode, using the <a name="dx1-42050"></a><a name="dx1-42051"></a><span class="sf">ucs</span> package.
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42052"></a><a name="dx1-42053"></a><span class="tt">\usepackage</span><em><span class="remark">{ucs}</span></em>            
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42054"></a><a name="dx1-42055"></a><span class="tt">\usepackage</span><em><span class="remark">[</span></em><a name="dx1-42056"></a><a name="dx1-42057"></a><a name="dx1-42058"></a><span class="tt">utf8x</span><em><span class="remark">]{inputenc}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                will enable you to create LaTeX input files in <a name="dx1-42059"></a><a name="dx1-42060"></a><a name="dx1-42061"></a><span class="tt">utf8x</span>, a multi-byte encoding in
+                which each character can be encoded in as little as one byte and as many as four
+                bytes.
+            </p><p>   Font encoding is a different matter. It defines at which position inside a
+                TE X-font each letter is stored. Multiple input encodings could be mapped into
+                one font encoding, which reduces number of required font sets. Font encodings
+                are handled through <a name="dx1-42062"></a><a name="dx1-42063"></a><span class="sf">fontenc</span> package:
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-42064"></a><a name="dx1-42065"></a><span class="tt">\usepackage</span><em><span class="remark">[</span></em><span class="emphasis"><em>encoding</em></span><em><span class="remark">]{fontenc}</span></em> <a name="dx1-42066"></a>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                where <span class="emphasis"><em>encoding</em></span> is font encoding. It is possible to load several encodings
+                simultaneously.
+            </p><p>
+                   The default LaTeX font encoding is  <a name="dx1-42067"></a><a name="dx1-42068"></a><a name="dx1-42069"></a><span class="tt">OT1</span>, the encoding of the original
+                Computer Modern TE X font. It contains only the 128 characters of the 7-bit
+                ASCII character set. When accented characters are required, TE X creates them
+                by combining a normal character with an accent. While the resulting output
+                looks perfect, this approach stops the automatic hyphenation from working
+                inside words containing accented characters. Besides, some of Latin letters
+                could not be created by combining a normal character with an accent,
+                to say nothing about letters of non-Latin alphabets, such as Greek or
+                Cyrillic.
+            </p><p>   To overcome these shortcomings, several 8-bit CM-like font sets were
+                created. <span class="emphasis"><em>Extended Cork</em></span> (EC) fonts in <a name="dx1-42070"></a><a name="dx1-42071"></a><a name="dx1-42072"></a><span class="tt">T1</span> encoding contains letters and
+                punctuation characters for most of the European languages based on Latin
+                script. The LH font set contains letters necessary to typeset documents in
+                languages using Cyrillic script. Because of the large number of Cyrillic
+                glyphs, they are arranged into four font encodings&#8212;<a name="dx1-42073"></a><a name="dx1-42074"></a><a name="dx1-42075"></a><span class="tt">T2A</span>, <a name="dx1-42076"></a><a name="dx1-42077"></a><a name="dx1-42078"></a><span class="tt">T2B</span>, <a name="dx1-42079"></a><a name="dx1-42080"></a><a name="dx1-42081"></a><span class="tt">T2C</span>,
+                and&nbsp;<a name="dx1-42082"></a><a name="dx1-42083"></a><a name="dx1-42084"></a><span class="tt">X2</span>.<a name="x1-42085f5"></a>
+                <sup>[<a name="d0e4557" href="#ftn.d0e4557">13</a>]</sup>
+                The CB bundle contains fonts in <a name="dx1-42086"></a><a name="dx1-42087"></a><a name="dx1-42088"></a><span class="tt">LGR</span> encoding for the composition of Greek
+                text.
+            </p><p>   By using these fonts you can improve/enable hyphenation in non-English
+                documents. Another advantage of using new CM-like fonts is that they provide
+                fonts of CM families in all weights, shapes, and optically scaled font
+                
+                
+                
+                sizes.
+            </p><p>
+            </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e4577"></a>4.5.2.&nbsp;
+                    <span class="abbrev">2.5.1</span><a name="x1-430002.5.1"></a>Support for Portuguese
+                </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e4688">4.5.2.1. </a></span></dt></dl></div><p>
+                    By Demerson Andre Polli 
+                    <a href="mailto:<a href="mailto:polli@linux.ime.usp.br">polli@linux.ime.usp.br</a>" target="_blank">
+                        <em><span class="remark"><a href="mailto:polli@linux.ime.usp.br">polli@linux.ime.usp.br</a></span></em>
+                    </a>
+                </p><p>
+                    To enable hyphenation and change all automatic text to <a name="dx1-43001"></a>Portuguese, <a name="dx1-43002"></a>use the
+                    command:
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[portuguese]{babel}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                       Or if you are in Brazil, substitute the language for 
+                    <span class="tt">
+                        <a name="dx1-43003"></a>brazilian
+                    </span>
+                    .
+                </p><p>   As there are a lot of accents in Portuguese you might want to use
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[latin1]{inputenc}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>   to be able to input them correctly as well as
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[T1]{fontenc}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>   to get the hyphenation right.
+                </p><p>   See table&nbsp;?? for the preamble you need to write in the Portuguese language.
+                    Note that we are using the latin1 input encoding here, so this will not
+                    work on a Mac or on DOS. Just use the appropriate encoding for your
+                    system.
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                            <a name="x1-430043"></a>Table&nbsp;2.3
+                        </b></p></div><p>Preamble for Portuguese documents.</p></blockquote></div><p>
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e4688"></a>4.5.2.1.&nbsp;</h5></div></div></div><p>___________________________</p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage[portuguese]{babel}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage[latin1]{inputenc}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage[T1]{fontenc}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                    _________________________</div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e4699"></a>4.5.3.&nbsp;
+                    <span class="abbrev">2.5.2</span><a name="x1-440002.5.2"></a>Support for French
+                </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e4772">4.5.3.1. </a></span></dt></dl></div><p>
+                    By Daniel Flipo 
+                    <a href="mailto:<a href="mailto:daniel.flipo@univ-lille1.fr">daniel.flipo@univ-lille1.fr</a>" target="_blank">
+                        <em><span class="remark"><a href="mailto:daniel.flipo@univ-lille1.fr">daniel.flipo@univ-lille1.fr</a></span></em>
+                    </a>
+                </p><p>
+                    Some hints for those creating <a name="dx1-44001"></a>French documents with LaTeX: you can load
+                    French language support with the following command:
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[frenchb]{babel}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                       Note that, for historical reasons, the name of <span class="sf">babel</span>&#8217;s option for French is
+                    either <span class="emphasis"><em>frenchb</em></span> or <span class="emphasis"><em>francais</em></span> but not <span class="emphasis"><em>french</em></span>.
+                </p><p>   This enables French hyphenation, if you have configured your LaTeX system
+                    accordingly. It also changes all automatic text into French: <em><span class="remark">\chapter</span></em> prints
+                    Chapitre, <em><span class="remark">\today</span></em> prints the current date in French and so on. A set of new
+                    commands also becomes available, which allows you to write French input files
+                    more easily. Check out table ?? for inspiration.
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                            <a name="x1-440024"></a>Table&nbsp;2.4
+                        </b></p></div><p>Special commands for French.</p></blockquote></div><p>
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e4772"></a>4.5.3.1.&nbsp;</h5></div></div></div><p>_________________________________________________
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">\og&nbsp;guillemets&nbsp;\fg{}</span></em>         
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&laquo;guillemets &raquo;</p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">M\up{me},&nbsp;D\up{r}</span></em>            
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            M
+                                            <img src="lshort-base44x.png">
+                                            ,D
+                                            <img src="lshort-base45x.png">
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">1\ier{},&nbsp;1\iere{},&nbsp;1\ieres{}</span></em> 
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            1
+                                            <img src="lshort-base46x.png">
+                                            ,1
+                                            <img src="lshort-base47x.png">
+                                            ,1
+                                            <img src="lshort-base48x.png">
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">2\ieme{}&nbsp;4\iemes{}</span></em>           
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            2
+                                            <img src="lshort-base49x.png">
+                                            4
+                                            <img src="lshort-base50x.png">
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">\No&nbsp;1,&nbsp;\no&nbsp;2</span></em>                 
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            N
+                                            <img src="lshort-base51x.png">
+                                            1, n
+                                            <img src="lshort-base52x.png">
+                                            2
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">20~\degres&nbsp;C,&nbsp;45\degres</span></em>      
+                                        </p>
+                                    </td><td align="left">
+                                        <p>20&nbsp;&#8451;C, 45&#8451;    </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">\bsc{M.&nbsp;Durand}</span></em>              
+                                        </p>
+                                    </td><td align="left">
+                                        <p>M.&nbsp;Durand </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">\nombre{1234,56789}</span></em>          
+                                        </p>
+                                    </td><td align="left">
+                                        <p>1234,567 89  </p>
+                                    </td></tr></tbody></table></div>
+                    _______</div><p>   You will also notice that the layout of lists changes when switching to the
+                    French language. For more information on what the <span class="tt">frenchb</span> option of <span class="sf">babel</span> does
+                    and how you can customize its behaviour, run LaTeX on file <span class="tt">frenchb.dtx</span> and
+                    read the produced file <span class="tt">frenchb.dvi</span>.
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e4940"></a>4.5.4.&nbsp;
+                    <span class="abbrev">2.5.3</span><a name="x1-450002.5.3"></a>Support for German
+                </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e4985">4.5.4.1. </a></span></dt></dl></div><p>
+                       Some hints for those creating <a name="dx1-45001"></a>German<a name="dx1-45002"></a> documents with LaTeX: you can load
+                    German language support with the following command:
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[german]{babel}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>   This enables German hyphenation, if you have configured your LaTeX system
+                    accordingly. It also changes all automatic text into German. Eg. &#8220;Chapter&#8221;
+                    becomes &#8220;Kapitel.&#8221; A set of new commands also becomes available, which allows
+                    you to write German input files more quickly even when you don&#8217;t use the
+                    inputenc package. Check out table ?? for inspiration. With inputenc, all
+                    this becomes moot, but your text also is locked in a particular encoding
+                    world.
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                            <a name="x1-450035"></a>Table&nbsp;2.5
+                        </b></p></div><p>German Special Characters.</p></blockquote></div><p>
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e4985"></a>4.5.4.1.&nbsp;</h5></div></div></div><p>___________________________________________
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="25%"><col width="25%"><col width="25%"><col width="25%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">"a</span></em>        
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&auml;</p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">"s</span></em>        
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&szlig;</p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">"&#8216;</span></em>        
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8222;  </p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">"&#8217;</span></em>        
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8220;</p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">"&lt;</span></em> or <a name="dx1-45004"></a><a name="dx1-45005"></a><span class="tt">\flqq</span>
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&laquo;</p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">"&gt;</span></em> or <a name="dx1-45006"></a><a name="dx1-45007"></a><span class="tt">\frqq</span>
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&raquo;</p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <a name="dx1-45008"></a><a name="dx1-45009"></a><span class="tt">\flq</span>      
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8249;   </p>
+                                    </td><td align="left">
+                                        <p>
+                                            <a name="dx1-45010"></a><a name="dx1-45011"></a><span class="tt">\frq</span>      
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8250; </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <a name="dx1-45012"></a><a name="dx1-45013"></a><span class="tt">\dq</span>       
+                                        </p>
+                                    </td><td align="left">
+                                        <p>"</p>
+                                    </td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td></tr></tbody></table></div>
+                    _______________________________________________</div><p>   In German books you often find French quotation marks (&laquo;guillemets&raquo;).
+                    German typesetters, however, use them differently. A quote in a German book
+                    would look like &raquo;this&laquo;. In the German speaking part of Switzerland, typesetters
+                    use &laquo;guillemets&raquo;&nbsp;the same way the French do.
+                </p><p>
+                       A major problem arises from the use of commands like <em><span class="remark">\flq</span></em>: If you use the
+                    OT1 font (which is the default font) the guillemets will look like the math symbol
+                    &#8220;
+                    <img src="lshort-base53x.png">
+                    &#8221;, which turns a typesetter&#8217;s stomach. T1 encoded fonts, on the other hand,
+                    do contain the required symbols. So if you are using this type of quote, make sure
+                    you use the T1 encoding. (<em><span class="remark">\usepackage[T1]{fontenc}</span></em>)
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e5158"></a>4.5.5.&nbsp;
+                    <span class="abbrev">2.5.4</span><a name="x1-460002.5.4"></a>Support for Korean
+                </h4></div></div></div><p>
+                       <a name="x1-46001f6"></a>
+                    <sup>[<a name="d0e5170" href="#ftn.d0e5170">14</a>]</sup>
+                </p><p>
+                       To use LaTeX for typesetting <a name="dx1-46002"></a>Korean, we need to solve three problems:
+                </p><p>
+                </p><div class="orderedlist"><ol type="1"><li><a name="x1-46004x1"></a><p>
+                            We  must  be  able  to  edit  <a name="dx1-46005"></a>Korean  input  files.  Korean  input  files
+                            must  be  in  plain  text  format,  but  because  Korean  uses  its  own
+                            character set outside the repertoire of US-ASCII, they will look rather
+                            strange  with  a  normal  ASCII  editor.  The  two  most  widely  used
+                            encodings for Korean text files are EUC-KR and its upward compatible
+                            extension used in Korean MS-Windows, CP949/Windows-949/UHC.
+                            In  these  encodings  each  US-ASCII  character  represents  its  normal
+                            ASCII character similar to other ASCII compatible encodings such
+                            as  ISO-8859-<span class="it">x</span>,  EUC-JP,  Big5,  or  Shift_JIS.  On  the  other  hand,
+                            Hangul syllables, Hanjas (Chinese characters as used in Korea), Hangul
+                            Jamos,  Hiraganas,  Katakanas,  Greek  and  Cyrillic  characters  and
+                            other  symbols  and  letters  drawn  from  KS&nbsp;X&nbsp;1001  are  represented
+                            by  two  consecutive  octets.  The  first  has  its  MSB  set.  Until  the
+                            mid-1990&#8217;s, it took a considerable amount of time and effort to set
+                            up a Korean-capable environment under a non-localized (non-Korean)
+                            operating  system.  You  can  skim  through  the  now  much-outdated
+                            <em><span class="remark">http://jshin.net/faq</span></em> to get a glimpse of what it was like to use
+                            Korean  under  non-Korean  OS  in  mid-1990&#8217;s.  These  days  all  three
+                            major operating systems (Mac OS, Unix, Windows) come equipped
+                            with  pretty  decent  multilingual  support  and  internationalization
+                            features so that editing Korean text file is not so much of a problem
+                            anymore, even on non-Korean operating systems.
+                        </p></li><li><a name="x1-46007x2"></a><p>TE X and LaTeX were originally written for scripts with no more than
+                            256 characters in their alphabet. To make them work for languages
+                            with considerably more characters such as Korean<a name="x1-46008f7"></a>
+                            <sup>[<a name="d0e5203" href="#ftn.d0e5203">15</a>]</sup>
+                            or Chinese, a subfont mechanism was developed. It divides a single
+                            CJK font with thousands or tens of thousands of glyphs into a set of
+                            subfonts with 256 glyphs each. For Korean, there are three widely used
+                            packages;  <a name="dx1-46009"></a>HLaTeX  by  UN&nbsp;Koaunghi,  <a name="dx1-46010"></a>hLaTeXp  by  CHA&nbsp;Jaechoon
+                            and the <a name="dx1-46011"></a>CJK package by Werner&nbsp;Lemberg.<a name="x1-46012f8"></a>
+                            <sup>[<a name="d0e5233" href="#ftn.d0e5233">16</a>]</sup>
+                            HLaTeX and hLaTeXp are specific to Korean and provide Korean
+                            localization on top of the font support. They both can process Korean
+                            input text files encoded in EUC-KR. HLaTeX can even process input
+                            files  encoded  in  CP949/Windows-949/UHC  and  UTF-8  when  used
+                            along with 
+                            <img src="lshort-base59x.png">
+                            ,
+                            <img src="lshort-base60x.png">
+                            .
+                        </p><p>The CJK package is not specific to Korean. It can process input files
+                            in UTF-8 as well as in various CJK encodings including EUC-KR and
+                            CP949/Windows-949/UHC, it can be used to typeset documents with
+                            multilingual content (especially Chinese, Japanese and Korean). The
+                            CJK package has no Korean localization such as the one offered by
+                            HLaTeX and it does not come with as many special Korean fonts as
+                            HLaTeX.
+                        </p></li><li><a name="x1-46014x3"></a><p>The  ultimate  purpose  of  using  typesetting  programs  like  TE X  and
+                            LaTeX  is  to  get  documents  typeset  in  an  &#8216;aesthetically&#8217;  satisfying
+                            way. Arguably the most important element in typesetting is a set of
+                            well-designed fonts. The HLaTeX distribution includes <a name="dx1-46015"></a>UHC <span class="sc">PostScript</span><a name="dx1-46016"></a>
+                            fonts of 10 different families and Munhwabu<a name="x1-46017f9"></a>
+                            <sup>[<a name="d0e5269" href="#ftn.d0e5269">17</a>]</sup>
+                            
+                            
+                            
+                            fonts (TrueType) of 5 different families. The CJK package works with
+                            a  set  of  fonts  used  by  earlier  versions  of  HLaTeX  and  it  can  use
+                            Bitstream&#8217;s cyberbit TrueType font.
+                        </p></li></ol></div><p>   To use the HLaTeX package for typesetting your Korean text, put the
+                    following declaration into the preamble of your document:
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage{hangul}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>   This command turns the Korean localization on. The headings of chapters,
+                    sections, subsections, table of content and table of figures are all translated into
+                    Korean and the formatting of the document is changed to follow Korean
+                    conventions. The package also provides automatic &#8220;particle selection.&#8221; In Korean,
+                    there are pairs of post-fix particles grammatically equivalent but different in
+                    form. Which of any given pair is correct depends on whether the preceding
+                    syllable ends with a vowel or a consonant. (It is a bit more complex than this,
+                    but this should give you a good picture.) Native Korean speakers have no
+                    problem picking the right particle, but it cannot be determined which particle to
+                    use for references and other automatic text that will change while you edit the
+                    document. It takes a painstaking effort to place appropriate particles manually
+                    every time you add/remove references or simply shuffle parts of your
+                    document around. HLaTeX relieves its users from this boring and error-prone
+                    process.
+                </p><p>   In case you don&#8217;t need Korean localization features but just want to typeset
+                    Korean text, you can put the following line in the preamble, instead.
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage{hfont}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                       For more details on typesetting Korean with HLaTeX, refer to the <span class="emphasis"><em>HLaTeX
+                        Guide
+                    </em></span>
+                    .Check out the web site of the Korean TE X User Group (KTUG) at
+                    <em><span class="remark">http://www.ktug.or.kr/</span></em>. There is also a Korean translation of this manual
+                    available.
+                </p><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e5337"></a>4.5.6.&nbsp;
+                    <span class="abbrev">2.5.5</span><a name="x1-470002.5.5"></a>Writing in Greek
+                </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e5380">4.5.6.1. </a></span></dt><dt><span class="section"><a href="se4se5.html#d0e5419">4.5.6.2. </a></span></dt></dl></div><p>
+                    By Nikolaos Pothitos 
+                    <a href="mailto:<a href="mailto:pothitos@di.uoa.gr">pothitos@di.uoa.gr</a>" target="_blank">
+                        <em><span class="remark"><a href="mailto:pothitos@di.uoa.gr">pothitos@di.uoa.gr</a></span></em>
+                    </a>
+                </p><p>
+                    See table&nbsp;?? for the preamble you need to write in the <a name="dx1-47001"></a>Greek <a name="dx1-47002"></a>language.
+                    
+                    
+                    
+                    This preamble enables hyphenation and changes all automatic text to
+                    Greek.<a name="x1-47003f10"></a>
+                    <sup>[<a name="d0e5362" href="#ftn.d0e5362">18</a>]</sup>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                            <a name="x1-470046"></a>Table&nbsp;2.6
+                        </b></p></div><p>Preamble for Greek documents.</p></blockquote></div><p>
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e5380"></a>4.5.6.1.&nbsp;</h5></div></div></div><p>______________________________________</p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage[english,greek]{babel}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage[iso-8859-7]{inputenc}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                    ___________________________________</div><p>   A set of new commands also becomes available, which allows you to write
+                    Greek input files more easily. In order to temporarily switch to English
+                    and vice versa, one can use the commands <em><span class="remark">\textlatin{</span></em><span class="emphasis"><em>english text</em></span><em><span class="remark">}</span></em>
+                    and <em><span class="remark">\textgreek{</span></em><span class="emphasis"><em>greek text</em></span><em><span class="remark">}</span></em> that both take one argument which is then
+                    typeset using the requested font encoding. Otherwise you can use the
+                    command <em><span class="remark">\selectlanguage{...}</span></em> described in a previous section. Check out
+                    table&nbsp;?? for some Greek punctuation characters. Use <em><span class="remark">\euro</span></em> for the Euro
+                    symbol.
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                            <a name="x1-470057"></a>Table&nbsp;2.7
+                        </b></p></div><p>Greek Special Characters.</p></blockquote></div><p>
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e5419"></a>4.5.6.2.&nbsp;</h5></div></div></div><p>______________________
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="25%"><col width="25%"><col width="25%"><col width="25%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">;</span></em> 
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            <img src="lshort-base63x.png">
+                                        </p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">?</span></em> 
+                                        </p>
+                                    </td><td align="left">
+                                        <p> ; </p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">((</span></em>
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&laquo;</p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">))</span></em>
+                                        </p>
+                                    </td><td align="left">
+                                        <p> &raquo;</p>
+                                    </td></tr><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">&#8216;&#8216;</span></em>
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8216;  </p>
+                                    </td><td align="left">
+                                        <p>
+                                            <em><span class="remark">&#8217;&#8217;</span></em>
+                                        </p>
+                                    </td><td align="left">
+                                        <p>&#8217;  </p>
+                                    </td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td><td class="auto-generated">&nbsp;</td></tr></tbody></table></div>
+                    ___________________________</div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e5523"></a>4.5.7.&nbsp;
+                    <span class="abbrev">2.5.6</span><a name="x1-480002.5.6"></a>Support for Cyrillic
+                </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se5.html#d0e5700">4.5.7.1. </a></span></dt></dl></div><p>
+                    By Maksym Polyakov 
+                    <a href="mailto:<a href="mailto:polyama@myrealbox.com">polyama@myrealbox.com</a>" target="_blank">
+                        <em><span class="remark"><a href="mailto:polyama@myrealbox.com">polyama@myrealbox.com</a></span></em>
+                    </a>
+                </p><p>
+                    Version&nbsp;3.7h of <a name="dx1-48001"></a><a name="dx1-48002"></a><span class="sf">babel</span> includes support for the <a name="dx1-48003"></a><a name="dx1-48004"></a><a name="dx1-48005"></a><span class="tt">T2*</span>&nbsp;encodings and for typesetting
+                    Bulgarian, Russian and Ukrainian texts using Cyrillic letters.
+                </p><p>   Support for Cyrillic is based on standard LaTeX mechanisms
+                    plus the <a name="dx1-48006"></a><a name="dx1-48007"></a><span class="sf">fontenc</span> and <a name="dx1-48008"></a><a name="dx1-48009"></a><span class="sf">inputenc</span> packages. But, if you are going to use
+                    Cyrillics in math mode, you need to load <a name="dx1-48010"></a><a name="dx1-48011"></a><span class="sf">mathtext</span> package before
+                    <a name="dx1-48012"></a><a name="dx1-48013"></a><span class="sf">fontenc</span>:<a name="x1-48014f11"></a>
+                    <sup>[<a name="d0e5578" href="#ftn.d0e5578">19</a>]</sup>
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage{mathtext}</span></em>                                 
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[</span></em><a name="dx1-48019"></a><a name="dx1-48020"></a><a name="dx1-48021"></a><span class="tt">T1</span><em><span class="remark">,</span></em><a name="dx1-48022"></a><a name="dx1-48023"></a><a name="dx1-48024"></a><span class="tt">T2A</span><em><span class="remark">]{fontenc}</span></em>                          
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[</span></em><a name="dx1-48025"></a><a name="dx1-48026"></a><a name="dx1-48027"></a><span class="tt">koi8-ru</span><em><span class="remark">]{inputenc}</span></em>                        
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p>
+                                        <em><span class="remark">\usepackage[english,bulgarian,russian,ukranian]{babel}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>
+                       Generally, <a name="dx1-48028"></a><a name="dx1-48029"></a><span class="sf">babel</span> will authomatically choose the default font encoding, for the
+                    above three languages this is <a name="dx1-48030"></a><a name="dx1-48031"></a><a name="dx1-48032"></a><span class="tt">T2A</span>. However, documents are not restricted to a
+                    single font encoding. For multi-lingual documents using Cyrillic and Latin-based
+                    languages it makes sense to include Latin font encoding explicitly. <a name="dx1-48033"></a><a name="dx1-48034"></a><span class="sf">babel</span> will take
+                    care of switching to the appropriate font encoding when a different language is
+                    selected within the document.
+                </p><p>   In addition to enabling hyphenations, translating automatically generated
+                    text strings, and activating some language specific typographic rules (like
+                    <a name="dx1-48035"></a><a name="dx1-48036"></a><span class="tt">\frenchspacing</span>), <a name="dx1-48037"></a><a name="dx1-48038"></a><span class="sf">babel</span> provides some commands allowing typesetting according
+                    to the standards of Bulgarian, Russian, or Ukrainian languages.
+                </p><p>   For all three languages, language specific punctuation is provided: The
+                    Cyrillic dash for the text (it is little narrower than Latin dash and surrounded by
+                    tiny spaces), a dash for direct speech, quotes, and commands to facilitate
+                    hyphenation, see Table&nbsp;??.
+                    
+                    
+                    
+                    
+                    
+                    
+                </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e5700"></a>4.5.7.1.&nbsp;</h5></div></div></div><p>
+                         <a name="dx1-48039"></a><a name="dx1-48040"></a> <a name="dx1-48041"></a><a name="dx1-48042"></a> <a name="dx1-48043"></a><a name="dx1-48044"></a> <a name="dx1-48045"></a>
+                        </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                <a name="x1-480468"></a>Table&nbsp;2.8
+                            </b></p></div><p>The extra definitions made by Bulgarian, Russian, and Ukrainian
+                                options of <a name="dx1-48047"></a><a name="dx1-48048"></a><span class="sf">babel</span>
+                            </p></blockquote></div><p>
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"|</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>disable ligature at this position.                                 </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"-</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>an explicit hyphen sign, allowing hyphenation in the rest of the word.</p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"---</span></em>  
+                                        </p>
+                                    </td><td align="char">
+                                        <p>Cyrillic emdash in plain text.                                   </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"--~</span></em>  
+                                        </p>
+                                    </td><td align="char">
+                                        <p>Cyrillic emdash in compound names (surnames).                 </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"--*</span></em>  
+                                        </p>
+                                    </td><td align="char">
+                                        <p>Cyrillic emdash for denoting direct speech.                       </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">""</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>
+                                            like <em><span class="remark">"-</span></em>, but producing no hyphen sign (for compound words with
+                                            hyphen, e.g.<em><span class="remark">x-""y</span></em> or some other signs as &#8220;disable/enable&#8221;).       
+                                        </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"~</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>for a compound word mark without a breakpoint.                </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"=</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>for a compound word mark with a breakpoint, allowing hyphenation
+                                            in the composing words.                                        
+                                        </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">",</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>thinspace for initials with a breakpoint in following surname.      </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"&#8216;</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>for German left double quotes (looks like ,,).                     </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"&#8217;</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>for German right double quotes (looks like &#8220;).                    </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"&lt;</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>
+                                            for French left double quotes (looks like 
+                                            <img src="lshort-base65x.png">
+                                            ).                    
+                                        </p>
+                                    </td></tr><tr><td align="char">
+                                        <p>
+                                            <em><span class="remark">"&gt;</span></em>     
+                                        </p>
+                                    </td><td align="char">
+                                        <p>
+                                            for French right double quotes (looks like 
+                                            <img src="lshort-base66x.png">
+                                            ).                   
+                                        </p>
+                                    </td></tr><tr><td align="char">
+                                        <p> </p>
+                                    </td><td class="auto-generated</body>
+</html>

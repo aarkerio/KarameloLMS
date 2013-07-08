@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/karamelo/!svn/ver/2951/trunk/app/View/PermanentClasses
+END
+admin_record.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/2948/trunk/app/View/PermanentClasses/admin_record.ctp
+END
+admin_get.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/karamelo/!svn/ver/2951/trunk/app/View/PermanentClasses/admin_get.ctp
+END
+admin_items.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/karamelo/!svn/ver/2945/trunk/app/View/PermanentClasses/admin_items.ctp
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/karamelo/!svn/ver/2949/trunk/app/View/PermanentClasses/admin_edit.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2949/trunk/app/View/PermanentClasses/admin_listing.ctp
+END
+admin_new.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/karamelo/!svn/ver/2951/trunk/app/View/PermanentClasses/admin_new.ctp
+END

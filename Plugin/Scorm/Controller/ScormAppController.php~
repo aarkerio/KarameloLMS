@@ -1,0 +1,4 @@
+<?php
+class ScormAppController extends AppController {
+}
+# ? > EOF

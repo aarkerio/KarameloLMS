@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.7. Titles, Chapters, and Sections</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6093"></a>4.7.&nbsp;
+                <span class="abbrev">2.7</span><a name="x1-500002.7"></a>Titles, Chapters, and Sections
+            </h3></div></div></div><p>   To help the reader find his or her way through your work, you should divide
+                it into chapters, sections, and subsections. LaTeX supports this with special
+                commands that take the section title as their argument. It is up to you to use
+                them in the correct order.
+            </p><p>
+                   The following sectioning commands are available for the <span class="tt">article</span> class:
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50001"></a><a name="dx1-50002"></a><span class="tt">\section</span><em><span class="remark">{...}</span></em>      
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50003"></a><a name="dx1-50004"></a><span class="tt">\subsection</span><em><span class="remark">{...}</span></em>   
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50005"></a><a name="dx1-50006"></a><span class="tt">\subsubsection</span><em><span class="remark">{...}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50007"></a><a name="dx1-50008"></a><span class="tt">\paragraph</span><em><span class="remark">{...}</span></em>    
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50009"></a><a name="dx1-50010"></a><span class="tt">\subparagraph</span><em><span class="remark">{...}</span></em> 
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>   If you want to split your document in parts without influencing the section or
+                chapter numbering you can use
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50011"></a><a name="dx1-50012"></a><span class="tt">\part</span><em><span class="remark">{...}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                   When you work with the <span class="tt">report</span> or <span class="tt">book</span> class, an additional top-level
+                sectioning command becomes available
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50013"></a><a name="dx1-50014"></a><span class="tt">\chapter</span><em><span class="remark">{...}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                   As the <span class="tt">article</span> class does not know about chapters, it is quite easy to
+                add articles as chapters to a book. The spacing between sections, the
+                numbering and the font size of the titles will be set automatically by
+                LaTeX.
+            </p><p>   Two of the sectioning commands are a bit special:
+            </p><div class="itemizedlist"><ul type="disc"><li><p>
+                        The <a name="dx1-50015"></a><a name="dx1-50016"></a><span class="tt">\part</span> command does not influence the numbering sequence of
+                        chapters.
+                    </p></li><li><p>
+                        The <a name="dx1-50017"></a><a name="dx1-50018"></a><span class="tt">\appendix</span> command does not take an argument. It just changes
+                        the chapter numbering to letters.<a name="x1-50019f12"></a>
+                        <sup>[<a name="d0e6275" href="#ftn.d0e6275">20</a>]</sup>
+                    </p></li></ul></div><p>   LaTeX creates a table of contents by taking the section headings and page
+                numbers from the last compile cycle of the document. The command
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50020"></a><a name="dx1-50021"></a><span class="tt">\tableofcontents</span>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>expands to a table of contents at the place it is issued. A new document has to
+                be compiled (&#8220;LaTeXed&#8221;) twice to get a correct <a name="dx1-50022"></a>table of contents. Sometimes it
+                might be necessary to compile the document a third time. LaTeX will tell you
+                when this is necessary.
+            </p><p>   All sectioning commands listed above also exist as &#8220;starred&#8221; versions. A
+                &#8220;starred&#8221; version of a command is built by adding a star <em><span class="remark">*</span></em> after the command
+                name. This generates section headings that do not show up in the table of
+                contents and are not numbered. The command <em><span class="remark">\section{Help}</span></em>, for example,
+                would become <em><span class="remark">\section*{Help}</span></em>.
+            </p><p>   Normally the section headings show up in the table of contents exactly as
+                they are entered in the text. Sometimes this is not possible, because the heading
+                is too long to fit into the table of contents. The entry for the table of
+                contents can then be specified as an optional argument in front of the actual
+                heading.
+            </p><p>
+            </p><p>
+                <em><span class="remark">\chapter[Title&nbsp;for&nbsp;the&nbsp;table&nbsp;of&nbsp;contents]{A&nbsp;long</span></em>
+                <em><span class="remark">&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;especially&nbsp;boring&nbsp;title,&nbsp;shown&nbsp;in&nbsp;the&nbsp;text}</span></em>
+            </p><p>
+                   The <a name="dx1-50023"></a>title of the whole document is generated by issuing a
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50024"></a><a name="dx1-50025"></a><span class="tt">\maketitle</span>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>command. The contents of the title have to be defined by the commands
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-50026"></a><a name="dx1-50027"></a><span class="tt">\title</span><em><span class="remark">{...}</span></em>, <a name="dx1-50028"></a><a name="dx1-50029"></a><span class="tt">\author</span><em><span class="remark">{...}</span></em> and optionally <a name="dx1-50030"></a><a name="dx1-50031"></a><span class="tt">\date</span><em><span class="remark">{...}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                before calling <em><span class="remark">\maketitle</span></em>. In the argument to <a name="dx1-50032"></a><a name="dx1-50033"></a><span class="tt">\author</span>, you can supply several
+                names separated by <a name="dx1-50034"></a><a name="dx1-50035"></a><span class="tt">\and</span> commands.
+                
+                
+                
+            </p><p>   An example of some of the commands mentioned above can be found in
+                Figure&nbsp;?? on page&nbsp;??.
+            </p><p>
+                   Apart from the sectioning commands explained above, LaTeX2
+                <img src="lshort-base68x.png">
+                introduced
+                three additional commands for use with the <em><span class="remark">book</span></em> class. They are useful for
+                dividing your publication. The commands alter chapter headings and page
+                numbering to work as you would expect it in a book:
+            </p><div class="variablelist"><dl><dt><span class="term">
+                        <a name="dx1-50036"></a><a name="dx1-50037"></a><span class="tt">\frontmatter</span> 
+                    </span></dt><dd><p>should be the very first command after the start of the document
+                            body (<em><span class="remark">\begin{document}</span></em>). It will switch page numbering to Roman
+                            numerals  and  sections  be  non-enumerated.  As  if  you  were  using
+                            the starred sectioning commands (eg <em><span class="remark">\chapter*{Preface}</span></em>) but the
+                            sections will still show up in the table of contents.
+                        </p></dd><dt><span class="term">
+                        <a name="dx1-50038"></a><a name="dx1-50039"></a><span class="tt">\mainmatter</span> 
+                    </span></dt><dd><p>comes right before the first chapter of the book. It turns on Arabic
+                            page numbering and restarts the page counter.
+                        </p></dd><dt><span class="term">
+                        <a name="dx1-50040"></a><a name="dx1-50041"></a><span class="tt">\appendix</span> 
+                    </span></dt><dd><p>marks  the  start  of  additional  material  in  your  book.  After  this
+                            command chapters will be numbered with letters.
+                        </p></dd><dt><span class="term">
+                        <a name="dx1-50042"></a><a name="dx1-50043"></a><span class="tt">\backmatter</span> 
+                    </span></dt><dd><p>should be inserted before the very last items in your book, such as the
+                            bibliography and the index. In the standard document classes, this has
+                            no visual effect.
+                        </p></dd></dl></div><p>
+            </p><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e6275" href="#d0e6275">20</a>] </sup>For the article style it changes the section numbering.</p></div></div></div></body>
+</html>

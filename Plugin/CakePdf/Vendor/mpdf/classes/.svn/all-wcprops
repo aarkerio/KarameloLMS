@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes
+END
+form.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/form.php
+END
+gif.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/gif.php
+END
+indic.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/indic.php
+END
+wmf.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/wmf.php
+END
+grad.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/grad.php
+END
+ttfontsuni.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/ttfontsuni.php
+END
+bmp.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/bmp.php
+END
+barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/barcode.php
+END
+svg.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/svg.php
+END
+tocontents.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/tocontents.php
+END
+directw.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/mpdf/classes/directw.php
+END

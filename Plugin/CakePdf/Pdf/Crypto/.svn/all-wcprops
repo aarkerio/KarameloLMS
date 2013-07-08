@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Pdf/Crypto
+END
+AbstractPdfCrypto.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Pdf/Crypto/AbstractPdfCrypto.php
+END
+PdftkCrypto.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Pdf/Crypto/PdftkCrypto.php
+END

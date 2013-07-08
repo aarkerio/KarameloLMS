@@ -1,0 +1,487 @@
+/**
+ *  CSS portal design
+ *  2006-2011 GPLv3 Chipotle Software (c)
+ */
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/img01.gif) repeat-x;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 237%;
+}
+
+a {
+	text-decoration: none;
+	color: #1777B1;
+}
+
+a:hover {
+	border-bottom: none;
+	color: #FF7400;
+}
+
+img {
+	border:0;
+}
+
+img.left {
+	float: left;
+	margin: 6px 15px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 6px 0 0 15px;
+}
+
+/* ------
+   - FORMS -
+   ------ */
+form {
+	clear: both;
+	margin-right: 20px;
+	padding: 0;
+	width: 90%;
+}
+fieldset {
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	padding: 3px;
+}
+fieldset legend {
+	color: #3465a4;
+	font-size: 14pt;
+	font-weight: bold;
+    padding:4px;
+    width:100%;
+}
+legend {
+	color: #3465a4;
+	font-size: 14pt;
+	font-weight: bold;
+    padding:4px;
+    width:100%;
+}
+fieldset fieldset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+fieldset fieldset legend {
+	font-size: 80%;
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+form div {
+	clear: both;
+	margin-bottom: 3px;
+	padding: 2px;
+	vertical-align: text-top;
+}
+form div.input {
+	color: #444;
+}
+form div.required {
+	color: #333;
+	font-weight: bold;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+fieldset div span.form-error {
+    display: block;
+    color: #F00;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+label {
+	display: block;
+	font-size: 70%;
+	padding-right: 20px;
+}
+input, textarea {
+	clear: both;
+	font-size: 10pt;
+	padding: 2px;
+}
+select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+	width: 100%;
+}
+option {
+	font-size: 100%;
+	padding: 0 3px;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+input[type=radio] {
+	float:left;
+	width:auto;
+	margin: 0 3px 7px 0;
+}
+div.radio label {
+	margin: 0 0 6px 20px;
+}
+input[type=submit] {
+	display: inline;
+	font-size: 7pt;
+	padding: 2px;
+	width: auto;
+    /* border:1px dotted gray;*/
+	vertical-align: bottom;
+}
+/* end cake forms*/
+
+/* social nets in news*/
+.socialnets{
+ background: url('/img/styles/portal/sn.jpg') bottom left no-repeat;
+ padding: 0 0 4px 16px;
+ height:34px;
+}
+/* TwitterTag */
+a#twitter { 
+      position: fixed;
+      right: 5px;;
+      bottom: 90%;
+      display: block;
+      height: 31px;
+      width: 143px;
+      background: url('/img/static/twitter-32b.png') bottom right no-repeat;
+      text-indent: -999em;
+      text-decoration: none;
+      z-index:3;
+}         
+a:hover#twitter { 
+          border: none;
+}
+
+/* Menu in menu_b.ctp element */
+.topmenu{
+    margin:0 25px 0 25px;
+    padding:0;
+    text-align:center; 
+    width:100;
+    height:26px;
+}
+
+ul.arrowunderline{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align:center; /* enter "left", "right", or "center" to orient the menu accordingly */
+    font: bolder 13px  Verdana, Arial, Helvetica, sans-serif;
+}
+
+ul.arrowunderline li{
+   display:inline;
+   margin-right:20px; /* spacing between each menu item */
+}
+
+ul.arrowunderline li a{
+   position:relative;
+   color:black;
+   padding-bottom:6px; /*spacing between each menu item and arrow underline beneath it */
+   text-decoration:none;
+}
+
+ul.arrowunderline li a:hover{
+border-bottom:3px solid #bf0b0b; /* style of arrow underline */
+}
+
+ul.arrowunderline li a:hover:after{ /* use CSS generated content to add arrow to the menu */
+content:'';
+width:0;
+height:0;
+position:absolute;
+left:50%;
+margin-left:-5px; /* value should match border-width below */
+bottom: 0;
+border-width:5px; /* value should match margin-left above */
+border-style:solid;
+border-color: transparent transparent #bf0b0b transparent; /* create up arrow */
+}
+
+
+/* Login boxes */
+#login{ padding:0;margin:15px 0 25px 0;}
+#cover { 
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: gray;
+      opacity: .6;
+      filter: alpha(opacity=70);
+      z-index: 5;
+}
+#loginpopup { 
+      position: absolute;
+      background-color: white;
+      top: 100px;
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 10%;
+      z-index: 10;
+      padding: 10px;
+}
+/* Page */
+#page {
+	width: 800px;
+	margin: 0 auto;
+    padding:0;
+    vertical-align:top;
+}
+/* toplinks */
+#toplinks{ 
+   text-align:right;
+   height:40px;
+   margin:0;
+   padding-top:0;
+   background: #fff url(/img/styles/portal/img02.jpg) no-repeat;
+   color:#fff;
+   font-weight:bold;
+   vertical-align:middle;
+}
+
+#toplinks a:visited { font-size:7pt; font-weight:bold;text-decoration:none;color:#fff;} 
+#toplinks a:hover   { font-size:7pt; font-weight:bold;text-decoration:none;color:#fff;} 
+#toplinks a:link    { font-size:7pt; font-weight:bold;text-decoration:none;color:#fff;}
+
+/* Header */
+
+#header {
+	height: 197px;
+	margin: 0;
+    padding:0;
+	background: #fff url(/img/static/header-beta.jpg) no-repeat;
+}
+/* Container */
+#container {
+    background: #fff url(/img/styles/portal/bg.jpg) no-repeat top;
+    vertical-align:top;
+	margin: 0;
+    padding:0;
+    float:left;
+}
+
+/* Content */
+#content {
+	float: right;
+	width: 600px;
+}
+
+#content p, #content ul, #content ol {
+	line-height: 1.8em;
+}
+
+/* Sidebar */
+#sidebar {
+  float: left;
+  width: 180px;
+  padding: 6px;
+ }
+
+.sidemenu {
+   color: #bf0b0b;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15pt;
+   font-style: italic;
+   font-weight: normal;
+   margin: 0;
+   padding:0;
+}
+
+.sideelement{
+   width:178px;
+   padding:0;
+   margin:30px 0 25px 0;
+}
+
+.sideelement p{
+   text-align:center;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	height: 150px;
+	padding: 20px 0 0 0;
+	background: #fff url(/img/styles/portal/bg_footer.jpg) no-repeat top;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: 85%;
+}
+
+#footer a {
+	border: none;
+	color: #CCCCCC;
+}
+
+#footer a:hover {
+	color: #ffd200;
+}
+
+#legal {
+  color:#6a6a6a;
+}
+
+#legal strong {
+  display: block;
+  padding: 20px 0 0 0;
+  font-family:"Times New Roman",Georgia,Serif;
+  letter-spacing: 3px;
+  font-size: 22pt;
+  font-weight:bold;
+  color:#6a6a6a;
+}
+
+
+/* News classes */
+.wrapnew { 
+  padding:3px;
+  margin:2px;
+  font-size:8pt;
+ }
+
+.wrapnew p { 
+  font-size:8pt;
+ }
+
+.bodynew { 
+  font-size:8pt;
+}           
+.titnew { 
+  color:#bf0b0b;
+  font-size:14pt;
+  padding:3px;
+  font-weight:bold;
+}              
+  
+.redaccion { 
+  font-size:9pt;
+  margin:2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+ }
+
+.img_new{
+   float:right;
+ } 
+
+.news_title{margin-top:15px;}
+
+.news_title a {font-size:14pt;font-weight:bold;color:#bf0b0b;text-decoration:none;}
+
+.news_theme { 
+         color:gray;
+         margin:0;
+         font-size:11pt;
+         font-variant: normal;
+         text-transform: capitalize;
+         font-family: Georgia, "Times New Roman", Times, serif;
+}      
+
+.news_date { 
+        font-size:8pt;
+        font-variant: normal;
+        text-transform: capitalize;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight:bold;
+        margin-bottom:5px;
+}
+
+/** PAGINATION ***/
+
+div.pagination { 
+         padding: 3px;
+         margin: 3px;
+         font-size:8pt;
+}                 
+                 
+div.pagination a { 
+         padding: 2px 5px 2px 5px;
+         margin: 2px;
+         border: 1px solid #fe640d;
+         text-decoration: none; /* no underline */
+         font-size:8pt;
+         color: #fe640d;
+}                                   
+
+div.pagination a:hover, div.pagination a:active { 
+         border: 1px solid #000099;
+         color: #000;
+}                                                                                      
+ 
+div.pagination span.current { 
+         padding: 2px 5px 2px 5px;
+         margin: 2px;
+         border: 1px solid #fe640d;
+         font-weight: bold;
+         background-color: #fe640d;
+         color: #fff;
+}
+                                                                                                            
+div.pagination span.disabled {
+         padding: 2px 5px 2px 5px; 
+         margin: 2px;
+         border: 1px solid #EEE;
+         color: #c0c0c0;
+}
+
+.divblock{ padding:4px;margin:2px; border:1px solid gray; }
+.title_portal{font-size:18pt; color:#3c3f3f;font-weight:bold;margin:10px 0 0 0;height:25px;vertical-align:bottom;}
+.negrita{
+   font-weight:bold;
+   color:#000;
+   font-size:10pt;
+}
+/* Message by flash CakePHP stuff */
+.message
+{
+    position:absolute;
+    top:40px;
+    left:800px;
+    width:200px;
+    font-size:7pt;
+    font-weight:bold;
+    color:white;
+    border: solid 1px orange;
+    padding:2px;
+    background-color:#66cc00;
+    text-align:center;
+}
+
+.spaced{margin:15px auto;padding:4px;}
+
+
+.pagination{ font-size:9pt;width:400px;margin:15px auto;text-align:center;}
+
+.error{ background-color: red; font-size:12pt;color: #fff;padding:2px;}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/3057/trunk/app/Plugin/Scorm/View/Scorms
+END
+view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/karamelo/!svn/ver/3055/trunk/app/Plugin/Scorm/View/Scorms/view.ctp
+END
+finish.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/karamelo/!svn/ver/3055/trunk/app/Plugin/Scorm/View/Scorms/finish.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/3042/trunk/app/Plugin/Scorm/View/Scorms/admin_listing.ctp
+END
+admin_import.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/karamelo/!svn/ver/3057/trunk/app/Plugin/Scorm/View/Scorms/admin_import.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2995/trunk/app/Plugin/Scorm/View/Scorms/index.ctp
+END
+admin_ekandie.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2888/trunk/app/Plugin/Scorm/View/Scorms/admin_ekandie.ctp
+END

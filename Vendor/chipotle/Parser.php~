@@ -1,0 +1,463 @@
+<?php
+/**
+ *  Chipotle-Software (c) 2009-2012
+ *  @version 0.7
+ *  @license GPLv3
+ *  @package scorm
+ *  load imsmanifest.xml and convert to array
+ */
+
+class Parser {
+
+ private $_items            = array();
+ public  $organizations     = array();
+ public  $resources         = array();
+ public  $resource          = array();
+ public  $manifest          = array();
+ public  $zipname           = 'testing';
+ public  $encoding          = 'UTF-8';
+ public  $userId            = Null;
+ public  $path              = Null;
+ public  $manifest_encoding = 'UTF-8';
+ public  $maxattent         = False;
+ public  $passedData        = ''; # array passed by controller
+ private $__itemsCounter    = Null;
+ private $__schemaversion   = Null;
+
+/**
+ * Possible SCO status: see CAM doc 2.3.2.5.1: passed, completed, browsed, failed, not attempted, incomplete
+ *
+ * Prerequisites: see CAM doc 2.3.2.5.1 for pseudo-code
+ *
+ *   __parseManifest()
+ *  Parses an imsmanifest.xml file and puts everything into the $manifest array
+ *  @param	string	Path to the imsmanifest.xml file on the system. If not defined, uses the base path of the course's scorm dir
+ *  @return	array	Structured array representing the imsmanifest's contents
+ *  @access private
+ */
+ private function __parseManifest($location='')
+ {
+  $file     = $location . '/imsmanifest.xml';
+  $xml = simplexml_load_file('test.xml');
+  #imsmanifest.xml has four main sections: the manifest tag, metadata section, organizations section and resources section
+
+  if (!is_file($file) or !is_readable($file)):
+      die('I can not read the imsmanifest.xml file');
+  endif;
+  $doc = new DOMDocument; # prepare to Read XML manifest
+  $res = $doc->load($file);
+
+  if ($res === False):
+      die('Can not read file something goes wrong cake error');
+  endif;
+  
+  
+  if ( !empty($doc->xmlEncoding) ):
+	  $manifest['encoding'] = strtoupper($doc->xmlEncoding);  # encodiong to the CakePHP view
+  endif;
+
+  # documentElement: 
+  #This is a convenience attribute that allows direct access to the child node that is the document element of the document.
+  $root = $doc->documentElement; # load full XML
+
+  #die(var_dump($root));
+  # debug XML
+  # $xml = $root->ownerDocument->saveXML($root);die(debug($xml));
+
+  #die(debug($root->tagName)); #  <manifest identifier="CourseID" version="1.2" and xmlns stuff
+  #  Checks if node has attributes 
+  $this->manifest['name'] = $root->tagName;
+  if ($root->hasAttributes()):
+	 if ($root->attributes->length !== 0):
+          foreach($root->attributes as $attrib):
+               #<manifest> element attributes
+               # echo  $attrib->value . '<br />';
+		       $this->manifest[$attrib->name] = $attrib->value;
+          endforeach;
+      endif;
+  endif;
+  #die(debug( $this->manifest)); 
+  # <manifest> stuff ends 
+
+  # http://www.php.net/manual/en/domnode.haschildnodes.php
+  # bool DOMNode::hasChildNodes  ( void  )
+  # This function checks if the node has children
+  if ($root->hasChildNodes()):
+      if ($root->childNodes->length !== 0):
+          foreach($root->childNodes as $child):
+              #var_dump($child); 
+	          # <manifest> element children (can be <metadata>, <organizations> or <resources> )
+              # NodeTypes - Named Constants: http://www.w3schools.com/Dom/dom_nodetype.asp
+          if ($child->nodeType == XML_ELEMENT_NODE):
+              switch($child->tagName):
+			      case 'metadata':
+				      # parse items from inside the <metadata> element
+                      #die(var_dump($child));
+				      $this->manifest['metadata'] = $this->__scormMetadata('manifest', $child);
+				      break;
+			      case 'organizations':
+	     		      # Contains the course structure - this element appears 1 and only 1 time in a package imsmanifest. 
+	     			  # It contains at least one 'organization' sub-element 
+                      foreach( $child->attributes as $orgs_attrib):
+				          #attributes of the <organizations> element
+                          if ($orgs_attrib->nodeType == XML_ATTRIBUTE_NODE):
+		    		          $this->organizations['atts'][$orgs_attrib->name] = $orgs_attrib->value; # I will handle $this->organizations in 131
+                          endif;
+                      endforeach;
+			          $i = 0;
+			          # die(debug($this->organizations));
+                      # ORGANIZATION PARSER
+                        
+                      foreach($child->childNodes as $orgnode):
+                          #die(debug($orgnode->nodeType));
+			     	      # inside <organization> element -    can contain <item>, <metadata> and <title>
+			     	      # Here we are at the 'organization' level. There might be several organization tags but
+			     	      # there is generally only one.
+			     	      # There are generally three children nodes we are looking for inside and organization:
+			     	      # -title
+			     	      # -item (may contain other item tags or may appear several times inside organization)
+			     	      # -metadata (relative to the organization)
+                          # $tmp = $doc->saveXML($orgnode);
+                          # echo 'NodeName: '. $orgnode->tagName. ':  '.var_dump($tmp) . '<br />'; 
+		     		      switch($orgnode->nodeType):
+			     		      case XML_TEXT_NODE:
+			     		          # Ignore here because nothing happend
+                                  # echo  $orgnode->nodeValue . '<br />';
+			     			      break;
+			     		      case XML_ATTRIBUTE_NODE:
+			     		          #just in case there would be interesting attributes inside the organization tag. 
+                                  # There shouldn't
+			     			      # as this is a node-level, not a data level
+			     			      # $this->organization[$i]['attribs'][$orgnode->name] = $orgnode->value;
+                                  # echo  'organization attribute node: '.$orgnode->value . '<br />';
+			     			      break;
+			     		      case XML_ELEMENT_NODE:
+			     	              #die(debug( $this->organizations)); #identifier
+			     			      $this->organizations['organizations'][$i]=$this->__scormOrganization('manifest',$orgnode,$this->encoding);
+			     	   	          break;
+                          endswitch;
+                      endforeach;
+                      # Next if is tricky (ugly), I need set item in the same level array but there is nothing linkin organizations with items
+                      # so I just "paste" items in this organizations node and reset _item array
+                      # die(debug($this->_items));
+                      $this->organizations['organizations'][$i]['items'] = $this->_items;
+                      break;
+		          case 'resources':
+                      if ($child->hasAttributes()):
+                          foreach($child->attributesas as $res_attr):
+                              if ($res_attr->type == XML_ATTRIBUTE_NODE):
+					              $this->resource['atts'][$res_attr->name] = $res_attr->value;
+                              endif;
+                          endforeach;
+                      endif;
+			          if ($child->hasChildNodes()):
+                          $h = (int) 0;
+                          foreach($child->childNodes as $resource_node):
+                              if ($resource_node->hasChildNodes()):
+                                  $h++;
+			                      $this->resources[$h] = $this->__scormResource('manifest',$resource_node);
+                              endif;
+                          endforeach;
+                     endif;
+			         break;
+		         case 'manifest':
+		         # only for sub-manifests
+			     break;
+          endswitch;
+       endif;
+     endforeach;
+   endif;
+ endif; # DOMNode::hasChildNodes 
+ unset($doc);
+ # TODO close the DOM handler
+ #die(debug( $this->manifest));
+ return True;
+ }
+ 
+/**
+ *  Four Dokeos private functions
+ *  @author Yannick Warnier <ywarnier@beeznest.org> 
+ *  @access private 
+ *  see:  http://www.dokeos.com/wiki/index.php/SCORM_tool_redesign
+ *        http://dokeos.svn.sourceforge.net/viewvc/dokeos/trunk/dokeos/main/newscorm/scorm.class.php
+ */
+ private function __scormMetadata($type='manifest', &$element)
+ {
+  $mData = array();
+  # parsing using PHP5 DOMXML methods
+  switch($type):
+   case 'db':
+          # TODO implement this way of metadata object creation
+          return false;
+          break;
+   case 'manifest': # do the same as the default
+          foreach( $element->childNodes as $child):
+            #echo 'child->nodeType on Metadata function ' .$child->nodeType. "\n";
+            # echo 'Metadata childname: ' . $child->tagName . '<br />';
+            switch($child->nodeType):
+               case XML_ELEMENT_NODE:
+                           # could be 'lom','schema','schemaversion' or 'location'
+                           switch($child->tagName):
+                                  case 'lom':
+                                            foreach($child->childNodes as $childchild):
+                                                 $mData['lom'] = $childchild->nodeValue;
+                                            endforeach;
+                                            break;
+                                  case 'schema':
+                                            foreach($child->childNodes as $childchild):
+                                                 # there is generally only one child here
+                                                 # $this->schema = $childchildren[$index]->textContent;
+                                                 $mData['schema'] = $childchild->nodeValue;
+                                            endforeach;
+                                            break;
+                                   case 'schemaversion':
+                                            foreach($child->childNodes as $childchild):
+                                                  # die('there is generally only one child here');
+                                                  # $this->schemaversion = $childchildren[$index]->textContent;
+                                                  $this->__schemaversion = $childchild->nodeValue;  # 1.2  or  1.3
+                                                  $mData['schemaversion'] = $childchild->nodeValue;
+                                                  # die(debug($mData['schemaversion']));
+                                            endforeach;
+                                            break;
+                                   case ($child->tagName == 'location' or $child->tagName=='adlp:location'):
+                                            foreach($child->childNodes as $childchild):
+                                                  # there is generally only one child here
+                                                  # $this->location = $childchildren[$index]->textContent;
+                                                  $mData['location'] = $childchild->nodeValue;
+                                            endforeach;
+                                            break;
+                           endswitch;
+                           break;
+               case XML_TEXT_NODE:
+                           if (trim($child->textContent) != ''):
+                                 if (count($children == 1)): 
+                                       # if this is the only child at this level and it is a content... save differently
+                                       $this->text = $child->textContent;
+                                 else:
+                                     $this->text[$element->tagName] = $child->textContent;
+                                 endif;
+                           endif;
+                           break;
+             endswitch;
+          endforeach;
+          if (is_array($element->attributes)):
+              foreach($element->attributes as $attrib):
+                  if (trim($attrib->value) != ''):
+                      $mData['atts'][$attrib->name] = $attrib->value;
+                  endif;
+              endforeach;
+          endif;
+    endswitch;
+  #die(debug($mData));
+  return $mData;
+ }
+
+/**
+ * parse organization (not organizations) section
+ * @return array
+ * @access private
+ */
+ private function __scormOrganization($type='manifest', $element, $scorm_charset='UTF-8')
+ {
+  $collector = array();
+
+  #parsing using PHP5 DOMXML methods
+  switch($type):
+      case 'db':
+          # TODO implement this way of metadata object creation
+          return False;
+      case 'manifest':  # actually do the same as the default
+      
+      default:
+          #die(var_dump($element));
+          # <item>,<metadata> or <title> (or attributes)
+          foreach($element->attributes as $orgs_attr):
+                $collector['atts'][$orgs_attr->name] = $orgs_attr->value;
+          endforeach;
+          $i = (int) 0;
+          foreach( $element->childNodes as $child):   # looking for <item>, <metadata> or <title>
+              $i++;
+              switch($child->nodeType):
+                  case XML_ELEMENT_NODE:
+                       switch($child->tagName):
+                             case 'item':
+                                 $this->__itemsCounter++;
+                                 $this->_items[$this->__itemsCounter]['item'] = $this->__scormItem('manifest',$child, 1);
+                                 #die(var_dump($this->_items)); 
+                                 break;
+                             case 'metadata':
+                                 $collector['metadata'] = $this->__scormMetadata('manifest',$child);
+                                 break;
+                             case 'title':
+                                 $collector['title'] = html_entity_decode(html_entity_decode($child->firstChild->nodeValue,ENT_QUOTES,$scorm_charset));
+                                 break;
+                       endswitch;
+                       break;
+                  case XML_TEXT_NODE:
+                       break;
+             endswitch;
+        endforeach;
+  endswitch;
+  #die(debug($collector));
+  return $collector;
+ }
+
+/**
+ * parse items section in organization
+ * @return array
+ * @access private
+ */
+ private function __scormItem($type='manifest', $element = Null, $level = 1)
+ {
+  # parsing using PHP5 DOMXML methods
+  $collector = array();
+  switch($type):
+     case 'db':
+         $this->scorm_contact = false;
+         # TODO implement this way of metadata object creation
+         return false;
+     case 'manifest': # do the same as the default
+     default:
+        $collector['level'] = $level; # set item level 
+        $level++;
+        
+        if ($element->hasAttributes()):
+            foreach( $element->attributes as $attrib):
+                $collector['atts'][$attrib->name] = $attrib->value;
+            endforeach;
+        endif;
+        # get childs 
+        $i = (int) 0;
+        foreach( $element->childNodes as $child):  # get <title>  and adlcp spacename stuff. Note: an item can have item children
+              $i++;
+              #echo '<b>'.$child->nodeType . '</b>   Tn:'.  $child->tagName . '  XEN=1    XTN=3<br />';
+              switch($child->nodeType):
+                   case XML_ELEMENT_NODE:
+                       switch($child->tagName):
+                             case ($child->tagName == 'datafromlms' or $child->tagName == 'adlcp:datafromlms'):
+                                  $collector['datafromlms'] = $child->nodeValue;
+                                  break;
+                             case 'title':
+                                  $collector['title'] = $child->nodeValue;
+                                  break;
+                             case 'metadata':
+                                  $collector['metadata'] = $this->__scormMetadata('manifest',$child);
+                                  break;
+                             case 'item':
+                                  $this->_items[$this->__itemsCounter]['subitems'][] = $this->__scormItem('manifest',$child, $level);
+                                  #die('I am in __item method');
+                                  break;
+                             case ($child->tagName == 'maxtimeallowed' or $child->tagName =='adlcp:maxtimeallowed'):
+                                  $collector['max_time_allowed'] = $child->nodeValue;
+                                  break;
+                             case ($child->tagName =='prerequisites' or $child->tagName =='adlcp:prerequisites'):
+                                  $collector['prereq_string'] = $child->nodeValue;
+                                  break;
+                             case ($child->tagName =='timelimitaction' or $child->tagName =='adlcp:timelimitaction'):
+                                  $collector['timelimitaction'] = $child->nodeValue;
+                                  break;
+                             case ($child->tagName =='adlcp:launchdata' or  $child->tagName == 'launchdata'): # in some cases (Wouters)
+                                  $collector['datafromlms'] = $child->nodeValue;
+                                  break;
+                             case ($child->tagName =='masteryscore' or $child->tagName =='adlcp:masteryscore'):     
+                                  $collector['masteryscore'] = $child->nodeValue;
+                                  break;
+                       endswitch;
+                       break;
+                  case XML_TEXT_NODE:
+                       # this case is actually treated by looking into ELEMENT_NODEs above
+                       break;
+        endswitch;   
+   endforeach;
+  endswitch;
+  #die(debug($collector));
+  return $collector;
+ }
+ 
+/**
+ * Parse Resource node
+ * @access private
+ * @return array
+ */
+ private function __scormResource($type='manifest',&$element) 
+ {
+  $collector = array();
+  # debug XML
+  # $xml = $element->ownerDocument->saveXML($element);die(debug($xml));
+  #die(var_dump($element->hasAttributes())); # false
+  # echo $element->saveXML();
+  if (isset($element)):
+      // parsing using PHP5 DOMXML methods
+      switch($type):
+         case 'db':
+             # TODO implement this way of metadata object creation
+             return false;
+         case 'manifest': //do the same as the default
+         default:
+             # resources node have attribs?
+             if ($element->hasAttributes()):
+                 # in some cases we get here with an empty attributes array
+                 # TODO find when and why we get such a case (empty array)
+                 foreach($element->attributes as $attrib):
+                      switch($attrib->name):
+                            case 'identifier':
+                                     $collector['atts']['identifier'] = $attrib->value;
+                                     break;
+                            case 'type':
+                                     if (!empty($attrib->value)):
+                                         $collector['atts']['type'] = $attrib->value;
+                                     endif;
+                                     break;
+                            case 'scormtype':
+                                     if (!empty($attrib->value)):
+                                         $collector['atts']['scormtype'] = $attrib->value;
+                                     endif;
+                                     break;
+                            case 'base':
+                                     if (!empty($attrib->value)):
+                                         $collector['atts']['base'] = $attrib->value;
+                                     endif;
+                                     break;
+                            case 'href':
+                                     $collector['atts']['href'] = $attrib->value;
+                                     break;
+                      endswitch;
+                 endforeach;
+             endif;
+             if ($element->childNodes):
+                #die('I am parsing resource node!');
+                $z = (int) 0;
+                foreach( $element->childNodes as $child):
+                      #die(debug($child));
+                      $z++;
+                      switch($child->nodeType):
+                           case XML_ELEMENT_NODE:
+                               switch($child->tagName):
+                                   case 'file':
+                                         #echo "Child is a file tag<br />\n";
+                                         $collector['files'][$z]['href'] = $child->getAttribute('href');
+                                         break;
+                                   case 'metadata':
+                                         # echo "Child is a metadata tag<br />\n";
+                                         $collector['metadata'] = $this->__scormMetadata('manifest',$child);
+                                         break;
+                                   case 'dependency':
+                                         # need to get identifierref attribute inside dependency node
+                                         # dependencies[] array represents all <dependency identifierref='x'> tags united
+                                         $collector['dependencies'][$z]['identifierref'] = $child->getAttribute('identifierref');
+                                         break;
+                               endswitch;
+                               break;
+                      endswitch;
+                endforeach;
+             endif; # is array
+        endswitch;
+  endif;
+  #die(debug($collector));
+  return $collector;
+ }
+
+}
+
+# ? > EOF
+

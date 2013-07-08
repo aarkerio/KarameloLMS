@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/karamelo/!svn/ver/3036/trunk/app/View/Tests
+END
+admin_record.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Tests/admin_record.ctp
+END
+admin_ekandie.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2887/trunk/app/View/Tests/admin_ekandie.ctp
+END
+quiz.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/3036/trunk/app/View/Tests/quiz.ctp
+END
+view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/3031/trunk/app/View/Tests/view.ctp
+END
+read.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/3035/trunk/app/View/Tests/read.ctp
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/3034/trunk/app/View/Tests/admin_edit.ctp
+END
+result.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Tests/result.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/3028/trunk/app/View/Tests/admin_listing.ctp
+END
+admin_questions.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/3019/trunk/app/View/Tests/admin_questions.ctp
+END
+admin_view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/3020/trunk/app/View/Tests/admin_view.ctp
+END
+admin_see.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Tests/admin_see.ctp
+END
+admin_points.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Tests/admin_points.ctp
+END

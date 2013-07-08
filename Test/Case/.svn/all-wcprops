@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/karamelo/!svn/ver/3067/trunk/app/Test/Case
+END
+AllHelpersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/3063/trunk/app/Test/Case/AllHelpersTest.php
+END
+AllTestsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/karamelo/!svn/ver/3063/trunk/app/Test/Case/AllTestsTest.php
+END
+AllModelsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Case/AllModelsTest.php
+END
+AllControllersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/3040/trunk/app/Test/Case/AllControllersTest.php
+END
+AllCorePluginsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/3063/trunk/app/Test/Case/AllCorePluginsTest.php
+END

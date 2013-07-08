@@ -1,0 +1,122 @@
+<!--
+/**
+ *  RELOAD TOOLS
+ *
+ *  Copyright (c) 2003 Oleg Liber, Bill Olivier, Phillip Beauvoir
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the "Software"), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *  Project Management Contact:
+ *
+ *  Oleg Liber
+ *  Bolton Institute of Higher Education
+ *  Deane Road
+ *  Bolton BL3 5AB
+ *  UK
+ *
+ *  e-mail:   o.liber@bolton.ac.uk
+ *
+ *
+ *  Technical Contact:
+ *
+ *  Phillip Beauvoir
+ *  e-mail:   p.beauvoir@dadabeatnik.com
+ *
+ *  Web:      http://www.reload.ac.uk
+ *
+ *  @author Paul Sharples
+ *  @version $Id: search.htm,v 1.2 2006/07/10 11:55:37 phillipus Exp $
+ */
+// -->
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<title></title>
+<link href="reload.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!-- original:  dion (biab@iinet.net.au) -->
+<!-- web site:  http://www.iinet.net.au/~biab -->
+<!-- this script and many more are available free online at -->
+<!-- the javascript source!! http://javascript.internet.com -->
+
+<!-- begin
+
+var item = new Array();
+page="<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><link rel='stylesheet' href='reload.css' type='text/css'><title>Search Results</title></head><body><div align='center'><p align='center'><img src='menu-images/reloadeditoricon.gif' alt='RELOAD Icon'></p> <table border=0 cellspacing=10><tr><td><b><span class='itemTitles'>Search Results</span><b><hr width='90%' align='left'></td></td>";
+
+function search(frm) {
+	item = parent.window.frames.CPFrame.CPAPI.getSearchArray();
+	//changed by colin to reflect our frame structure 220703
+	parent.window.frames.text.document.write(page);
+	txt = frm.srchval.value.split(" ");
+	fnd = new Array(); total=0;
+	for (i = 0; i < item.length; i++) {
+		fnd[i] = 0; order = new Array(0, 4, 2, 3);
+		for (j = 0; j < order.length; j++)
+			for (k = 0; k < txt.length; k++)
+				if (item[i][order[j]].toLowerCase().indexOf(txt[k]) > -1 && txt[k] != "")
+					fnd[i] += (j+1);
+				}
+			for (i = 0; i < fnd.length; i++) {
+				n = 0; w = -1;
+				for (j = 0;j < fnd.length; j++)
+					if (fnd[j] > n) { n = fnd[j]; w = j; };
+		if (w > -1) total += show(w, top.window.frames.text, n);
+		fnd[w] = 0;
+	}
+	parent.window.frames.text.document.write("<tr><td><hr width='90%' align='left'>Total found: "+total+"</td></tr></table><br></div><br></body></html>");
+	parent.window.frames.text.document.close();
+}
+
+function show(which,wind,num) {
+	link = "javascript:parent.window.frames.code.NavigateItems(\"" + item[which][0] + "\")";
+	var showtext = parent.window.frames.CPFrame.CPAPI.getHref(item[which][0]);
+	line = "<tr><td><a href='"+link+"'>"+item[which][2]+"</a> Score: "+num+"<br>";
+	line += item[which][4] + "<br>"+showtext+"</td></tr>";
+	wind.document.write(line);
+	return 1;
+}
+//  End -->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0" >
+<tr>
+<td width="10"></td>
+<td>
+<form method="get" action="javascript:void(0)" onsubmit="search(this); return false;">
+<table width="120" border="1" align="left" cellpadding="0" cellspacing="0" bordercolor="#5a79ef">
+        <tr>
+          <td bgcolor="#5a79ef"><div align="left"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><strong>Search</strong></font></div></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="1" bordercolor="#66CCFF">
+              <tr>
+                    <td><input name="srchval" type="text" value="" size="35"></td>
+                    <td><input type="submit" value="Go"></td>
+              </tr>
+
+            </table></td>
+        </tr>
+      </table>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>

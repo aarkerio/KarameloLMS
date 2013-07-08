@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>5.9. Bold Symbols</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10762"></a>5.9.&nbsp;
+                <span class="abbrev">3.9</span><a name="x1-720003.9"></a>Bold Symbols
+            </h3></div></div></div><p>
+                   <a name="dx1-72001"></a>
+            </p><p>   It is quite difficult to get bold symbols in LaTeX; this is probably
+                intentional as amateur typesetters tend to overuse them. The font change
+                command <em><span class="remark">\mathbf</span></em> gives bold letters, but these are roman (upright) whereas
+                
+                
+                
+                mathematical symbols are normally italic. There is a <a name="dx1-72002"></a><a name="dx1-72003"></a><span class="tt">\boldmath</span> command, but
+                <span class="emphasis"><em>this can only be used outside mathematics mode</em></span>. It works for symbols
+                too.
+            </p><p>&nbsp;\begin{displaymath}
+                &nbsp;\mu,&nbsp;M&nbsp;\qquad&nbsp;\mathbf{M}&nbsp;\qquad
+                &nbsp;\mbox{\boldmath&nbsp;$\mu,&nbsp;M$}
+                &nbsp;\end{displaymath}                  
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p></p><div class="equation"><div><img src="lshort-base170x.png"></div></div><p>
+                        </p></dd></dl></div><p>Notice that the comma is bold too, which may not be what is required.
+            </p><p>
+                   The package <a name="dx1-72004"></a><a name="dx1-72005"></a><span class="sf">amsbsy</span> (included by <a name="dx1-72006"></a><a name="dx1-72007"></a><span class="sf">amsmath</span>) as well as the <a name="dx1-72008"></a><a name="dx1-72009"></a><span class="sf">bm</span> from
+                the tools bundle make this much easier as they include a <a name="dx1-72010"></a><a name="dx1-72011"></a><span class="tt">\boldsymbol</span>
+                command.
+            </p><p>&nbsp;\begin{displaymath}
+                &nbsp;\mu,&nbsp;M&nbsp;\qquad
+                &nbsp;\boldsymbol{\mu},&nbsp;\boldsymbol{M}
+                &nbsp;\end{displaymath}                  
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p></p><div class="equation"><div><img src="lshort-base171x.png"></div></div><p>
+                        </p></dd></dl></div></div></body>
+</html>

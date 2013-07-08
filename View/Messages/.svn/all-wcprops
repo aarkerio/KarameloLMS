@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/karamelo/!svn/ver/3035/trunk/app/View/Messages
+END
+message.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Messages/message.ctp
+END
+display.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Messages/display.ctp
+END
+admin_general.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Messages/admin_general.ctp
+END
+compose.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/3035/trunk/app/View/Messages/compose.ctp
+END
+admin_allclass.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2949/trunk/app/View/Messages/admin_allclass.ctp
+END
+listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Messages/listing.ctp
+END
+sent.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/3035/trunk/app/View/Messages/sent.ctp
+END
+deliver.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Messages/deliver.ctp
+END
+admin_compose.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Messages/admin_compose.ctp
+END
+admin_add.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/3035/trunk/app/View/Messages/admin_add.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Messages/admin_listing.ctp
+END
+sentmessages.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Messages/sentmessages.ctp
+END

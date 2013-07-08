@@ -1,0 +1,1 @@
+<?php echo $this->Html->para(null, 'Message sent', array('style'=>'font-weight:bold;margin:14px;')); ?>

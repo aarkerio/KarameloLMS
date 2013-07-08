@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/CHANGES
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/COPYRIGHT
+END
+CHANGES.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/CHANGES.html
+END
+FONTS.hpux
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/FONTS.hpux
+END
+ttf.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf.c
+END
+FONTS.hpux.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/FONTS.hpux.html
+END
+windows.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/windows.h
+END
+ttf.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf.h
+END
+ttf2pt1.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf2pt1.c
+END
+pt1.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/pt1.c
+END
+FONTS
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/FONTS
+END
+pt1.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/pt1.h
+END
+runt1asm.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/runt1asm.c
+END
+README.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/README.html
+END
+ttf2pt1.1
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf2pt1.1
+END
+ttf2pt1_x2gs.1
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf2pt1_x2gs.1
+END
+t1asm.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/t1asm.c
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/version.h
+END
+cygbuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/cygbuild.sh
+END
+bdf.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/bdf.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/Makefile
+END
+winbuild.bat
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/winbuild.bat
+END
+README.FIRST
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/README.FIRST
+END
+byteorder.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/byteorder.h
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/global.h
+END
+ttf2ufm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf2ufm
+END
+ft.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ft.c
+END
+FONTS.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/FONTS.html
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/README
+END
+bitmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/bitmap.c
+END
+ttf2pt1_convert.1
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/karamelo/!svn/ver/3066/trunk/app/Plugin/CakePdf/Vendor/dompdf/lib/ttf2ufm/ttf2ufm-src/ttf2pt1_convert.1
+END

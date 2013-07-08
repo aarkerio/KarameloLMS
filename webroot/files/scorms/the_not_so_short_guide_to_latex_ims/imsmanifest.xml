@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--This is an ATutor SCORM 1.2 Content Package document-->
+<!--Created from the ATutor Content Package Generator - http://www.atutor.ca-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-212efe528f82d00a8fb8d6f32794a76a" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema> 
+  	    <schemaversion>1.2</schemaversion>
+		<imsmd:lom>
+		  <imsmd:general>
+			<imsmd:title>
+			  <imsmd:langstring xml:lang="en">The not so Short Guide to LaTeX</imsmd:langstring>
+			</imsmd:title>
+			<imsmd:description>
+			  <imsmd:langstring xml:lang="en"></imsmd:langstring>
+			</imsmd:description>
+		  </imsmd:general>
+		  <imsmd:lifecycle>
+			<imsmd:contribute>
+			  <imsmd:role>
+			    <imsmd:source>
+			      <imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring> 
+			    </imsmd:source>
+			    <imsmd:value>
+			      <imsmd:langstring xml:lang="x-none">Author</imsmd:langstring> 
+			    </imsmd:value>
+			  </imsmd:role>
+			  <imsmd:centity>
+			    <imsmd:vcard>BEGIN:VCARD
+VERSION:2.1
+N:Öberg;Jonas;jonas;;
+FN:Jonas jonas =D6berg
+EMAIL;INTERNET:oberg@fsfeurope.org
+NOTE;ENCODING=QUOTED-PRINTABLE:Originated from an ATutor at http://atutor.selfproject.eu/. See ATutor.ca f=
+    or additional information.
+URL:http://www.coyote.org/
+REV:2007-10-05T10:35:30Z
+END:VCARD
+</imsmd:vcard> 
+			  </imsmd:centity>
+			</imsmd:contribute>
+		  </imsmd:lifecycle>
+		  <imsmd:educational>
+			<imsmd:learningresourcetype>
+			  <imsmd:source>
+				<imsmd:langstring xml:lang="x-none">ATutor</imsmd:langstring>
+			  </imsmd:source>
+			  <imsmd:value>
+				<imsmd:langstring xml:lang="x-none">Content Module</imsmd:langstring>
+			  </imsmd:value>
+			</imsmd:learningresourcetype>
+		  </imsmd:educational>
+		  <imsmd:rights>
+		  </imsmd:rights>
+		</imsmd:lom>
+	</metadata>
+
+	<organizations default="MANIFEST01_ORG1">
+		<organization identifier="MANIFEST01_ORG1" structure="hierarchical">
+			<title>The not so Short Guide to LaTeX</title>
+                        <item identifier="MANIFEST01_ITEM1746" identifierref="MANIFEST01_RESOURCE1746" parameters="">
+                                <title>1. Thank you!</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1747" identifierref="MANIFEST01_RESOURCE1747" parameters="">
+                            <title>2. Preface</title>
+                        <item identifier="MANIFEST01_ITEM1748" identifierref="MANIFEST01_RESOURCE1748" parameters="">
+                                <title>2.1. Contents</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1749" identifierref="MANIFEST01_RESOURCE1749" parameters="">
+                                <title>2.2. List of Figures</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1750" identifierref="MANIFEST01_RESOURCE1750" parameters="">
+                                <title>2.3. List of Tables</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1751" identifierref="MANIFEST01_RESOURCE1751" parameters="">
+                            <title>3. Things You Need to Know</title>
+                        <item identifier="MANIFEST01_ITEM1752" identifierref="MANIFEST01_RESOURCE1752" parameters="">
+                                <title>3.1. The Name of the Game</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1753" identifierref="MANIFEST01_RESOURCE1753" parameters="">
+                                <title>3.2. Basics</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1754" identifierref="MANIFEST01_RESOURCE1754" parameters="">
+                                <title>3.3. LaTeX Input Files</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1755" identifierref="MANIFEST01_RESOURCE1755" parameters="">
+                                <title>3.4. Input File Structure</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1756" identifierref="MANIFEST01_RESOURCE1756" parameters="">
+                                <title>3.5. A Typical Command Line Session</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1757" identifierref="MANIFEST01_RESOURCE1757" parameters="">
+                                <title>3.6. The Layout of the Document</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1758" identifierref="MANIFEST01_RESOURCE1758" parameters="">
+                                <title>3.7. Files You Might Encounter</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1759" identifierref="MANIFEST01_RESOURCE1759" parameters="">
+                                <title>3.8. Big Projects</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1760" identifierref="MANIFEST01_RESOURCE1760" parameters="">
+                            <title>4. Typesetting Text</title>
+                        <item identifier="MANIFEST01_ITEM1761" identifierref="MANIFEST01_RESOURCE1761" parameters="">
+                                <title>4.1. The Structure of Text and Language</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1762" identifierref="MANIFEST01_RESOURCE1762" parameters="">
+                                <title>4.2. Line Breaking and Page Breaking</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1763" identifierref="MANIFEST01_RESOURCE1763" parameters="">
+                                <title>4.3. Ready-Made Strings</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1764" identifierref="MANIFEST01_RESOURCE1764" parameters="">
+                                <title>4.4. Special Characters and Symbols</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1765" identifierref="MANIFEST01_RESOURCE1765" parameters="">
+                                <title>4.5. International Language Support</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1766" identifierref="MANIFEST01_RESOURCE1766" parameters="">
+                                <title>4.6. The Space Between Words</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1767" identifierref="MANIFEST01_RESOURCE1767" parameters="">
+                                <title>4.7. Titles, Chapters, and Sections</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1768" identifierref="MANIFEST01_RESOURCE1768" parameters="">
+                                <title>4.8. Cross References</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1769" identifierref="MANIFEST01_RESOURCE1769" parameters="">
+                                <title>4.9. Footnotes</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1770" identifierref="MANIFEST01_RESOURCE1770" parameters="">
+                                <title>4.10. Emphasized Words</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1771" identifierref="MANIFEST01_RESOURCE1771" parameters="">
+                                <title>4.11. Environments</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1772" identifierref="MANIFEST01_RESOURCE1772" parameters="">
+                                <title>4.12. Floating Bodies</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1773" identifierref="MANIFEST01_RESOURCE1773" parameters="">
+                                <title>4.13. Protecting Fragile Commands</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1774" identifierref="MANIFEST01_RESOURCE1774" parameters="">
+                            <title>5. Typesetting Mathematical Formulae</title>
+                        <item identifier="MANIFEST01_ITEM1775" identifierref="MANIFEST01_RESOURCE1775" parameters="">
+                                <title>5.1. General</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1776" identifierref="MANIFEST01_RESOURCE1776" parameters="">
+                                <title>5.2. Grouping in Math Mode</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1777" identifierref="MANIFEST01_RESOURCE1777" parameters="">
+                                <title>5.3. Building Blocks of a Mathematical Formula</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1778" identifierref="MANIFEST01_RESOURCE1778" parameters="">
+                                <title>5.4. Math Spacing</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1779" identifierref="MANIFEST01_RESOURCE1779" parameters="">
+                                <title>5.5. Vertically Aligned Material</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1780" identifierref="MANIFEST01_RESOURCE1780" parameters="">
+                                <title>5.6. Phantoms</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1781" identifierref="MANIFEST01_RESOURCE1781" parameters="">
+                                <title>5.7. Math Font Size</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1782" identifierref="MANIFEST01_RESOURCE1782" parameters="">
+                                <title>5.8. Theorems, Laws, â€¦</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1783" identifierref="MANIFEST01_RESOURCE1783" parameters="">
+                                <title>5.9. Bold Symbols</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1784" identifierref="MANIFEST01_RESOURCE1784" parameters="">
+                                <title>5.10. List of Mathematical Symbols</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1785" identifierref="MANIFEST01_RESOURCE1785" parameters="">
+                            <title>6. Specialities</title>
+                        <item identifier="MANIFEST01_ITEM1786" identifierref="MANIFEST01_RESOURCE1786" parameters="">
+                                <title>6.1. Including Encapsulated</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1787" identifierref="MANIFEST01_RESOURCE1787" parameters="">
+                                <title>6.2. Bibliography</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1788" identifierref="MANIFEST01_RESOURCE1788" parameters="">
+                                <title>6.3. Bibliography</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1789" identifierref="MANIFEST01_RESOURCE1789" parameters="">
+                            <title>7. Indexing</title>
+                        <item identifier="MANIFEST01_ITEM1790" identifierref="MANIFEST01_RESOURCE1790" parameters="">
+                                <title>7.1.</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1791" identifierref="MANIFEST01_RESOURCE1791" parameters="">
+                                <title>8. Fancy Headers</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1792" identifierref="MANIFEST01_RESOURCE1792" parameters="">
+                                <title>9. The Verbatim Package</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1793" identifierref="MANIFEST01_RESOURCE1793" parameters="">
+                                <title>10. Installing Extra Packages</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1794" identifierref="MANIFEST01_RESOURCE1794" parameters="">
+                            <title>11. Working with pdfLaTeX</title>
+                        <item identifier="MANIFEST01_ITEM1795" identifierref="MANIFEST01_RESOURCE1795" parameters="">
+                                <title>11.1. PDF Documents for the Web</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1796" identifierref="MANIFEST01_RESOURCE1796" parameters="">
+                                <title>11.2. The Fonts</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1797" identifierref="MANIFEST01_RESOURCE1797" parameters="">
+                                <title>11.3. Using Graphics</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1798" identifierref="MANIFEST01_RESOURCE1798" parameters="">
+                                <title>11.4. Hypertext Links</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1799" identifierref="MANIFEST01_RESOURCE1799" parameters="">
+                                <title>11.5. Problems with Links</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1800" identifierref="MANIFEST01_RESOURCE1800" parameters="">
+                                <title>11.6. Problems with Bookmarks</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1801" identifierref="MANIFEST01_RESOURCE1801" parameters="">
+                                <title>12. Creating Presentations</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1802" identifierref="MANIFEST01_RESOURCE1802" parameters="">
+                            <title>13. Producing Mathematical Graphics</title>
+                        <item identifier="MANIFEST01_ITEM1803" identifierref="MANIFEST01_RESOURCE1803" parameters="">
+                                <title>13.1. Overview</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1804" identifierref="MANIFEST01_RESOURCE1804" parameters="">
+                                <title>13.2. The Environment</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1805" identifierref="MANIFEST01_RESOURCE1805" parameters="">
+                                <title>13.3. XY -pic</title>
+                        </item>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1806" identifierref="MANIFEST01_RESOURCE1806" parameters="">
+                            <title>14. Customising LaTeX</title>
+                        <item identifier="MANIFEST01_ITEM1807" identifierref="MANIFEST01_RESOURCE1807" parameters="">
+                                <title>14.1. New Commands, Environments and Packages</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1808" identifierref="MANIFEST01_RESOURCE1808" parameters="">
+                                <title>14.2. Fonts and Sizes</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1809" identifierref="MANIFEST01_RESOURCE1809" parameters="">
+                                <title>14.3. Spacing</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1810" identifierref="MANIFEST01_RESOURCE1810" parameters="">
+                                <title>14.4. Page Layout</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1811" identifierref="MANIFEST01_RESOURCE1811" parameters="">
+                                <title>14.5. More Fun With Lengths</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1812" identifierref="MANIFEST01_RESOURCE1812" parameters="">
+                                <title>14.6. Boxes</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1813" identifierref="MANIFEST01_RESOURCE1813" parameters="">
+                                <title>14.7. Rules and Struts</title>
+                        </item>
+                        <item identifier="MANIFEST01_ITEM1814" identifierref="MANIFEST01_RESOURCE1814" parameters="">
+                                <title>14.8. Bibliography</title>
+                        </item>
+                        </item>
+
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="MANIFEST01_RESOURCE1746" type="webcontent" href="resources/package/1746.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1746.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1747" type="webcontent" href="resources/package/1747.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1747.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1748" type="webcontent" href="resources/package/1748.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1748.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1749" type="webcontent" href="resources/package/1749.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1749.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1750" type="webcontent" href="resources/package/1750.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1750.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1751" type="webcontent" href="resources/package/1751.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1751.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1752" type="webcontent" href="resources/package/1752.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1752.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1753" type="webcontent" href="resources/package/1753.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1753.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1754" type="webcontent" href="resources/package/1754.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1754.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1755" type="webcontent" href="resources/package/1755.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1755.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1756" type="webcontent" href="resources/package/1756.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1756.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1757" type="webcontent" href="resources/package/1757.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1757.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1758" type="webcontent" href="resources/package/1758.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1758.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1759" type="webcontent" href="resources/package/1759.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1759.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1760" type="webcontent" href="resources/package/1760.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1760.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1761" type="webcontent" href="resources/package/1761.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1761.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1762" type="webcontent" href="resources/package/1762.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1762.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1763" type="webcontent" href="resources/package/1763.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1763.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1764" type="webcontent" href="resources/package/1764.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1764.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1765" type="webcontent" href="resources/package/1765.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1765.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1766" type="webcontent" href="resources/package/1766.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1766.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1767" type="webcontent" href="resources/package/1767.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1767.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1768" type="webcontent" href="resources/package/1768.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1768.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1769" type="webcontent" href="resources/package/1769.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1769.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1770" type="webcontent" href="resources/package/1770.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1770.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1771" type="webcontent" href="resources/package/1771.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1771.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1772" type="webcontent" href="resources/package/1772.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1772.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1773" type="webcontent" href="resources/package/1773.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1773.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1774" type="webcontent" href="resources/package/1774.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1774.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1775" type="webcontent" href="resources/package/1775.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1775.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1776" type="webcontent" href="resources/package/1776.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1776.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1777" type="webcontent" href="resources/package/1777.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1777.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1778" type="webcontent" href="resources/package/1778.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1778.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1779" type="webcontent" href="resources/package/1779.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1779.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1780" type="webcontent" href="resources/package/1780.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1780.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1781" type="webcontent" href="resources/package/1781.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1781.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1782" type="webcontent" href="resources/package/1782.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1782.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1783" type="webcontent" href="resources/package/1783.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1783.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1784" type="webcontent" href="resources/package/1784.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1784.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1785" type="webcontent" href="resources/package/1785.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1785.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1786" type="webcontent" href="resources/package/1786.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1786.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1787" type="webcontent" href="resources/package/1787.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1787.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1788" type="webcontent" href="resources/package/1788.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1788.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1789" type="webcontent" href="resources/package/1789.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1789.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1790" type="webcontent" href="resources/package/1790.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1790.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1791" type="webcontent" href="resources/package/1791.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1791.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1792" type="webcontent" href="resources/package/1792.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1792.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1793" type="webcontent" href="resources/package/1793.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1793.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1794" type="webcontent" href="resources/package/1794.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1794.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1795" type="webcontent" href="resources/package/1795.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1795.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1796" type="webcontent" href="resources/package/1796.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1796.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1797" type="webcontent" href="resources/package/1797.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1797.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1798" type="webcontent" href="resources/package/1798.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1798.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1799" type="webcontent" href="resources/package/1799.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1799.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1800" type="webcontent" href="resources/package/1800.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1800.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1801" type="webcontent" href="resources/package/1801.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1801.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1802" type="webcontent" href="resources/package/1802.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1802.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1803" type="webcontent" href="resources/package/1803.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1803.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1804" type="webcontent" href="resources/package/1804.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1804.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1805" type="webcontent" href="resources/package/1805.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1805.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1806" type="webcontent" href="resources/package/1806.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1806.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1807" type="webcontent" href="resources/package/1807.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1807.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1808" type="webcontent" href="resources/package/1808.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1808.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1809" type="webcontent" href="resources/package/1809.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1809.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1810" type="webcontent" href="resources/package/1810.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1810.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1811" type="webcontent" href="resources/package/1811.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1811.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1812" type="webcontent" href="resources/package/1812.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1812.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1813" type="webcontent" href="resources/package/1813.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1813.html"/>
+
+		</resource>
+
+		<resource identifier="MANIFEST01_RESOURCE1814" type="webcontent" href="resources/package/1814.html"  adlcp:scormtype="asset">
+			<metadata/>
+			<file href="resources/package/1814.html"/>
+
+		</resource>
+
+
+	</resources>
+</manifest>

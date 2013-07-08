@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.8. Cross References</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6494"></a>4.8.&nbsp;
+                <span class="abbrev">2.8</span><a name="x1-510002.8"></a>Cross References
+            </h3></div></div></div><p>
+                   In books, reports and articles, there are often <a name="dx1-51001"></a>cross-references to figures,
+                tables and special segments of text. LaTeX provides the following commands for
+                cross referencing
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-51002"></a><a name="dx1-51003"></a><span class="tt">\label</span><em><span class="remark">{</span></em><span class="emphasis"><em>marker</em></span><em><span class="remark">}</span></em>, <a name="dx1-51004"></a><a name="dx1-51005"></a><span class="tt">\ref</span><em><span class="remark">{</span></em><span class="emphasis"><em>marker</em></span><em><span class="remark">}</span></em> and <a name="dx1-51006"></a><a name="dx1-51007"></a><span class="tt">\pageref</span><em><span class="remark">{</span></em><span class="emphasis"><em>marker</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                where <span class="emphasis"><em>marker</em></span> is an identifier chosen by the user. LaTeX replaces <em><span class="remark">\ref</span></em>
+                by the number of the section, subsection, figure, table, or theorem
+                after which the corresponding <em><span class="remark">\label</span></em> command was issued. <em><span class="remark">\pageref</span></em>
+                prints the page number of the page where the <em><span class="remark">\label</span></em> command
+                occurred.<a name="x1-51008f13"></a>
+                <sup>[<a name="d0e6576" href="#ftn.d0e6576">21</a>]</sup>
+                As with the section titles, the numbers from the previous run are used.
+                &nbsp;A&nbsp;reference&nbsp;to&nbsp;this&nbsp;subsection
+                &nbsp;\label{sec:this}&nbsp;looks&nbsp;like:
+                &nbsp;&#8216;&#8216;see&nbsp;section~\ref{sec:this}&nbsp;on
+                &nbsp;page~\pageref{sec:this}.&#8217;&#8217;         
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p>A reference to this subsection  looks like:
+                            &#8220;see section&nbsp;?? on page&nbsp;??.&#8221; 
+                        </p></dd></dl></div><p>
+            </p><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e6576" href="#d0e6576">21</a>] </sup>
+                        Note that these commands are not aware of what they refer to. <a name="dx1-51009"></a><a name="dx1-51010"></a><span class="tt">\label</span> just saves the last
+                        automatically generated number.
+                    </p></div></div></div></body>
+</html>

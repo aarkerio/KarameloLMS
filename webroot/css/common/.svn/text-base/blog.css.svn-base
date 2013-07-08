@@ -1,0 +1,18 @@
+/*
+ *  Common CSS clasees in edublogs
+ */
+
+.printbutton{
+  width:90%; 
+  text-align:right;
+  margin:15px;
+}
+
+.printtitle{
+  font-size:14pt;
+  margin:12px;
+}
+
+.printbody{
+  text-align:justify;
+}

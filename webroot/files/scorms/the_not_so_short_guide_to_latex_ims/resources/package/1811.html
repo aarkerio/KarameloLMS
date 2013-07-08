@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>14.5. More Fun With Lengths</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e18286"></a>14.5.&nbsp;
+    <span class="abbrev">6.5</span><a name="x1-1230006.5"></a>More Fun With Lengths
+</h3></div></div></div><p>   Whenever possible, I avoid using absolute lengths in LaTeX documents. I
+    rather try to base things on the width or height of other page elements. For the
+    width of a figure this could be <em><span class="remark">\textwidth</span></em> in order to make it fill the
+    page.
+</p><p>   The following 3 commands allow you to determine the width, height and
+    depth of a text string.
+</p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                    <p>
+                        <a name="dx1-123001"></a><a name="dx1-123002"></a><span class="tt">\settoheight</span><em><span class="remark">{</span></em><span class="emphasis"><em>variable</em></span><em><span class="remark">}{</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">}</span></em>
+                    </p>
+                </td></tr><tr><td align="left">
+                    <p>
+                        <a name="dx1-123003"></a><a name="dx1-123004"></a><span class="tt">\settodepth</span><em><span class="remark">{</span></em><span class="emphasis"><em>variable</em></span><em><span class="remark">}{</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">}</span></em> 
+                    </p>
+                </td></tr><tr><td align="left">
+                    <p>
+                        <a name="dx1-123005"></a><a name="dx1-123006"></a><span class="tt">\settowidth</span><em><span class="remark">{</span></em><span class="emphasis"><em>variable</em></span><em><span class="remark">}{</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">}</span></em> 
+                    </p>
+                </td></tr><tr><td align="left">
+                    <p> </p>
+                </td></tr></tbody></table></div><p>The example below shows a possible application of these commands.
+    &nbsp;\flushleft
+    &nbsp;\newenvironment{vardesc}[1]{%
+    &nbsp;&nbsp;&nbsp;\settowidth{\parindent}{#1:\&nbsp;}
+    &nbsp;&nbsp;&nbsp;\makebox[0pt][r]{#1:\&nbsp;}}{}
+    &nbsp;
+    &nbsp;\begin{displaymath}
+    &nbsp;a^2+b^2=c^2
+    &nbsp;\end{displaymath}
+    &nbsp;
+    &nbsp;\begin{vardesc}{Where}$a$,
+    &nbsp;$b$&nbsp;--&nbsp;are&nbsp;adjoin&nbsp;to&nbsp;the&nbsp;right
+    &nbsp;angle&nbsp;of&nbsp;a&nbsp;right-angled&nbsp;triangle.
+    &nbsp;
+    &nbsp;$c$&nbsp;--&nbsp;is&nbsp;the&nbsp;hypotenuse&nbsp;of
+    &nbsp;the&nbsp;triangle&nbsp;and&nbsp;feels&nbsp;lonely.
+    &nbsp;
+    &nbsp;$d$&nbsp;--&nbsp;finally&nbsp;does&nbsp;not&nbsp;show&nbsp;up
+    &nbsp;here&nbsp;at&nbsp;all.&nbsp;Isn&#8217;t&nbsp;that&nbsp;puzzling?
+    &nbsp;\end{vardesc}                      
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p>
+            </p><div class="equation"><div><img src="lshort-base284x.png"></div></div><p>
+            </p><p>
+                Where:&nbsp;
+                <img src="lshort-base285x.png">
+                ,
+                <img src="lshort-base286x.png">
+                &#8211; are adjoin to the right angle of
+                a right-angled triangle.
+            </p><p>
+                          
+                <img src="lshort-base287x.png">
+                &#8211; is the hypotenuse of the triangle
+                and feels lonely.
+            </p><p>
+                          
+                <img src="lshort-base288x.png">
+                &#8211; finally does not show up here at
+                all. Isn&#8217;t that puzzling?
+                
+                
+                
+            </p><p>
+            </p></dd></dl></div></div></body>
+</html>

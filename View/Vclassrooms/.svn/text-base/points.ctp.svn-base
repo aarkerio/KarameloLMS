@@ -1,0 +1,1 @@
+<?php echo '<b>Total points: '. $points . '</b>'; ?>

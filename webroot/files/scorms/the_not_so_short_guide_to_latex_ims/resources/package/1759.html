@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>3.8. Big Projects</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2262"></a>3.8.&nbsp;
+                <span class="abbrev">1.8</span><a name="x1-260001.8"></a>Big Projects
+            </h3></div></div></div><p>   When working on big documents, you might want to split the input
+                file into several parts. LaTeX has two commands that help you to do
+                that.
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-26001"></a><a name="dx1-26002"></a><span class="tt">\include</span><em><span class="remark">{</span></em><span class="emphasis"><em>filename</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>You can use this command in the document body to insert the contents of
+                another file named <span class="emphasis"><em>filename.tex</em></span>. Note that LaTeX will start a new page before
+                processing the material input from <span class="emphasis"><em>filename.tex</em></span>.
+            </p><p>   The second command can be used in the preamble. It allows you to instruct
+                LaTeX to only input some of the <em><span class="remark">\include</span></em>d files.
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-26003"></a><a name="dx1-26004"></a><span class="tt">\includeonly</span><em><span class="remark">{</span></em><span class="emphasis"><em>filename</em></span><em><span class="remark">,</span></em><span class="emphasis"><em>filename</em></span><em><span class="remark">,</span></em>&#8230;<em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>   After this command is executed in the preamble of the document, only
+                <a name="dx1-26005"></a><a name="dx1-26006"></a><span class="tt">\include</span> commands for the filenames that are listed in the argument of the
+                <a name="dx1-26007"></a><a name="dx1-26008"></a><span class="tt">\includeonly</span> command will be executed. Note that there must be no spaces
+                between the filenames and the commas.
+            </p><p>
+                   The <a name="dx1-26009"></a><a name="dx1-26010"></a><span class="tt">\include</span> command starts typesetting the included text on a new page.
+                This is helpful when you use <a name="dx1-26011"></a><a name="dx1-26012"></a><span class="tt">\includeonly</span>, because the page breaks will not
+                move, even when some included files are omitted. Sometimes this might not be
+                desirable. In this case, you can use the
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-26013"></a><a name="dx1-26014"></a><span class="tt">\input</span><em><span class="remark">{</span></em><span class="emphasis"><em>filename</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>command. It simply includes the file specified. No flashy suits, no strings
+                attached.
+            </p><p>
+                   To make LaTeX quickly check your document you can use the <a name="dx1-26015"></a><a name="dx1-26016"></a><span class="sf">syntonly</span>
+                package. This makes LaTeX skim through your document only checking for
+                proper syntax and usage of the commands, but doesn&#8217;t produce any (DVI)
+                output. As LaTeX runs faster in this mode you may save yourself valuable time.
+                Usage is very simple:
+                
+                
+                
+            </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage{syntonly}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\syntaxonly<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div><p>   When you want to produce pages, just comment out the second line (by
+                adding a percent sign).
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </p><p>
+                
+                
+                
+            </p></div></body>
+</html>

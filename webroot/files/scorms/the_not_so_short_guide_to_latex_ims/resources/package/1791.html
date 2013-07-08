@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>8. Fancy Headers</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12074"></a>8.&nbsp;
+        <span class="abbrev">4.4</span><a name="x1-790004.4"></a>Fancy Headers
+    </h2></div></div></div><p>
+           The <a name="dx1-79001"></a><a name="dx1-79002"></a><span class="sf">fancyhdr</span> package,<a name="x1-79003f6"></a>
+        <sup>[<a name="d0e12091" href="#ftn.d0e12091">40</a>]</sup>
+        written by Piet van Oostrum, provides a few simple commands that allow
+        you to customize the header and footer lines of your document. If you
+        look at the top of this page, you can see a possible application of this
+        package.
+    </p><div class="figure"><a name="d0e12098"></a><p class="title"><b>Figure&nbsp;3.&nbsp;</b></p><div class="blockquote"><blockquote class="blockquote"><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e12101"></a>1.&nbsp;</h5></div></div></div><p>_____________________________________________________________________</p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\documentclass{book}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage{fancyhdr}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\pagestyle{fancy}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;with&nbsp;this&nbsp;we&nbsp;ensure&nbsp;that&nbsp;the&nbsp;chapter&nbsp;and&nbsp;section<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;headings&nbsp;are&nbsp;in&nbsp;lowercase.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\renewcommand{\chaptermark}[1]{%<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\markboth{#1}{}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\renewcommand{\sectionmark}[1]{%<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\markright{\thesection\&nbsp;#1}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancyhf{}&nbsp;&nbsp;%&nbsp;delete&nbsp;current&nbsp;header&nbsp;and&nbsp;footer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancyhead[LE,RO]{\bfseries\thepage}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancyhead[LO]{\bfseries\rightmark}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancyhead[RE]{\bfseries\leftmark}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\renewcommand{\headrulewidth}{0.5pt}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\renewcommand{\footrulewidth}{0pt}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\addtolength{\headheight}{0.5pt}&nbsp;%&nbsp;space&nbsp;for&nbsp;the&nbsp;rule<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancypagestyle{plain}{%<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\fancyhead{}&nbsp;%&nbsp;get&nbsp;rid&nbsp;of&nbsp;headers&nbsp;on&nbsp;plain&nbsp;pages<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\renewcommand{\headrulewidth}{0pt}&nbsp;%&nbsp;and&nbsp;the&nbsp;line<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                _______________________________________________________________</div><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                    <a name="x1-790041"></a>Figure&nbsp;4.1
+                </b></p></div><p>
+                    Example <a name="dx1-79005"></a><a name="dx1-79006"></a><span class="sf">fancyhdr</span> Setup.
+                </p></blockquote></div></blockquote></div></div><p>   The tricky problem when customising headers and footers is to get things like
+        running section and chapter names in there. LaTeX accomplishes this with a
+        two-stage approach. In the header and footer definition, you use the commands
+        <a name="dx1-79007"></a><a name="dx1-79008"></a><span class="tt">\rightmark</span> and <a name="dx1-79009"></a><a name="dx1-79010"></a><span class="tt">\leftmark</span> to represent the current section and chapter heading,
+        respectively. The values of these two commands are overwritten whenever a
+        chapter or section command is processed.
+    </p><p>
+           For ultimate flexibility, the <em><span class="remark">\chapter</span></em> command and its friends do not
+        redefine <a name="dx1-79011"></a><a name="dx1-79012"></a><span class="tt">\rightmark</span> and <a name="dx1-79013"></a><a name="dx1-79014"></a><span class="tt">\leftmark</span> themselves. They call yet another command
+        (<a name="dx1-79015"></a><a name="dx1-79016"></a><span class="tt">\chaptermark</span>, <a name="dx1-79017"></a><a name="dx1-79018"></a><span class="tt">\sectionmark</span>, or <a name="dx1-79019"></a><a name="dx1-79020"></a><span class="tt">\subsectionmark</span>) that is responsible for
+        redefining <a name="dx1-79021"></a><a name="dx1-79022"></a><span class="tt">\rightmark</span> and <a name="dx1-79023"></a><a name="dx1-79024"></a><span class="tt">\leftmark</span>.
+    </p><p>   If you want to change the look of the chapter name in the header line, you
+        need only &#8220;renew&#8221; the <a name="dx1-79025"></a><a name="dx1-79026"></a><span class="tt">\chaptermark</span> command. <a name="dx1-79027"></a><a name="dx1-79028"></a><a name="dx1-79029"></a><a name="dx1-79030"></a>
+    </p><p>
+           Figure&nbsp;?? shows a possible setup for the <a name="dx1-79031"></a><a name="dx1-79032"></a><span class="sf">fancyhdr</span> package that makes the
+        headers look about the same as they look in this booklet. In any case, I suggest
+        you fetch the documentation for the package at the address mentioned in the
+        footnote.
+    </p><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e12091" href="#d0e12091">40</a>] </sup>
+                Available from <em><span class="remark">macros/latex/contrib/supported/fancyhdr</span></em>.
+            </p></div></div></div></body>
+</html>

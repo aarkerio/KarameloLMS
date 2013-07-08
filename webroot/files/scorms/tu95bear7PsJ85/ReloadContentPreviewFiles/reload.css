@@ -1,0 +1,115 @@
+body {
+	background-color: #F4F7FF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+#root {
+	color:#000000;
+	background:transparent;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:70%;
+}
+
+.subtext {
+	color: #000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:70%;
+	background:transparent;
+}
+
+a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:70%;
+	text-decoration:none;
+	color:#330099;
+	background:transparent;
+}
+
+a:hover {
+	font-weight: bold;
+	color:#000000;
+	background-color:#ffffff;
+}
+
+a.tracked {
+	font-weight: bold;
+	color:#ffffff;
+	background-color:#000000;
+}
+
+a.subexpanded {
+	color:#666699;
+	background:transparent;
+}
+
+a.subclosed {
+	color:#666699;
+	background:transparent;
+}
+
+.text {
+	color: #5a79ef;
+	font-family:Arial, Helvetica, sans-serif;
+        font-size:70%;
+}
+
+input {
+	BORDER-RIGHT: #0066cc 1px solid;
+	BORDER-TOP: #0066cc 1px solid;
+	FONT: 12px verdana bold;
+	BORDER-LEFT: #0066cc 1px solid;
+	COLOR: #003399;
+	BORDER-BOTTOM: #0066cc 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+.buggyinput {
+	BORDER-RIGHT: #def3ff 0px solid;
+	BORDER-TOP: #def3ff 0px solid;
+	FONT: 12px verdana bold;
+	BORDER-LEFT: #def3ff 0px solid;
+	COLOR: #003399;
+	BORDER-BOTTOM: #def3ff 0px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+option {
+	BORDER-RIGHT: #0066cc 1px solid;
+	BORDER-TOP: #0066cc 1px solid;
+	FONT: 10px verdana bold;
+	BORDER-LEFT: #0066cc 1px solid;
+	COLOR: #003399;
+	BORDER-BOTTOM: #0066cc 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+select {
+	BORDER-RIGHT: #0066cc 1px solid;
+	BORDER-TOP: #0066cc 1px solid;
+	FONT: 10px verdana bold;
+	BORDER-LEFT: #0066cc 1px solid;
+	COLOR: #003399;
+	BORDER-BOTTOM: #0066cc 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+
+form {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+}
+
+textarea {
+	BORDER-RIGHT: #0066cc 1px solid;
+	BORDER-TOP: #0066cc 1px solid;
+	FONT: 12px verdana bold;
+	BORDER-LEFT: #0066cc 1px solid;
+	COLOR: #003399;
+	BORDER-BOTTOM: #0066cc 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+

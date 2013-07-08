@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-6EAAA662CE72029A407D0BDC292761E6" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>Instalación y Uso de ChirpCompiler</imsmd:identifier>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="en">chrpcompiler</imsmd:langstring>
+        </imsmd:title>
+        <imsmd:catalogentry>
+          <imsmd:catalog>Instalación y Uso de ChirpCompiler</imsmd:catalog>
+          <imsmd:entry>
+            <imsmd:langstring xml:lang="en">chrpcompiler</imsmd:langstring>
+          </imsmd:entry>
+        </imsmd:catalogentry>
+        <imsmd:language>es</imsmd:language>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en">Instalación y Uso de Chirp Compiler</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en">chirpcompiler Scratch</imsmd:langstring>
+        </imsmd:keyword>
+        <imsmd:coverage>
+          <imsmd:langstring xml:lang="en">Comunidad de Programadores Scratch</imsmd:langstring>
+        </imsmd:coverage>
+        <imsmd:structure>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Collection</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:structure>
+        <imsmd:aggregationlevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">1</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:aggregationlevel>
+      </imsmd:general>
+      <imsmd:lifecycle>
+        <imsmd:version>
+          <imsmd:langstring xml:lang="en">1.0</imsmd:langstring>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Draft</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:status>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="en">Author</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:role>
+          <imsmd:centity>
+            <imsmd:vcard>Pablo Marcelo García</imsmd:vcard>
+          </imsmd:centity>
+          <imsmd:date>
+            <imsmd:datetime>17/11/2009</imsmd:datetime>
+          </imsmd:date>
+        </imsmd:contribute>
+      </imsmd:lifecycle>
+      <imsmd:metametadata>
+        <imsmd:identifier>ChirpCompiler</imsmd:identifier>
+        <imsmd:catalogentry>
+          <imsmd:catalog>Instalación y Uso de ChirpCompiler</imsmd:catalog>
+          <imsmd:entry>
+            <imsmd:langstring xml:lang="en">ChirpCompiler</imsmd:langstring>
+          </imsmd:entry>
+        </imsmd:catalogentry>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="en" />
+            </imsmd:value>
+          </imsmd:role>
+        </imsmd:contribute>
+      </imsmd:metametadata>
+      <imsmd:technical>
+        <imsmd:format>video/x-ms-asf</imsmd:format>
+        <imsmd:requirement>
+          <imsmd:type>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="en">Browser</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:type>
+          <imsmd:name>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="en">MS-Windows</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:name>
+          <imsmd:minimumversion>2000</imsmd:minimumversion>
+          <imsmd:maximumversion>vista</imsmd:maximumversion>
+        </imsmd:requirement>
+      </imsmd:technical>
+      <imsmd:educational>
+        <imsmd:interactivitytype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Expositive</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitytype>
+        <imsmd:learningresourcetype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Slide</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:learningresourcetype>
+        <imsmd:interactivitylevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">medium</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitylevel>
+        <imsmd:semanticdensity>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">medium</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:semanticdensity>
+        <imsmd:intendedenduserrole>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Learner</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:intendedenduserrole>
+        <imsmd:context>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">Continuous Formation</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:context>
+        <imsmd:typicalagerange>
+          <imsmd:langstring xml:lang="en">9-25</imsmd:langstring>
+        </imsmd:typicalagerange>
+        <imsmd:difficulty>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">easy</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:difficulty>
+        <imsmd:typicallearningtime>
+          <imsmd:datetime>20</imsmd:datetime>
+        </imsmd:typicallearningtime>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en">Instalación y uso de ChirpCompiler</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:language>es</imsmd:language>
+      </imsmd:educational>
+      <imsmd:rights>
+        <imsmd:cost>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">no</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:cost>
+        <imsmd:copyrightandotherrestrictions>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="en">no</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:copyrightandotherrestrictions>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en">Free</imsmd:langstring>
+        </imsmd:description>
+      </imsmd:rights>
+    </imsmd:lom>
+  </metadata>
+  <organizations default="ORG-2BFDE4140892629C6A685EF419951E15">
+    <organization identifier="ORG-2BFDE4140892629C6A685EF419951E15" structure="hierarchical">
+      <title>Organization</title>
+      <item identifier="ITEM-47E504EC5506046065D8C7718F08FD2F" isvisible="true" identifierref="RES-6486EDE99263A5461AF8FD8F59618FF3">
+        <title>Caratula</title>
+      </item>
+      <item identifier="ITEM-67D1CF4EFF8A7F227FDEE8AE61ACEEAE" isvisible="true" identifierref="RES-4B02AF7B66BD22516C787127EA72A606">
+        <title>intro</title>
+      </item>
+      <item identifier="ITEM-6F175B5E4684441EA3154B1C93A1FE44" isvisible="true" identifierref="RES-4C03BE90E71C756A41AA79E586D121E9">
+        <title>intro2</title>
+      </item>
+      <item identifier="ITEM-0B5F246A37550279EADB2DAA09EEDD6A" isvisible="true" identifierref="RES-1FA8F157252B9E14D8421E4FCD7613E6">
+        <title>video1</title>
+      </item>
+      <item identifier="ITEM-457DAC2077D51671564127E9906EE1A8" isvisible="true" identifierref="RES-FDDD6D1784E12395786E46DC967CB752">
+        <title>video2</title>
+      </item>
+      <item identifier="ITEM-07196E933F41708FEB0F2823A7BC3E72" isvisible="true" identifierref="RES-135FD50305A1334107941755DFB4EE83">
+        <title>DiMaWe</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-1FA8F157252B9E14D8421E4FCD7613E6" type="webcontent" href="video1.swf">
+      <file href="video1.swf" />
+    </resource>
+    <resource identifier="RES-FDDD6D1784E12395786E46DC967CB752" type="webcontent" href="video2.swf">
+      <file href="video2.swf" />
+    </resource>
+    <resource identifier="RES-4C03BE90E71C756A41AA79E586D121E9" type="webcontent" href="intro2.pdf">
+      <file href="intro2.pdf" />
+    </resource>
+    <resource identifier="RES-135FD50305A1334107941755DFB4EE83" type="webcontent" href="DiMaWe.pdf">
+      <file href="DiMaWe.pdf" />
+    </resource>
+    <resource identifier="RES-4B02AF7B66BD22516C787127EA72A606" type="webcontent" href="intro.pdf">
+      <file href="intro.pdf" />
+    </resource>
+    <resource identifier="RES-6486EDE99263A5461AF8FD8F59618FF3" type="webcontent" href="Caratula.pdf" />
+  </resources>
+</manifest>
+

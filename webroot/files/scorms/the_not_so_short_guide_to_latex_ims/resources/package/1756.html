@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>3.5. A Typical Command Line Session</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e1068"></a>3.5.&nbsp;
+                <span class="abbrev">1.5</span><a name="x1-200001.5"></a>A Typical Command Line Session
+            </h3></div></div></div><p>   I bet you must be dying to try out the neat small LaTeX input file shown
+                on page ??. Here is some help: LaTeX itself comes without a GUI or
+                fancy buttons to press. It is just a program that crunches away at your
+                input file. Some LaTeX installations feature a graphical front-end where
+                you can click LaTeX into compiling your input file. On other systems
+                there might be some typing involved, so here is how to coax LaTeX into
+                compiling your input file on a text based system. Please note: this
+                description assumes that a working LaTeX installation already sits on your
+                computer.<a name="x1-20001f6"></a>
+                <sup>[<a name="d0e1080" href="#ftn.d0e1080">6</a>]</sup>
+            </p><p>
+            </p><div class="orderedlist"><ol type="1"><li><a name="x1-20003x1"></a><p>
+                    </p><p>Edit/Create your LaTeX input file. This file must be plain ASCII text.
+                        On Unix all the editors will create just that. On Windows you might
+                        want to make sure that you save the file in ASCII or <span class="emphasis"><em>Plain Text</em></span> format.
+                        When picking a name for your file, make sure it bears the extension
+                        <a name="dx1-20004"></a><span class="tt">.tex</span>.
+                    </p></li><li><a name="x1-20006x2"></a><p>
+                    </p><p>
+                        Run LaTeX on your input file. If successful you will end up with a <span class="tt">.dvi</span>
+                        file. It may be necessary to run LaTeX several times to get the
+                        table of contents and all internal references right. When your input
+                        file has a bug LaTeX will tell you about it and stop processing
+                        your input file. Type <span class="tt">ctrl-D</span> to get back to the command line.
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">latex&nbsp;foo.tex</span></em>
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td></tr></tbody></table></div></li><li><a name="x1-20008x3"></a><p>Now you may view the DVI file. There are several ways to do that. You can
+                        show the file on screen with
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">xdvi&nbsp;foo.dvi&nbsp;&amp;</span></em>
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td></tr></tbody></table></div><p>This only works on Unix with X11. If you are on Windows you might want
+                        to try <span class="tt">yap</span> (yet another previewer).
+                    </p><p>
+                        You can also convert the dvi file to <span class="sc">PostScript</span><a name="dx1-20009"></a> for printing or viewing
+                        with Ghostscript.
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">dvips&nbsp;-Pcmz&nbsp;foo.dvi&nbsp;-o&nbsp;foo.ps</span></em>
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td></tr></tbody></table></div><p>
+                        If you are lucky your LaTeX system even comes with the <span class="tt">dvipdf</span>
+                        tool, which allows you to convert your <span class="tt">.dvi</span> files straight into pdf.
+                    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                        <p>
+                                            <em><span class="remark">dvipdf&nbsp;foo.dvi</span></em>
+                                        </p>
+                                    </td></tr><tr><td align="left">
+                                        <p> </p>
+                                    </td></tr></tbody></table></div></li></ol></div><p>
+            </p><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e1080" href="#d0e1080">6</a>] </sup>This is the case with most well groomed Unix Systems, and &#8230; Real Men use Unix, so &#8230;
+                        <span class="tt">;-)</span>
+                    </p></div></div></div></body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.2. Line Breaking and Page Breaking</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2508"></a>4.2.&nbsp;
+                <span class="abbrev">2.2</span><a name="x1-290002.2"></a>Line Breaking and Page Breaking
+            </h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se4se2.html#d0e2519">4.2.1. 
+                    <span class="abbrev">2.2.1</span>Justified Paragraphs
+                </a></span></dt><dt><span class="section"><a href="se4se2.html#d0e2721">4.2.2. 
+                    <span class="abbrev">2.2.2</span>Hyphenation
+                </a></span></dt></dl></div><p>
+            </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e2519"></a>4.2.1.&nbsp;
+                    <span class="abbrev">2.2.1</span><a name="x1-300002.2.1"></a>Justified Paragraphs
+                </h4></div></div></div><p>   Books are often typeset with each line having the same length. LaTeX inserts
+                    the necessary <a name="dx1-30001"></a>line breaks and spaces between words by optimizing the contents of
+                    a whole paragraph. If necessary, it also hyphenates words that would not fit
+                    comfortably on a line. How the paragraphs are typeset depends on the document
+                    class. Normally the first line of a paragraph is indented, and there is no
+                    additional space between two paragraphs. Refer to section&nbsp;?? for more
+                    information.
+                </p><p>   In special cases it might be necessary to order LaTeX to break a line:
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-30002"></a><a name="dx1-30003"></a><span class="tt">\\</span> or <a name="dx1-30004"></a><a name="dx1-30005"></a><span class="tt">\newline</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>starts a new line without starting a new paragraph.
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-30006"></a><a name="dx1-30007"></a><span class="tt">\\*</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>additionally prohibits a page break after the forced line break.
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-30008"></a><a name="dx1-30009"></a><span class="tt">\newpage</span>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>starts a new page.
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-30010"></a><a name="dx1-30011"></a><span class="tt">\linebreak</span><em><span class="remark">[</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">]</span></em>, <a name="dx1-30012"></a><a name="dx1-30013"></a><span class="tt">\nolinebreak</span><em><span class="remark">[</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">]</span></em>, <a name="dx1-30014"></a><a name="dx1-30015"></a><span class="tt">\pagebreak</span><em><span class="remark">[</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">]</span></em>, <a name="dx1-30016"></a><a name="dx1-30017"></a><span class="tt">\nopagebreak</span><em><span class="remark">[</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">]</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>suggest places where a break may (or may not happen). They enable the author
+                    to influence their actions with the optional argument <span class="emphasis"><em>n</em></span>, which can be set to a
+                    number between zero and four. By setting <span class="emphasis"><em>n</em></span> to a value below 4, you leave LaTeX
+                    the option of ignoring your command if the result would look very bad. Do not
+                    confuse these &#8220;break&#8221; commands with the &#8220;new&#8221; commands. Even when you give
+                    a &#8220;break&#8221; command, LaTeX still tries to even out the right border of the line and
+                    the total length of the page, as described in the next section; this can
+                    lead to unpleasant gaps in your text. If you really want to start a &#8220;new
+                    line&#8221; or a &#8220;new page&#8221;, then use the corresponding command. Guess their
+                    names!
+                </p><p>   LaTeX always tries to produce the best line breaks possible. If it
+                    cannot find a way to break the lines in a manner that meets its high
+                    standards, it lets one line stick out on the right of the paragraph. LaTeX then
+                    complains (&#8220;<a name="dx1-30018"></a>overfull hbox&#8221;) while processing the input file. This happens
+                    most often when LaTeX cannot find a suitable place to hyphenate a
+                    word.<a name="x1-30019f2"></a>
+                    <sup>[<a name="d0e2691" href="#ftn.d0e2691">10</a>]</sup>
+                    You can instruct LaTeX to lower its standards a little by giving the <a name="dx1-30022"></a><a name="dx1-30023"></a><span class="tt">\sloppy</span>
+                    command. It prevents such over-long lines by increasing the inter-word
+                    spacing&#8212;even if the final output is not optimal. In this case a warning
+                    (&#8220;<a name="dx1-30024"></a>underfull hbox&#8221;) is given to the user. In most such cases the result doesn&#8217;t
+                    look very good. The command <a name="dx1-30025"></a><a name="dx1-30026"></a><span class="tt">\fussy</span> brings LaTeX back to its default
+                    behaviour.
+                </p><p>
+                </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e2721"></a>4.2.2.&nbsp;
+                    <span class="abbrev">2.2.2</span><a name="x1-310002.2.2"></a>Hyphenation
+                </h4></div></div></div><p>   LaTeX hyphenates words whenever necessary. If the hyphenation
+                    algorithm does not find the correct hyphenation points, you can remedy
+                    the situation by using the following commands to tell TE X about the
+                    exception.
+                    
+                    
+                    
+                </p><p>   The command
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-31001"></a><a name="dx1-31002"></a><span class="tt">\hyphenation</span><em><span class="remark">{</span></em><span class="emphasis"><em>word list</em></span><em><span class="remark">}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>causes the words listed in the argument to be hyphenated only at the points
+                    marked by &#8220;<em><span class="remark">-</span></em>&#8221;. The argument of the command should only contain words built
+                    from normal letters, or rather signs that are considered to be normal letters by
+                    LaTeX. The hyphenation hints are stored for the language that is active when
+                    the hyphenation command occurs. This means that if you place a hyphenation
+                    command into the preamble of your document it will influence the English
+                    language hyphenation. If you place the command after the <em><span class="remark">\begin{document}</span></em>
+                    and you are using some package for national language support like <a name="dx1-31003"></a><a name="dx1-31004"></a><span class="sf">babel</span>, then
+                    the hyphenation hints will be active in the language activated through
+                    <a name="dx1-31005"></a><a name="dx1-31006"></a><span class="sf">babel</span>.
+                </p><p>   The example below will allow &#8220;hyphenation&#8221; to be hyphenated as well as
+                    &#8220;Hyphenation&#8221;, and it prevents &#8220;FORTRAN&#8221;, &#8220;Fortran&#8221; and &#8220;fortran&#8221; from
+                    being hyphenated at all. No special characters or symbols are allowed in the
+                    argument.
+                </p><p>   Example:
+                </p><p>
+                    <em><span class="remark">\hyphenation{FORTRAN&nbsp;Hy-phen-a-tion}</span></em>
+                </p><p>
+                       The command <a name="dx1-31007"></a><a name="dx1-31008"></a><span class="tt">\-</span> inserts a discretionary hyphen into a word. This also
+                    becomes the only point hyphenation is allowed in this word. This command is
+                    especially useful for words containing special characters (e.g. accented
+                    characters), because LaTeX does not automatically hyphenate words containing
+                    special characters.
+                    &nbsp;I&nbsp;think&nbsp;this&nbsp;is:&nbsp;su\-per\-cal\-%
+                    &nbsp;i\-frag\-i\-lis\-tic\-ex\-pi\-%
+                    &nbsp;al\-i\-do\-cious                   
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>I             think             this             is:
+                                supercalifragilisticexpialidocious 
+                            </p></dd></dl></div><p>   Several words can be kept together on one line with the command
+                </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                    <p>
+                                        <a name="dx1-31009"></a><a name="dx1-31010"></a><span class="tt">\mbox</span><em><span class="remark">{</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">}</span></em>
+                                    </p>
+                                </td></tr><tr><td align="left">
+                                    <p> </p>
+                                </td></tr></tbody></table></div><p>It causes its argument to be kept together under all circumstances.
+                    
+                    
+                    
+                    &nbsp;My&nbsp;phone&nbsp;number&nbsp;will&nbsp;change&nbsp;soon.
+                    &nbsp;It&nbsp;will&nbsp;be&nbsp;\mbox{0116&nbsp;291&nbsp;2319}.
+                    &nbsp;
+                    &nbsp;The&nbsp;parameter
+                    &nbsp;\mbox{\emph{filename}}&nbsp;should
+                    &nbsp;contain&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file.      
+                </p><div class="glosslist"><dl><dt><em><span class="remark">
+                            </span></em>
+                        </dt><dd><p>My phone number will change soon. It will
+                                be 0116 291 2319.
+                            </p><p>
+                                The  parameter  <span class="emphasis"><em>filename</em></span>  should  contain
+                                the name of the file. 
+                            </p></dd></dl></div><p>
+                       <a name="dx1-31011"></a><a name="dx1-31012"></a><span class="tt">\fbox</span> is similar to <a name="dx1-31013"></a><a name="dx1-31014"></a><span class="tt">\mbox</span>, but in addition there will be a visible box drawn
+                    around the content.
+                </p><p>
+                </p></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e2691" href="#d0e2691">10</a>] </sup>Although LaTeX gives you a warning when that happens (Overfull hbox) and displays the
+                            offending line, such lines are not always easy to find. If you use the option <span class="tt">draft</span> in the
+                            <a name="dx1-30020"></a><a name="dx1-30021"></a><span class="tt">\documentclass</span> command, these lines will be marked with a thick black line on the right
+                            margin.
+                        </p></div></div></div></body>
+</html>

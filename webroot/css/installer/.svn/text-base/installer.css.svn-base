@@ -1,0 +1,99 @@
+/*Web installers styles*/
+
+body {
+ background: #e0e0e0;
+ margin: 0px;
+ padding: 0px;
+ font-size: 10pt; 
+ font-family: Verdana, Arial;
+}
+.rojo {
+ border:1px dotted red;font-size:7pt;padding:3px 0 3px 18px;margin:10px auto;background: #fff url(/img/static/img_incorrect.gif) no-repeat  left top;
+}
+.verde {
+ border:1px dotted green;font-size:7pt;padding:3px 0 3px 18px;margin:10px auto;background:#fff url(/img/static/img_correct.gif) no-repeat left top;
+}
+.validateError{
+width:205px;
+text-align: left;
+background: #fff url(/img/static/img_incorrect.gif) no-repeat  right top;
+color: red;
+font-weight: bold;
+}
+
+.loadTables{
+font-size:7pt;
+color:orange;
+}
+
+.field_req{
+font-size:8pt;
+color: red;
+}
+
+.required:after {
+content: "*";
+color:red;
+}
+
+.content {
+margin:5px auto 45px auto;
+padding:8px;
+width:560px;
+border:1px solid black;
+background-color:#fff;
+min-height:870px;
+}
+
+#header{
+padding:0;
+margin:0;
+text-align:center;
+}
+
+#header_img{
+border:1px solid black;
+}
+
+.title{
+  margin:25px 0;
+  font-size:15pt;
+  font-weight:bold;
+  color:orange;
+  border-bottom:1px solid orange;
+}
+
+.step{
+  margin:25px 0;
+  font-size:15pt;
+  font-weight:bold;
+  color:orange;
+  border-bottom:1px solid orange;
+}
+
+.instruct{
+  font-size:8pt;
+}
+
+#indic{
+  display:block;
+  border:1px dotted gray;
+  padding:6px;
+  font-size:8pt;
+}
+
+#footer{
+  padding:6px;
+  border-top:2px solid #000;
+  background-color:#0154a0;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+}
+
+#footer a {
+  font-size:8pt;
+  color:#fff;
+}

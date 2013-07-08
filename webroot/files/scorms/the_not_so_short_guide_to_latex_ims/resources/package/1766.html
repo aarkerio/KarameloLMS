@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>4.6. The Space Between Words</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6007"></a>4.6.&nbsp;
+                <span class="abbrev">2.6</span><a name="x1-490002.6"></a>The Space Between Words
+            </h3></div></div></div><p>   To get a straight right margin in the output, LaTeX inserts varying amounts
+                of space between the words. It inserts slightly more space at the end of a
+                sentence, as this makes the text more readable. LaTeX assumes that sentences
+                end with periods, question marks or exclamation marks. If a period follows an
+                uppercase letter, this is not taken as a sentence ending, since periods after
+                uppercase letters normally occur in abbreviations.
+            </p><p>   Any exception from these assumptions has to be specified by the author. A
+                backslash in front of a space generates a space that will not be enlarged. A
+                tilde&nbsp;&#8216;<em><span class="remark">~</span></em>&#8217; character generates a space that cannot be enlarged and additionally
+                prohibits a line break. The command <em><span class="remark">\@</span></em> in front of a period specifies that this
+                period terminates a sentence even when it follows an uppercase letter. <a name="dx1-49001"></a><a name="dx1-49002"></a> <a name="dx1-49003"></a><a name="dx1-49004"></a>
+                <a name="dx1-49005"></a>
+                &nbsp;Mr.~Smith&nbsp;was&nbsp;happy&nbsp;to&nbsp;see&nbsp;her\\
+                &nbsp;cf.~Fig.~5\\
+                &nbsp;I&nbsp;like&nbsp;BASIC\@.&nbsp;What&nbsp;about&nbsp;you?    
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p>Mr.&nbsp;Smith was happy to see her
+                            cf.&nbsp;Fig.&nbsp;5
+                            I like BASIC. What about you? 
+                        </p></dd></dl></div><p>   The additional space after periods can be disabled with the command
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-49006"></a><a name="dx1-49007"></a><span class="tt">\frenchspacing</span>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                which tells LaTeX <span class="emphasis"><em>not</em></span> to insert more space after a period than after ordinary
+                character. This is very common in non-English languages, except bibliographies.
+                If you use <a name="dx1-49008"></a><a name="dx1-49009"></a><span class="tt">\frenchspacing</span>, the command <em><span class="remark">\@</span></em> is not necessary.
+            </p><p>
+                
+                
+                
+            </p></div></body>
+</html>

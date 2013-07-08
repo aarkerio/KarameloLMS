@@ -1,0 +1,51 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 25
+/repos/karamelo/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repos/karamelo/!svn/ver/3068/trunk/app/Config
+END
+database.php.default
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2855/trunk/app/Config/database.php.default
+END
+core.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/karamelo/!svn/ver/2943/trunk/app/Config/core.php
+END
+email.php.default
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/2745/trunk/app/Config/email.php.default
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/karamelo/!svn/ver/3066/trunk/app/Config/bootstrap.php
+END
+inflections.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/2854/trunk/app/Config/inflections.php
+END
+acl.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/karamelo/!svn/ver/2953/trunk/app/Config/acl.php
+END
+routes.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/karamelo/!svn/ver/2766/trunk/app/Config/routes.php
+END

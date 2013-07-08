@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Treasures
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2884/trunk/app/View/Treasures/admin_listing.ctp
+END
+admin_view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Treasures/admin_view.ctp
+END
+admin_vclassrooms.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Treasures/admin_vclassrooms.ctp
+END
+admin_points.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Treasures/admin_points.ctp
+END
+admin_ekandie.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2886/trunk/app/View/Treasures/admin_ekandie.ctp
+END
+view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Treasures/view.ctp
+END
+admin_answers.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2886/trunk/app/View/Treasures/admin_answers.ctp
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Treasures/admin_edit.ctp
+END

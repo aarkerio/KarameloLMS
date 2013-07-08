@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>6.2. Bibliography</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11512"></a>6.2.&nbsp;
+                <span class="abbrev">4.2</span><a name="x1-760004.2"></a>Bibliography
+            </h3></div></div></div><p>
+                   You can produce a <a name="dx1-76001"></a>bibliography with the <a name="dx1-76002"></a><a name="dx1-76003"></a><span class="tt">thebibliography</span> environment.
+                Each entry starts with
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-76004"></a><a name="dx1-76005"></a><span class="tt">\bibitem</span><em><span class="remark">[</span></em><span class="emphasis"><em>label</em></span><em><span class="remark">]{</span></em><span class="emphasis"><em>marker</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                   The <span class="emphasis"><em>marker</em></span> is then used to cite the book, article or paper within the
+                document.
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-76006"></a><a name="dx1-76007"></a><span class="tt">\cite</span><em><span class="remark">{</span></em><span class="emphasis"><em>marker</em></span><em><span class="remark">}</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                   If you do not use the <span class="emphasis"><em>label</em></span> option, the entries will get enumerated
+                automatically. The parameter after the <em><span class="remark">\begin{thebibliography}</span></em> command
+                defines how much space to reserve for the number of labels. In the example
+                below, <em><span class="remark">{99}</span></em> tells LaTeX to expect that none of the bibliography item numbers
+                
+                
+                
+                will be wider than the number 99.
+            </p><p>&nbsp;Partl~\cite{pa}&nbsp;has
+                &nbsp;proposed&nbsp;that&nbsp;\ldots
+                &nbsp;\begin{thebibliography}{99}
+                &nbsp;\bibitem{pa}&nbsp;H.~Partl:
+                &nbsp;\emph{German&nbsp;\TeX},
+                &nbsp;TUGboat&nbsp;Volume~9,&nbsp;Issue~1&nbsp;(1988)
+                &nbsp;\end{thebibliography}              
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p>
+                            Partl&nbsp;[<span class="citation">[?]</span>] has proposed that &#8230;
+                        </p></dd></dl></div></div></body>
+</html>

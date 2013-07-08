@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/karamelo/!svn/ver/2811/trunk/app/View/News
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/2811/trunk/app/View/News/admin_edit.ctp
+END
+category.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/2780/trunk/app/View/News/category.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2780/trunk/app/View/News/admin_listing.ctp
+END
+display.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/karamelo/!svn/ver/2780/trunk/app/View/News/display.ctp
+END

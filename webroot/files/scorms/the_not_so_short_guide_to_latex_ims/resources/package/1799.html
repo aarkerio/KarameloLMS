@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>11.5. Problems with Links</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e13198"></a>11.5.&nbsp;
+            <span class="abbrev">4.7.5</span><a name="x1-870004.7.5"></a>Problems with Links
+        </h3></div></div></div><p>   Messages like the following:
+            
+            
+            
+        </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!&nbsp;pdfTeX&nbsp;warning&nbsp;(ext4):&nbsp;destination&nbsp;with&nbsp;the&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier&nbsp;(name{page.1})&nbsp;has&nbsp;been&nbsp;already&nbsp;used,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duplicate&nbsp;ignored<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div><p>   appear when a counter gets reinitialized, for example by using the
+            command <a name="dx1-87001"></a><a name="dx1-87002"></a><span class="tt">\mainmatter</span> provided by the <span class="tt">book</span> document class. It resets the
+            page number counter to&nbsp;1 prior to the first chapter of the book. But as
+            the preface of the book also has a page number&nbsp;1 all links to &#8220;page 1&#8221;
+            would not be unique anymore, hence the notice that &#8220;<em><span class="remark">duplicate</span></em> has been
+            <em><span class="remark">ignored</span></em>.&#8221;
+        </p><p>
+               The counter measure consists of putting <span class="tt">plainpages=false</span> into the hyperref
+            options. This unfortunately only helps with the page counter. An even more
+            radical solution is to use the option
+            <span class="tt">hypertexnames=false</span>, but this will cause the page links in the index to stop
+            working.
+        </p><p>
+        </p></div></body>
+</html>

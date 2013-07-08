@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>SCORM 1.2 test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="author" content="Daniel Kirsch">
+
+<!-- include the scorm library -->
+<script type="text/javascript" src="scorm_1_2.js"></script>
+
+<script type="text/javascript">
+
+var SCORM = new Scorm();
+
+onload=function() {
+	SCORM.initialize();
+};
+
+/*
+onbeforeunload=function() {
+	SCORM.unload();
+};
+*/
+
+function evalInput() {
+	var val = document.getElementById('inputBox').value;
+	if (!val)
+		alert('--No input data defined--\n\nPlease enter an executable javascript command into the input box');
+	else
+		eval(val);
+}
+
+function getProperties (aObj,separator) {
+    var lProps = [];
+    var x = 0;
+    for (var i in aObj) lProps[x++]=i;
+    lProps = lProps.sort();
+    if (separator) return lProps.join(separator);
+    else return lProps;
+}
+
+function getPropertyList(aObj,separator,showAll) {
+    var lProps = getProperties(aObj);
+    if (!showAll) {
+      for (var i in lProps) {
+        try {
+          lProps[i] +=  " = " + ((typeof aObj[lProps[i]] == "function") ? "[function]" : aObj[lProps[i]]);
+        }
+        catch(e){}
+      }
+    }
+    return lProps.join(separator ? separator:"\n");
+}
+
+function PLA(obj,sep,all) {
+	alert(getPropertyList(obj,sep,all));
+}
+
+</script>
+
+
+<style type="text/css">
+
+.group {
+	margin:10px 5px;
+	width:500px;
+	border:1px solid #ccc;
+}
+
+.group div {
+	cursor:pointer;
+	background-color:#eee;
+	border:1px outset #888;
+	margin:5px;
+	text-align:center;
+}
+
+.group div:hover {
+	background-color:#fff;
+}
+
+.group div:active {
+	border:1px inset #888;
+}
+
+#inputBox {
+	width:100%;
+}
+
+.input {
+	text-align:right;
+	padding:5px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+ 
+ <div class="group">
+	<div onclick="alert(SCORM.api.LMSGetValue)">LMSGetValue implementation</div>
+	<div onclick="alert(SCORM.api.LMSSetValue)">LMSSetValue implementation</div>
+</div>
+ 
+<div class="group">
+ 	<div onclick="var val = prompt('value'); SCORM.setProgress(val)">save progress</div>
+ 	<div onclick="alert(SCORM.getProgress())">get progress</div>
+</div>
+
+<div class="group">
+	<div onclick="var u = SCORM.getUser();alert(u.firstName + ' ' + u.lastName)">get user</div>
+</div>
+
+<div class="group input">
+	<textarea id="inputBox" rows="10" onkeypress="if (event.keyCode == 13 && event.ctrlKey) evalInput()"></textarea>
+	<button onclick="evalInput()">Evaluate</button>
+</div>
+</body>
+</html>

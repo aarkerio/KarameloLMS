@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="ila_mdextensions"
+   xmlns="ila_mdextensions"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:element name="ContentLocation" type="ContentLocationType"/>
+   <xsd:element name="ReferenceMaterial" type="ReferenceMaterialType"/>
+   <xsd:element name="Categories" type="CategoriesType"/>
+   <xsd:element name="Announcement" type="AnnouncementType"/>
+   <xsd:element name="ContentServerId" type="ContentServerIdType"/>
+   <xsd:element name="Directory" type="DirectoryType"/>
+   <xsd:element name="Name" type="NameType"/>
+   <xsd:element name="Description" type="DescriptionType"/>
+   <xsd:element name="URL" type="URLType"/>
+   <xsd:element name="Text" type="TextType"/>
+   <xsd:element name="PreviewText" type="PreviewTextType"/>
+   <xsd:element name="ExternalId" type="ExternalIdType"/>
+   <xsd:element name="ExternalSrc" type="ExternalSrcType"/>
+   <xsd:element name="ExtraInfo" type="ExtraInfo"/>
+   <xsd:element name="ContentDuration" type="ContentDuration"/>
+
+   <xsd:simpleType name="ExternalIdType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="ExternalSrcType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="ExtraInfo">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="ContentDuration">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="ContentServerIdType">
+      <xsd:restriction base="xsd:long"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="DirectoryType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="NameType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="DescriptionType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="URLType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="TextType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+   <xsd:simpleType name="PreviewTextType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+
+  <xsd:complexType name="ContentLocationType">
+     <xsd:sequence>
+          <xsd:element ref="ContentServerId"/>
+          <xsd:element ref="Directory"/>
+     </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ReferenceMaterialType">
+     <xsd:sequence>
+          <xsd:element ref="Name"/>
+          <xsd:element ref="Description" minOccurs="0"/>
+          <xsd:element ref="URL" minOccurs="0"/>
+     </xsd:sequence>
+          <xsd:attribute name="id" type="xsd:long" use="optional"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="CategoriesType">
+          <xsd:attribute name="id" type="xsd:long" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="AnnouncementType">
+     <xsd:sequence>
+          <xsd:element ref="Text"/>
+          <xsd:element ref="PreviewText"/>
+     </xsd:sequence>
+          <xsd:attribute name="id" type="xsd:long" use="optional"/>
+  </xsd:complexType>
+
+  <!-- Web Services extensions -->
+  <xsd:simpleType name="CommitFrequencyWSType">
+      <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:element name="CommitFrequencyWS" type="CommitFrequencyWSType"/>
+
+  <xsd:simpleType name="CheckExternalIdFirstWSType">
+      <xsd:restriction base="xsd:string"/>
+   </xsd:simpleType>
+  <xsd:element name="CheckExternalIdFirstWS" type="CheckExternalIdFirstWSType"/>
+
+  <xsd:complexType name="WebServiceHeaderType">
+        <xsd:sequence>
+         <xsd:element ref="CommitFrequencyWS" minOccurs="0"/>         
+         <xsd:element ref="CheckExternalIdFirstWS" minOccurs="0"/>
+        </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="WebServiceHeader" type="WebServiceHeaderType"/>
+
+</xsd:schema>

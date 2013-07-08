@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data
+END
+RoleData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/RoleData.php
+END
+CommentData.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/CommentData.php
+END
+AcoData.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/AcoData.php
+END
+MenuData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/MenuData.php
+END
+NodesTaxonomyData.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/NodesTaxonomyData.php
+END
+TermData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/TermData.php
+END
+VocabularyData.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/VocabularyData.php
+END
+SettingData.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/SettingData.php
+END
+TaxonomyData.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/TaxonomyData.php
+END
+UserData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/UserData.php
+END
+I18nData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/I18nData.php
+END
+AroData.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/AroData.php
+END
+TypeData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/TypeData.php
+END
+RegionData.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/RegionData.php
+END
+LanguageData.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/LanguageData.php
+END
+MessageData.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/MessageData.php
+END
+NodeData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/NodeData.php
+END
+MetaData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/MetaData.php
+END
+ArosAcoData.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/ArosAcoData.php
+END
+BlockData.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/BlockData.php
+END
+ContactData.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/ContactData.php
+END
+TypesVocabularyData.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/TypesVocabularyData.php
+END
+LinkData.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/karamelo/!svn/ver/2855/trunk/app/Plugin/Install/Config/Data/LinkData.php
+END

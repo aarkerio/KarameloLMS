@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Simulation Launch Page</TITLE>
+<SCRIPT language="JavaScript" src="APIWrapper.js"></SCRIPT>
+<SCRIPT>
+<!--
+var simwindow;
+function launchSim(simurl)
+{
+    simwindow = window.open(simurl,'Sim','width=770,height=530,scrollbars=yes,resizable=yes,location=no,status=no');
+    simwindow.focus();
+}
+function closeSim()
+{
+    if (simwindow != null)
+        simwindow.close();
+}
+
+// -->
+</SCRIPT>
+
+</HEAD>
+<BODY onLoad="doLMSInitialize();launchSim('http://www.foriodev.com/broadcast/sims/mysim/')" onUnload="doLMSFinish();closeSim();">
+
+<h1>Simulation launch page</h1>
+<P>The simulation will automatically launch within a few seconds.
+
+</BODY>
+</HTML>

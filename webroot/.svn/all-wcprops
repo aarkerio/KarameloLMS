@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/karamelo/!svn/ver/3050/trunk/app/webroot
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/karamelo/!svn/ver/2939/trunk/app/webroot/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/karamelo/!svn/ver/3071/trunk/app/webroot/index.php
+END
+css.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/karamelo/!svn/ver/2694/trunk/app/webroot/css.php
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/1538/trunk/app/webroot/favicon.ico
+END
+cakephp.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/2854/trunk/app/webroot/cakephp.php
+END
+xd_receiver.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/1558/trunk/app/webroot/xd_receiver.html
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/karamelo/!svn/ver/2955/trunk/app/webroot/test.php
+END
+mime.magic
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/karamelo/!svn/ver/2190/trunk/app/webroot/mime.magic
+END

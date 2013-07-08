@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>13.3. XY -pic</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15249"></a>13.3.&nbsp;
+    <span class="abbrev">5.3</span><a name="x1-1050005.3"></a>XY -pic
+</h3></div></div></div><p>
+    By Alberto Manuel Brand&atilde;o Sim&otilde;es 
+    <a href="mailto:<a href="mailto:albie@alfarrabio.di.uminho.pt">albie@alfarrabio.di.uminho.pt</a>" target="_blank">
+        <em><span class="remark"><a href="mailto:albie@alfarrabio.di.uminho.pt">albie@alfarrabio.di.uminho.pt</a></span></em>
+    </a>
+</p><p>
+    <a name="dx1-105001"></a><a name="dx1-105002"></a><span class="sf">xy</span> is a special package for drawing diagrams. To use it, simply add the following
+    line to the preamble of your document:
+</p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                    <p>
+                        <em><span class="remark">\usepackage[</span></em><span class="emphasis"><em>options</em></span><em><span class="remark">]{xy}</span></em>
+                    </p>
+                </td></tr><tr><td align="left">
+                    <p> </p>
+                </td></tr></tbody></table></div><p>
+       <span class="emphasis"><em>options</em></span> is a list of functions from XY -pic you want to load. These options are
+    primarily useful when debugging the package. I recommend you pass the <em><span class="remark">all</span></em>
+    option, making LaTeX load all the XY commands.
+</p><p>   XY-pic diagrams are drawn over a matrix-oriented canvas, where each diagram
+    element is placed in a matrix slot:
+</p><p>&nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{A&nbsp;&amp;&nbsp;B&nbsp;\\
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&amp;&nbsp;D&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base250x.png"></div></div><p>
+            </p></dd></dl></div><p>
+       The <a name="dx1-105003"></a><a name="dx1-105004"></a><span class="tt">\xymatrix</span> command must be used in math mode. Here, we specified two
+    lines and two columns. To make this matrix a diagram we just add directed
+    arrows using the <a name="dx1-105005"></a><a name="dx1-105006"></a><span class="tt">\ar</span> command.
+</p><p>&nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{&nbsp;A&nbsp;\ar[r]&nbsp;&amp;&nbsp;B&nbsp;\ar[d]&nbsp;\\
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;\ar<u>&nbsp;&amp;&nbsp;C&nbsp;\ar[l]&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base251x.png"></div></div><p>
+            </p></dd></dl></div><p>   The arrow command is placed on the origin cell for the arrow. The
+    arguments are the direction the arrow should point to (<span class="tt">u</span>p, <span class="tt">d</span>own, <span class="tt">r</span>ight and
+    <span class="tt">l</span>eft).
+    
+    
+    
+    &nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;&nbsp;&nbsp;A&nbsp;\ar[d]&nbsp;\ar[dr]&nbsp;\ar[r]&nbsp;&amp;&nbsp;B&nbsp;\\
+    &nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;C&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base252x.png"></div></div><p>
+            </p></dd></dl></div><p>   To make diagonals, just use more than one direction. In fact, you can repeat
+    directions to make bigger arrows.
+</p><p>&nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;&nbsp;&nbsp;A&nbsp;\ar[d]&nbsp;\ar[dr]&nbsp;\ar[drr]&nbsp;&amp;&nbsp;&amp;&nbsp;\\
+    &nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;C&nbsp;&amp;&nbsp;D&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base253x.png"></div></div><p>
+            </p></dd></dl></div><p>   We can draw even more interesting diagrams by adding labels to
+    the arrows. To do this, we use the common superscript and subscript
+    operators.
+</p><p>&nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;&nbsp;&nbsp;A&nbsp;\ar[r]^f&nbsp;\ar[d]_g&nbsp;&amp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;\ar[d]^{g&#8217;}&nbsp;\\
+    &nbsp;&nbsp;&nbsp;D&nbsp;\ar[r]_{f&#8217;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;C&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base254x.png"></div></div><p>
+            </p></dd></dl></div><p>   As shown, you use these operators as in math mode. The only difference is
+    that that superscript means &#8220;on top of the arrow,&#8221; and subscript means &#8220;under
+    the arrow.&#8221; There is a third operator, the vertical bar: <em><span class="remark">|</span></em> It causes text to be
+    placed <span class="emphasis"><em>in</em></span> the arrow.
+    
+    
+    
+</p><p>&nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;&nbsp;&nbsp;A&nbsp;\ar[r]|f&nbsp;\ar[d]|g&nbsp;&amp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;\ar[d]|{g&#8217;}&nbsp;\\
+    &nbsp;&nbsp;&nbsp;D&nbsp;\ar[r]|{f&#8217;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;C&nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base255x.png"></div></div><p>
+            </p></dd></dl></div><p>
+       To draw an arrow with a hole in it, use <em><span class="remark">\ar[...]|\hole</span></em>.
+</p><p>   In some situations, it is important to distinguish between different types of
+    arrows. This can be done by putting labels on them, or changing their
+    appearance:
+    &nbsp;\shorthandoff{"}
+    &nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;\bullet\ar@{-&gt;}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{.&lt;}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{~)}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{=(}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{~/}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{^{(}-&gt;}[rr]&nbsp;&amp;&amp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@2{-&gt;}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@3{-&gt;}[rr]&nbsp;&amp;&amp;&nbsp;\bullet\\
+    &nbsp;\bullet\ar@{=+}[rr]&nbsp;&nbsp;&amp;&amp;&nbsp;\bullet
+    &nbsp;}
+    &nbsp;\end{displaymath}
+    &nbsp;\shorthandon{"}                    
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p> </p><div class="equation"><div><img src="lshort-base256x.png"></div></div><p>
+            </p></dd></dl></div><p>   Notice the difference between the following two diagrams:
+    &nbsp;\begin{displaymath}
+    &nbsp;\xymatrix{
+    &nbsp;&nbsp;\bullet&nbsp;\ar[r]
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ar@{.&gt;}[r]&nbsp;&amp;
+    &nbsp;&nbsp;\bullet
+    &nbsp;}
+    &nbsp;\end{displaymath}                  
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base257x.png"></div></div><p>
+            </p></dd></dl></div>&nbsp;\begin{displaymath}&nbsp;\xymatrix{&nbsp;&nbsp;\bullet&nbsp;\ar@/^/[r]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ar@/_/@{.&gt;}[r]&nbsp;&amp;&nbsp;&nbsp;\bullet&nbsp;}&nbsp;\end{displaymath}                  <div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p></p><div class="equation"><div><img src="lshort-base258x.png"></div></div><p>
+            </p></dd></dl></div><p>   The modifiers between the slashes define how the curves are drawn. XY -pic
+    offers many ways to influence the drawing of curves; for more information, check
+    XY-pic documentation.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</p></div></body>
+</html>

@@ -1,0 +1,39 @@
+body {
+margin-left: 2%;
+margin-right: 2%;
+}
+
+p, table, tr, li, ul, ol, body, td {  
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: small;
+bgcolor=#ffffff;
+}
+
+a {font-weight:bold;text-decoration:none;}
+a:link {color:#9CC6FF;}
+a:visited {color:#003163;}
+a:hover	{color:#218CF7;}
+
+.LINKS {font-weight:bold;text-decoration:none;}
+a.LINKS:link {color:#FFFFFF;}
+a.LINKS:visited {color:#FFFFFF;}
+a.LINKS:hover {color:#FF9900;}
+
+
+hr {
+color: #218CF7;
+height: 1pt;
+bgcolor=#FFFFFF;
+
+}
+
+.HEAD {
+font-size: large;
+color: #9CC6FF;
+}
+
+
+.SUBHEAD {
+font-size: medium;
+color: #218CF7;
+}

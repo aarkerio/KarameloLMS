@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/karamelo/!svn/ver/3066/trunk/app/Test/Fixture
+END
+UserFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/3066/trunk/app/Test/Fixture/UserFixture.php
+END
+ChatFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2977/trunk/app/Test/Fixture/ChatFixture.php
+END
+TestFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2971/trunk/app/Test/Fixture/TestFixture.php
+END
+PermanentClassFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/2959/trunk/app/Test/Fixture/PermanentClassFixture.php
+END
+UserVclassroomFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/karamelo/!svn/ver/3059/trunk/app/Test/Fixture/UserVclassroomFixture.php
+END
+VclassroomFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2971/trunk/app/Test/Fixture/VclassroomFixture.php
+END
+GroupFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2966/trunk/app/Test/Fixture/GroupFixture.php
+END
+AcquaintanceFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/karamelo/!svn/ver/3062/trunk/app/Test/Fixture/AcquaintanceFixture.php
+END
+NewsletterFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2981/trunk/app/Test/Fixture/NewsletterFixture.php
+END
+SubjectFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2983/trunk/app/Test/Fixture/SubjectFixture.php
+END
+EntryFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2967/trunk/app/Test/Fixture/EntryFixture.php
+END
+KnetFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2982/trunk/app/Test/Fixture/KnetFixture.php
+END
+AcoFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/3061/trunk/app/Test/Fixture/AcoFixture.php
+END
+ShareFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2971/trunk/app/Test/Fixture/ShareFixture.php
+END
+WikiFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2982/trunk/app/Test/Fixture/WikiFixture.php
+END
+NewsFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2981/trunk/app/Test/Fixture/NewsFixture.php
+END
+AroFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/3061/trunk/app/Test/Fixture/AroFixture.php
+END
+ArosAcoFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/3061/trunk/app/Test/Fixture/ArosAcoFixture.php
+END
+ForumFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2975/trunk/app/Test/Fixture/ForumFixture.php
+END
+HelpFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Fixture/HelpFixture.php
+END
+PodcastFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2972/trunk/app/Test/Fixture/PodcastFixture.php
+END
+QuoteFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/3066/trunk/app/Test/Fixture/QuoteFixture.php
+END
+ConfirmFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2969/trunk/app/Test/Fixture/ConfirmFixture.php
+END
+WebquestFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/karamelo/!svn/ver/2970/trunk/app/Test/Fixture/WebquestFixture.php
+END
+ProfileFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2967/trunk/app/Test/Fixture/ProfileFixture.php
+END
+CommentFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2965/trunk/app/Test/Fixture/CommentFixture.php
+END
+LessonFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/2969/trunk/app/Test/Fixture/LessonFixture.php
+END
+EcourseFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2974/trunk/app/Test/Fixture/EcourseFixture.php
+END
+FaqFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2967/trunk/app/Test/Fixture/FaqFixture.php
+END
+GapFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2979/trunk/app/Test/Fixture/GapFixture.php
+END
+PcStudentFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/karamelo/!svn/ver/2957/trunk/app/Test/Fixture/PcStudentFixture.php
+END
+AnnotationFixture.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/karamelo/!svn/ver/2973/trunk/app/Test/Fixture/AnnotationFixture.php
+END

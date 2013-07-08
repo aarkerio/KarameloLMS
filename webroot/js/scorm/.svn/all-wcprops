@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/karamelo/!svn/ver/1406/trunk/app/webroot/js/scorm
+END
+rd.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/1404/trunk/app/webroot/js/scorm/rd.js
+END
+request.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/1290/trunk/app/webroot/js/scorm/request.js
+END
+SCORM_API_wrapper.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/karamelo/!svn/ver/1389/trunk/app/webroot/js/scorm/SCORM_API_wrapper.js
+END

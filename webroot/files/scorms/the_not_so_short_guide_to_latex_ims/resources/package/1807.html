@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>14.1. New Commands, Environments and Packages</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15530"></a>14.1.&nbsp;
+    <span class="abbrev">6.1</span><a name="x1-1070006.1"></a>New Commands, Environments and Packages
+</h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se14se1.html#d0e15613">14.1.1. 
+        <span class="abbrev">6.1.1</span>New Commands
+    </a></span></dt><dt><span class="section"><a href="se14se1.html#d0e15774">14.1.2. 
+        <span class="abbrev">6.1.2</span>New Environments
+    </a></span></dt><dt><span class="section"><a href="se14se1.html#d0e15920">14.1.3. 
+        <span class="abbrev">6.1.3</span>Extra Space
+    </a></span></dt><dt><span class="section"><a href="se14se1.html#d0e15992">14.1.4. 
+        <span class="abbrev">6.1.4</span>Commandline LaTeX
+    </a></span></dt><dt><span class="section"><a href="se14se1.html#d0e16024">14.1.5. 
+        <span class="abbrev">6.1.5</span>Your Own Package
+    </a></span></dt></dl></div><p>   You may have noticed that all the commands I introduce in this book are
+    typeset in a box, and that they show up in the index at the end of the book.
+    Instead of directly using the necessary LaTeX commands to achieve this, I have
+    created a <a name="dx1-107001"></a>package in which I defined new commands and environments for this
+    purpose. Now I can simply write:
+    &nbsp;\begin{lscommand}
+    &nbsp;\ci{dum}
+    &nbsp;\end{lscommand}                    
+</p><div class="glosslist"><dl><dt><em><span class="remark">
+            </span></em>
+        </dt><dd><p>
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-107002"></a><a name="dx1-107003"></a><span class="tt">\dum</span>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div></dd></dl></div><p>   In this example, I am using both a new environment called
+    <a name="dx1-107004"></a><a name="dx1-107005"></a><span class="tt">lscommand</span>, which is responsible for drawing the box around the command, and a
+    new command named <a name="dx1-107006"></a><a name="dx1-107007"></a><span class="tt">\ci</span>, which typesets the command name and makes a
+    corresponding entry in the index. You can check this out by looking up the
+    <a name="dx1-107008"></a><a name="dx1-107009"></a><span class="tt">\dum</span> command in the index at the back of this book, where you&#8217;ll find
+    an entry for <a name="dx1-107010"></a><a name="dx1-107011"></a><span class="tt">\dum</span>, pointing to every page where I mentioned the <a name="dx1-107012"></a><a name="dx1-107013"></a><span class="tt">\dum</span>
+    command.
+</p><p>   If I ever decide that I do not like the commands to be typeset in a box any
+    more, I can simply change the definition of the <span class="tt">lscommand</span> environment to create
+    a new look. This is much easier than going through the whole document to hunt
+    down all the places where I have used some generic LaTeX commands to draw a
+    box around some word.
+    
+    
+    
+</p><p>
+</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e15613"></a>14.1.1.&nbsp;
+        <span class="abbrev">6.1.1</span><a name="x1-1080006.1.1"></a>New Commands
+    </h4></div></div></div><p>   To add your own commands, use the
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-108001"></a><a name="dx1-108002"></a><span class="tt">\newcommand</span><em><span class="remark">{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}[</span></em><span class="emphasis"><em>num</em></span><em><span class="remark">]{</span></em><span class="emphasis"><em>definition</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+        command. Basically, the command requires two arguments: the <span class="emphasis"><em>name</em></span> of the
+        command you want to create, and the <span class="emphasis"><em>definition</em></span> of the command. The <span class="emphasis"><em>num</em></span>
+        argument in square brackets is optional and specifies the number of arguments
+        the new command takes (up to 9 are possible). If missing it defaults to 0, i.e. no
+        argument allowed.
+    </p><p>   The following two examples should help you to get the idea. The
+        first example defines a new command called <a name="dx1-108003"></a><a name="dx1-108004"></a><span class="tt">\tnss</span>. This is short for
+        &#8220;The Not So Short Introduction to LaTeX2
+        <img src="lshort-base259x.png">
+        .&#8221; Such a command could
+        come in handy if you had to write the title of this book over and over
+        again.
+        &nbsp;\newcommand{\tnss}{The&nbsp;not
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;so&nbsp;Short&nbsp;Introduction&nbsp;to
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\LaTeXe}
+        &nbsp;This&nbsp;is&nbsp;&#8216;&#8216;\tnss&#8217;&#8217;&nbsp;\ldots{}
+        &nbsp;&#8216;&#8216;\tnss&#8217;&#8217;                          
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p> This is &#8220;The not so Short Introduction
+                    to   LaTeX2
+                    <img src="lshort-base260x.png">
+                    &#8221;   &#8230;   &#8220;The   not   so   Short
+                    Introduction to LaTeX2
+                    <img src="lshort-base261x.png">
+                    &#8221; 
+                </p></dd></dl></div><p>   The next example illustrates how to define a new command that takes one
+        argument. The <em><span class="remark">#1</span></em> tag gets replaced by the argument you specify. If you wanted
+        to use more than one argument, use <em><span class="remark">#2</span></em> and so on.
+        &nbsp;\newcommand{\txsit}[1]
+        &nbsp;&nbsp;{This&nbsp;is&nbsp;the&nbsp;\emph{#1}&nbsp;Short
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction&nbsp;to&nbsp;\LaTeXe}
+        &nbsp;%&nbsp;in&nbsp;the&nbsp;document&nbsp;body:
+        &nbsp;\begin{itemize}
+        &nbsp;\item&nbsp;\txsit{not&nbsp;so}
+        &nbsp;\item&nbsp;\txsit{very}
+        &nbsp;\end{itemize}                      
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>
+                </p><div class="itemizedlist"><ul type="disc"><li><p>
+                            This    is    the    <span class="emphasis"><em>not    so</em></span>    Short
+                            Introduction to LaTeX2
+                            <img src="lshort-base262x.png">
+                        </p></li><li><p>
+                            This is the <span class="emphasis"><em>very</em></span> Short Introduction
+                            to LaTeX2
+                            <img src="lshort-base263x.png">
+                        </p></li></ul></div></dd></dl></div><p>   LaTeX will not allow you to create a new command that would overwrite
+        
+        
+        
+        an existing one. But there is a special command in case you explicitly
+        want this: <a name="dx1-108005"></a><a name="dx1-108006"></a><span class="tt">\renewcommand</span>. It uses the same syntax as the <em><span class="remark">\newcommand</span></em>
+        command.
+    </p><p>
+           In certain cases you might also want to use the <a name="dx1-108007"></a><a name="dx1-108008"></a><span class="tt">\providecommand</span> command.
+        It works like <a name="dx1-108009"></a><a name="dx1-108010"></a><span class="tt">\newcommand</span>, but if the command is already defined, LaTeX2
+        <img src="lshort-base264x.png">
+        will
+        silently ignore it.
+    </p><p>   There are some points to note about whitespace following LaTeX commands.
+        See page ?? for more information.
+    </p><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e15774"></a>14.1.2.&nbsp;
+        <span class="abbrev">6.1.2</span><a name="x1-1090006.1.2"></a>New Environments
+    </h4></div></div></div><p>
+           Just as with the <em><span class="remark">\newcommand</span></em> command, there is a command to create your
+        own environments. The <a name="dx1-109001"></a><a name="dx1-109002"></a><span class="tt">\newenvironment</span> command uses the following
+        syntax:
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-109003"></a><a name="dx1-109004"></a><span class="tt">\newenvironment</span><em><span class="remark">{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}[</span></em><span class="emphasis"><em>num</em></span><em><span class="remark">]{</span></em><span class="emphasis"><em>before</em></span><em><span class="remark">}{</span></em><span class="emphasis"><em>after</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+           Again <a name="dx1-109005"></a><a name="dx1-109006"></a><span class="tt">\newenvironment</span> can have an optional argument. The material
+        specified in the <span class="emphasis"><em>before</em></span> argument is processed before the text in the environment
+        gets processed. The material in the <span class="emphasis"><em>after</em></span> argument gets processed when the
+        <em><span class="remark">\end{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}</span></em> command is encountered.
+    </p><p>
+           The example below illustrates the usage of the <a name="dx1-109007"></a><a name="dx1-109008"></a><span class="tt">\newenvironment</span>
+        command.
+    </p><p>&nbsp;\newenvironment{king}
+        &nbsp;&nbsp;{\rule{1ex}{1ex}%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\hspace{\stretch{1}}}
+        &nbsp;&nbsp;{\hspace{\stretch{1}}%
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\rule{1ex}{1ex}}
+        &nbsp;
+        &nbsp;\begin{king}
+        &nbsp;My&nbsp;humble&nbsp;subjects&nbsp;\ldots
+        &nbsp;\end{king}                         
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>
+                </p><p>_               My humble subjects &#8230;
+                    _
+                </p></dd></dl></div><p>
+           The <span class="emphasis"><em>num</em></span> argument is used the same way as in the <em><span class="remark">\newcommand</span></em> command.
+        LaTeX makes sure that you do not define an environment that already
+        exists. If you ever want to change an existing command, you can use the
+        <a name="dx1-109009"></a><a name="dx1-109010"></a><span class="tt">\renewenvironment</span> command. It uses the same syntax as the <a name="dx1-109011"></a><a name="dx1-109012"></a><span class="tt">\newenvironment</span>
+        command.
+        
+        
+        
+    </p><p>
+           The commands used in this example will be explained later. For the <a name="dx1-109013"></a><a name="dx1-109014"></a><span class="tt">\rule</span>
+        command see page ??, for <a name="dx1-109015"></a><a name="dx1-109016"></a><span class="tt">\stretch</span> go to page ??, and more information on
+        <a name="dx1-109017"></a><a name="dx1-109018"></a><span class="tt">\hspace</span> can be found on page ??.
+    </p><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e15920"></a>14.1.3.&nbsp;
+        <span class="abbrev">6.1.3</span><a name="x1-1100006.1.3"></a>Extra Space
+    </h4></div></div></div><p>   When creating a new environment you may easily get bitten by extra spaces
+        creaping in, which can potentially have fatal effects. For example when you want
+        to create a title environemnt which supresses its own indentation as well as the
+        one on the following paragraph. The <a name="dx1-110001"></a><a name="dx1-110002"></a><span class="tt">\ignorespaces</span> command in the begin block
+        of the environment will make it ignore any space after executing the
+        begin block. The end block is a bit more tricky as special processing
+        occurs at the end of an environment. With the <a name="dx1-110003"></a><a name="dx1-110004"></a><span class="tt">\ignorespacesafterend</span>
+        LaTeX will issue an <a name="dx1-110005"></a><a name="dx1-110006"></a><span class="tt">\ignorespaces</span> after the special &#8216;end&#8217; processing has
+        occured.
+        &nbsp;\newenvironment{simple}%
+        &nbsp;&nbsp;{\noindent}%
+        &nbsp;&nbsp;{\par\noindent}
+        &nbsp;
+        &nbsp;\begin{simple}
+        &nbsp;See&nbsp;the&nbsp;space\\to&nbsp;the&nbsp;left.
+        &nbsp;\end{simple}
+        &nbsp;Same\\here.                        
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>
+                </p><p> See the space
+                    to the left.
+                </p><p>
+                    Same
+                    here. 
+                </p></dd></dl></div>&nbsp;\newenvironment{correct}%&nbsp;&nbsp;{\noindent\ignorespaces}%&nbsp;&nbsp;{\par\noindent%&nbsp;&nbsp;&nbsp;&nbsp;\ignorespacesafterend}&nbsp;&nbsp;\begin{correct}&nbsp;No&nbsp;space\\to&nbsp;the&nbsp;left.&nbsp;\end{correct}&nbsp;Same\\here.                        <div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>
+                </p><p>No space
+                    to the left.
+                </p><p>
+                    Same
+                    here. 
+                </p></dd></dl></div><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e15992"></a>14.1.4.&nbsp;
+        <span class="abbrev">6.1.4</span><a name="x1-1110006.1.4"></a>Commandline LaTeX
+    </h4></div></div></div><p>   If you work on a Unix like OS, you might be using Makefiles to build your
+        LaTeX projects. In that connection it might be interesting to produce different
+        versions of the same document by calling LaTeX with commandline parameters.
+        If you add the following structure to your document:
+        
+        
+        
+    </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\usepackage{ifthen}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ifthenelse{\equal{\blackandwhite}{true}}{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;"black&nbsp;and&nbsp;white"&nbsp;mode;&nbsp;do&nbsp;something..<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;"color"&nbsp;mode;&nbsp;do&nbsp;something&nbsp;different..<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</p></div><p>   Now you can call LaTeX like this:
+        
+        
+        
+    </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;latex&nbsp;&#8217;\newcommand{\blackandwhite}{true}\input{test.tex}&#8217;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</p></div><p>
+           First the command <em><span class="remark">\blackandwhite</span></em> gets defined and then the actual file is
+        read with input. By setting <em><span class="remark">\blackandwhite</span></em> to false the color version of the
+        document would be produced.
+    </p><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e16024"></a>14.1.5.&nbsp;
+        <span class="abbrev">6.1.5</span><a name="x1-1120006.1.5"></a>Your Own Package
+    </h4></div></div></div><p>   If you define a lot of new environments and commands, the preamble of your
+        document will get quite long. In this situation, it is a good idea to create a
+        LaTeX package containing all your command and environment definitions. You
+        can then use the <a name="dx1-112001"></a><a name="dx1-112002"></a><span class="tt">\usepackage</span> command to make the package available in your
+        document.
+    </p><div class="figure"><a name="d0e16039"></a><p class="title"><b>Figure&nbsp;5.&nbsp;</b></p><div class="blockquote"><blockquote class="blockquote"><div class="section" lang="en"><div class="titlepage"><div><div><h6 class="title"><a name="d0e16042"></a>1.&nbsp;</h6></div></div></div><p>_____________________________________________________________________</p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;Demo&nbsp;Package&nbsp;by&nbsp;Tobias&nbsp;Oetiker<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ProvidesPackage{demopack}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newcommand{\tnss}{The&nbsp;not&nbsp;so&nbsp;Short&nbsp;Introduction<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;\LaTeXe}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newcommand{\txsit}[1]{The&nbsp;\emph{#1}&nbsp;Short<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction&nbsp;to&nbsp;\LaTeXe}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newenvironment{king}{\begin{quote}}{\end{quote}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                _______________________________________________________________</div><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                    <a name="x1-1120031"></a>Figure&nbsp;6.1
+                </b></p></div><p>Example Package.</p></blockquote></div></blockquote></div></div><p>   Writing a package basically consists of copying the contents of your document
+        preamble into a separate file with a name ending in <span class="tt">.sty</span>. There is one special
+        command,
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-112004"></a><a name="dx1-112005"></a><span class="tt">\ProvidesPackage</span><em><span class="remark">{</span></em><span class="emphasis"><em>package name</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+        for use at the very beginning of your package file. <em><span class="remark">\ProvidesPackage</span></em> tells
+        LaTeX the name of the package and will allow it to issue a sensible error
+        message when you try to include a package twice. Figure&nbsp;?? shows a small
+        example package that contains the commands defined in the examples
+        above.
+    </p></div></div></body>
+</html>

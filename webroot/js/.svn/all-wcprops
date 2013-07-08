@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/karamelo/!svn/ver/3019/trunk/app/webroot/js
+END
+vendors.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/1532/trunk/app/webroot/js/vendors.php
+END
+myfunctions.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2935/trunk/app/webroot/js/myfunctions.js
+END
+unittest.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/karamelo/!svn/ver/334/trunk/app/webroot/js/unittest.js
+END
+jquery-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/3012/trunk/app/webroot/js/jquery-min.js
+END
+jquery.form.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2326/trunk/app/webroot/js/jquery.form.js
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/karamelo/!svn/ver/1/trunk/app/webroot/js/index.php
+END
+jquery.CKEditor.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2326/trunk/app/webroot/js/jquery.CKEditor.js
+END
+jsapi.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/karamelo/!svn/ver/779/trunk/app/webroot/js/jsapi.js
+END
+admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/karamelo/!svn/ver/3019/trunk/app/webroot/js/admin.js
+END
+validate.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/karamelo/!svn/ver/581/trunk/app/webroot/js/validate.js
+END
+jquery-ui.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/3013/trunk/app/webroot/js/jquery-ui.js
+END

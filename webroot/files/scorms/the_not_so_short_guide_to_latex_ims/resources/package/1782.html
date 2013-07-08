@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>5.8. Theorems, Laws, …</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10482"></a>5.8.&nbsp;
+                <span class="abbrev">3.8</span><a name="x1-710003.8"></a>Theorems, Laws, &#8230;
+            </h3></div></div></div><p>   When writing mathematical documents, you probably need a way
+                to typeset &#8220;Lemmas&#8221;, &#8220;Definitions&#8221;, &#8220;Axioms&#8221; and similar structures.
+            </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                                <p>
+                                    <a name="dx1-71001"></a><a name="dx1-71002"></a><span class="tt">\newtheorem</span><em><span class="remark">{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}[</span></em><span class="emphasis"><em>counter</em></span><em><span class="remark">]{</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">}[</span></em><span class="emphasis"><em>section</em></span><em><span class="remark">]</span></em>
+                                </p>
+                            </td></tr><tr><td align="left">
+                                <p> </p>
+                            </td></tr></tbody></table></div><p>
+                   The <span class="emphasis"><em>name</em></span> argument is a short keyword used to identify the &#8220;theorem.&#8221; With
+                the <span class="emphasis"><em>text</em></span> argument you define the actual name of the &#8220;theorem,&#8221; which will be
+                printed in the final document.
+            </p><p>   The arguments in square brackets are optional. They are both used to specify
+                the numbering used on the &#8220;theorem.&#8221; Use the <span class="emphasis"><em>counter</em></span> argument to specify the
+                <span class="emphasis"><em>name</em></span> of a previously declared &#8220;theorem.&#8221; The new &#8220;theorem&#8221; will then
+                be numbered in the same sequence. The <span class="emphasis"><em>section</em></span> argument allows you
+                to specify the sectional unit within which the &#8220;theorem&#8221; should get its
+                numbers.
+            </p><p>
+                   After executing the <a name="dx1-71003"></a><a name="dx1-71004"></a><span class="tt">\newtheorem</span> command in the preamble of your
+                document, you can use the following command within the document.
+                
+                
+                
+            </p><p>
+                <em><span class="remark">\begin{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}[</span></em><span class="emphasis"><em>text</em></span><em><span class="remark">]</span></em>
+                This is my interesting theorem
+                <em><span class="remark">\end{</span></em><span class="emphasis"><em>name</em></span><em><span class="remark">}</span></em>
+            </p><p>
+                   The <a name="dx1-71005"></a><a name="dx1-71006"></a><span class="sf">amsthm</span> package provides the <a name="dx1-71007"></a><a name="dx1-71008"></a><span class="tt">\newtheoremstyle</span><em><span class="remark">{</span></em><span class="emphasis"><em>style</em></span><em><span class="remark">}</span></em> command which
+                lets you define what the theorem is all about by picking from three predefined
+                styles: <span class="tt">definition</span> (fat title, roman body), <span class="tt">plain</span> (fat title, italic body) or
+                <span class="tt">remark</span> (italic title, roman body).
+            </p><p>   This should be enough theory. The following examples should remove any
+                remaining doubt, and make it clear that the <em><span class="remark">\newtheorem</span></em> environment is way
+                too complex to understand.
+            </p><p>   First define the theorems:
+                
+                
+                
+            </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\theoremstyle{definition}&nbsp;\newtheorem{law}{Law}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\theoremstyle{plain}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newtheorem{jury}[law]{Jury}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\theoremstyle{remark}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\newtheorem*{marg}{Margaret}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>&nbsp;\begin{law}&nbsp;\label{law:box}&nbsp;Don&#8217;t&nbsp;hide&nbsp;in&nbsp;the&nbsp;witness&nbsp;box&nbsp;\end{law}&nbsp;\begin{jury}[The&nbsp;Twelve]&nbsp;It&nbsp;could&nbsp;be&nbsp;you!&nbsp;So&nbsp;beware&nbsp;and&nbsp;see&nbsp;law~\ref{law:box}\end{jury}&nbsp;\begin{marg}No,&nbsp;No,&nbsp;No\end{marg}   <div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p>
+                        </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                <a name="x1-71009r1"></a>
+                                Law <span class="up">1</span>.  
+                            </b></p></div><p>Don&#8217;t hide in the witness box
+                            </p></blockquote></div><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                <a name="x1-71010r2"></a>
+                                Jury <span class="up">2</span> (The Twelve).  
+                            </b></p></div><p>It could be you! So beware and see law&nbsp;??
+                            </p></blockquote></div><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                Margaret.  
+                            </b></p></div><p>No, No, No
+                            </p></blockquote></div></dd></dl></div><p>   The &#8220;Jury&#8221; theorem uses the same counter as the &#8220;Law&#8221; theorem, so it gets
+                a number that is in sequence with the other &#8220;Laws.&#8221; The argument in
+                square brackets is used to specify a title or something similar for the
+                theorem.
+                
+                
+                
+            </p><p>&nbsp;\flushleft
+                &nbsp;\newtheorem{mur}{Murphy}[section]
+                &nbsp;\begin{mur}
+                &nbsp;If&nbsp;there&nbsp;are&nbsp;two&nbsp;or&nbsp;more
+                &nbsp;ways&nbsp;to&nbsp;do&nbsp;something,&nbsp;and
+                &nbsp;one&nbsp;of&nbsp;those&nbsp;ways&nbsp;can&nbsp;result
+                &nbsp;in&nbsp;a&nbsp;catastrophe,&nbsp;then
+                &nbsp;someone&nbsp;will&nbsp;do&nbsp;it.\end{mur}       
+            </p><div class="glosslist"><dl><dt><em><span class="remark">
+                        </span></em>
+                    </dt><dd><p>
+                        </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                <a name="x1-71011r1"></a>
+                                Murphy <span class="up">3.8.1</span>.
+                            </b></p></div><p>If
+                                there
+                                are
+                                two
+                                or
+                                more
+                                ways
+                                to
+                                do
+                                something,
+                                and
+                                one
+                                of
+                                those
+                                ways
+                                can
+                                result
+                                in
+                                a
+                                catastrophe,
+                                then
+                                someone
+                                will
+                                do
+                                it.
+                            </p></blockquote></div><p>   The &#8220;Murphy&#8221; theorem gets a number that is linked to the number of the
+                            current section. You could also use another unit, for example chapter or
+                            subsection.
+                        </p><p>
+                               The <a name="dx1-71012"></a><a name="dx1-71013"></a><span class="sf">amsthm</span> also provides the <a name="dx1-71014"></a><a name="dx1-71015"></a><span class="tt">proof</span>.
+                            
+                            
+                            
+                            &nbsp;\begin{proof}
+                            &nbsp;&nbsp;Trivial,&nbsp;use
+                            &nbsp;\[E=mc^2\]
+                            &nbsp;\end{proof}                        
+                        </p><div class="glosslist"><dl><dt><em><span class="remark">
+                                    </span></em>
+                                </dt><dd><p>
+                                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                            Proof. 
+                                        </b></p></div><p>Trivial, use </p><div class="equation"><div><img src="lshort-base168x.png"></div></div><p>
+                                            &#9633;
+                                        </p></blockquote></div></dd></dl></div><p>
+                               With the command <a name="dx1-71016"></a><a name="dx1-71017"></a><span class="tt">\qedhere</span> you can move the &#8216;end of proof symbol&#8217;. symbol
+                            around for situations where it would end up alone on a line.
+                            &nbsp;\begin{proof}
+                            &nbsp;&nbsp;Trivial,&nbsp;use
+                            &nbsp;\[E=mc^2&nbsp;\qedhere\]
+                            &nbsp;\end{proof}                        
+                        </p><div class="glosslist"><dl><dt><em><span class="remark">
+                                    </span></em>
+                                </dt><dd><p>
+                                    </p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+                                            Proof. 
+                                        </b></p></div><p>Trivial, use </p><div class="equation"><div><img src="lshort-base169x.png"></div></div><p>
+                                        </p></blockquote></div></dd></dl></div><p>
+                        </p></dd></dl></div></div></body>
+</html>

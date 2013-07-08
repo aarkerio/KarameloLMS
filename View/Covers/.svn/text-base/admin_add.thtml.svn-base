@@ -1,0 +1,41 @@
+<?php echo $javascript->link('myfunctions'); ?>
+<?php echo $javascript->link('fckeditor/fckeditor'); ?> 
+
+<div class="spaced">
+
+<?php echo $html->addCrumb('Control Tools', '/entries/index'); ?> 
+<?php echo $html->addCrumb('Covers', '/covers/listing'); ?> 
+<?php echo $html->getCrumbs(' / '); ?>
+
+<?php echo $html->formTag('/admin/covers/add/','post', array("onsubmit"=>"return validateEntry()")); ?>
+
+<fieldset>
+  <?php echo $form->labelTag('Cover/title', 'Title');?><br /> 
+  <?php echo $html->input('Cover/title', array("size" => 40, "maxlength" => 50, "class"=>"formas")); ?>
+  <?php echo $html->tagErrorMsg('Cover/title', 'Title is required.'); ?>
+  <br /><br />
+  <p><?php echo $form->labelTag('Cover/group_id', 'Group:' );?>
+     <br />
+      <?php  echo $html->selectTag('Cover/group_id', $groups, null, null, null, false);  ?>
+  </p>
+ 
+  <p style="text-align:right;">
+  <?php echo $html->link($html->image('admin/myimages.jpg', array("alt"=>"My Images", "title"=>"My Images")), '#', array("onclick"=>"javascript:window.open('/images/listview', 'blank', 'toolbar=no, scrollbars=yes,width=700,height=500')"), null, false) ?></p>
+  <p>
+  <?php echo $form->labelTag( 'Cover/Body', 'Body:' );?><br />
+  <?php echo $html->textarea('Cover/body', array("cols"=>80, "rows"=>45)) ?>
+  <?php echo $fck->load('Cover/body', 'Karamelo'); ?> 
+  <?php echo $html->tagErrorMsg('Cover/body', 'Body is required.'); ?>
+  <br />
+  </p>
+  
+  <p>
+  <?php echo $form->labelTag( 'Cover/status', 'Published:' );?><br />
+  <?php echo $html->checkbox('Cover/status', null, array("value"=>1)); ?>
+  <br /></p>
+ 
+  <br />
+  <?php echo $html->submit('Add'); ?>
+</fieldset>
+</form>
+</div>

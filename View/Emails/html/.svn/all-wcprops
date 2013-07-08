@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/karamelo/!svn/ver/2906/trunk/app/View/Emails/html
+END
+msgforum.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2827/trunk/app/View/Emails/html/msgforum.ctp
+END
+default.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2906/trunk/app/View/Emails/html/default.ctp
+END
+confirmation.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/karamelo/!svn/ver/2827/trunk/app/View/Emails/html/confirmation.ctp
+END

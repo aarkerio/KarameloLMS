@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/karamelo/!svn/ver/3017/trunk/app/View/Answers
+END
+admin_delete.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/3017/trunk/app/View/Answers/admin_delete.ctp
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/3011/trunk/app/View/Answers/admin_edit.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/karamelo/!svn/ver/3006/trunk/app/View/Answers/admin_listing.ctp
+END
+admin_see.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/karamelo/!svn/ver/3009/trunk/app/View/Answers/admin_see.ctp
+END

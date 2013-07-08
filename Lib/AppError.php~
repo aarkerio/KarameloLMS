@@ -1,0 +1,12 @@
+<?php
+
+#file: APP/Lib/AppError.php
+
+class AppError {
+    public static function handleError($code, $description, $file = Null, $line = Null, $context = Null) 
+    {
+        echo 'There has been an error!';
+    }
+}
+
+# ? > EOF

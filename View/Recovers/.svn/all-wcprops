@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/karamelo/!svn/ver/2954/trunk/app/View/Recovers
+END
+check.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/2954/trunk/app/View/Recovers/check.ctp
+END
+newpwd.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/karamelo/!svn/ver/2954/trunk/app/View/Recovers/newpwd.ctp
+END
+recover.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Recovers/recover.ctp
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Colleges
+END
+admin_reports.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Colleges/admin_reports.ctp
+END
+firsttime.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/firsttime.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/index.ctp
+END
+calendar.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/calendar.ctp
+END
+sent.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/2995/trunk/app/View/Colleges/sent.ctp
+END
+quickstart.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/quickstart.ctp
+END
+terms.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/terms.ctp
+END
+view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/view.ctp
+END
+contact.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/contact.ctp
+END
+admin_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/karamelo/!svn/ver/2873/trunk/app/View/Colleges/admin_edit.ctp
+END
+admin_index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/karamelo/!svn/ver/2751/trunk/app/View/Colleges/admin_index.ctp
+END
+goya.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/karamelo/!svn/ver/2751/trunk/app/View/Colleges/goya.ctp
+END
+admin_listing.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/karamelo/!svn/ver/2780/trunk/app/View/Colleges/admin_listing.ctp
+END

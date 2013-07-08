@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/karamelo/!svn/ver/3067/trunk/app/Plugin/Shout/Controller
+END
+ShoutAppController.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/karamelo/!svn/ver/3067/trunk/app/Plugin/Shout/Controller/ShoutAppController.php
+END
+ShoutsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/karamelo/!svn/ver/3067/trunk/app/Plugin/Shout/Controller/ShoutsController.php
+END

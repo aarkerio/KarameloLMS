@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<style type="text/css">
+	body { font-family: Verdana, Arial, Helvetica, sans-serif;}
+	a.at-term {	font-style: italic; }
+	</style>
+	<title>14.3. Spacing</title>
+	<meta name="Generator" content="ATutor">
+	<meta name="Keywords" content="">
+</head>
+<body> <div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e17239"></a>14.3.&nbsp;
+    <span class="abbrev">6.3</span><a name="x1-1170006.3"></a>Spacing
+</h3></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se14se3.html#d0e17250">14.3.1. 
+        <span class="abbrev">6.3.1</span>Line Spacing
+    </a></span></dt><dt><span class="section"><a href="se14se3.html#d0e17349">14.3.2. 
+        <span class="abbrev">6.3.2</span>Paragraph Formatting
+    </a></span></dt><dt><span class="section"><a href="se14se3.html#d0e17479">14.3.3. 
+        <span class="abbrev">6.3.3</span>Horizontal Space
+    </a></span></dt><dt><span class="section"><a href="se14se3.html#d0e17738">14.3.4. 
+        <span class="abbrev">6.3.4</span>Vertical Space
+    </a></span></dt></dl></div><p>
+</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e17250"></a>14.3.1.&nbsp;
+        <span class="abbrev">6.3.1</span><a name="x1-1180006.3.1"></a>Line Spacing
+    </h4></div></div></div><p>
+           <a name="dx1-118001"></a>If you want to use larger inter-line spacing in a document, you can change its
+        
+        
+        
+        value by putting the
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-118002"></a><a name="dx1-118003"></a><span class="tt">\linespread</span><em><span class="remark">{</span></em><span class="emphasis"><em>factor</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+        command into the preamble of your document. Use <em><span class="remark">\linespread{1.3}</span></em> for
+        &#8220;one and a half&#8221; line spacing, and <em><span class="remark">\linespread{1.6}</span></em> for &#8220;double&#8221; line
+        spacing. Normally the lines are not spread, so the default line spread factor
+        is&nbsp;1.<a name="dx1-118004"></a>
+    </p><p>
+           Note that the effect of the <a name="dx1-118005"></a><a name="dx1-118006"></a><span class="tt">\linespread</span> command is rather drastic and not
+        appropriate for published work. So if you have a good reason for changing the
+        line spacing you might want to use the command:
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <em><span class="remark">\setlength{\baselineskip}{1.5\baselineskip}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div>&nbsp;{\setlength{\baselineskip}%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{1.5\baselineskip}&nbsp;This&nbsp;paragraph&nbsp;is&nbsp;typeset&nbsp;with&nbsp;the&nbsp;baseline&nbsp;skip&nbsp;set&nbsp;to&nbsp;1.5&nbsp;of&nbsp;what&nbsp;it&nbsp;was&nbsp;before.&nbsp;Note&nbsp;the&nbsp;par&nbsp;command&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;paragraph.\par}&nbsp;&nbsp;This&nbsp;paragraph&nbsp;has&nbsp;a&nbsp;clear&nbsp;purpose,&nbsp;it&nbsp;shows&nbsp;that&nbsp;after&nbsp;the&nbsp;curly&nbsp;brace&nbsp;has&nbsp;been&nbsp;closed,&nbsp;everything&nbsp;is&nbsp;back&nbsp;to&nbsp;normal.      <div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p> This  paragraph  is  typeset  with  the
+                    baseline  skip  set  to  1.5  of  what  it  was
+                    before. Note the par command at the end
+                    of the paragraph.
+                </p><p>This  paragraph  has  a  clear  purpose,  it
+                    shows that after the curly brace has been
+                    closed, everything is back to normal. 
+                </p></dd></dl></div><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e17349"></a>14.3.2.&nbsp;
+        <span class="abbrev">6.3.2</span><a name="x1-1190006.3.2"></a>Paragraph Formatting
+    </h4></div></div></div><p>   In LaTeX, there are two parameters influencing paragraph layout. By placing
+        a definition like
+    </p><p>
+        <a name="dx1-119001"></a><a name="dx1-119002"></a><span class="tt">\setlength</span><em><span class="remark">{</span></em><a name="dx1-119003"></a><a name="dx1-119004"></a><span class="tt">\parindent</span><em><span class="remark">}{0pt}</span></em>
+        <em><span class="remark">\setlength{</span></em><a name="dx1-119005"></a><a name="dx1-119006"></a><span class="tt">\parskip</span><em><span class="remark">}{1ex&nbsp;plus&nbsp;0.5ex&nbsp;minus&nbsp;0.2ex}</span></em>
+        
+        
+        
+    </p><p>in the preamble of the input file, you can change the layout of paragraphs. These two
+        commands increase the space between two paragraphs while setting the
+        paragraph indent to zero.
+    </p><p>
+           The <span class="tt">plus</span> and <span class="tt">minus</span> parts of the length above tell TE X that it can compress
+        and expand the inter paragraph skip by the amount specified, if this is necessary
+        to properly fit the paragraphs onto the page.
+    </p><p>   In continental Europe, paragraphs are often separated by some space and not
+        indented. But beware, this also has its effect on the table of contents. Its lines get
+        spaced more loosely now as well. To avoid this, you might want to move the two
+        commands from the preamble into your document to some place below the
+        command <em><span class="remark">\tableofcontents</span></em> or to not use them at all, because you&#8217;ll find
+        that most professional books use indenting and not spacing to separate
+        paragraphs.
+    </p><p>   If you want to indent a paragraph that is not indented, you can use
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-119007"></a><a name="dx1-119008"></a><span class="tt">\indent</span>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>
+        at the beginning of the paragraph.<a name="x1-119009f2"></a>
+        <sup>[<a name="d0e17433" href="#ftn.d0e17433">45</a>]</sup>
+        Obviously, this will only have an effect when <em><span class="remark">\parindent</span></em> is not set to
+        zero.
+    </p><p>   To create a non-indented paragraph, you can use
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-119012"></a><a name="dx1-119013"></a><span class="tt">\noindent</span>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>as the first command of the paragraph. This might come in handy when you start
+        a document with body text and not with a sectioning command.
+    </p><p>
+    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e17479"></a>14.3.3.&nbsp;
+        <span class="abbrev">6.3.3</span><a name="x1-1200006.3.3"></a>Horizontal Space
+    </h4></div></div></div><div class="toc"><dl><dt><span class="section"><a href="se14se3.html#d0e17556">14.3.3.1. </a></span></dt></dl></div><p>   LaTeX determines the spaces between words and sentences automatically. To
+        add horizontal space, use: <a name="dx1-120001"></a>
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-120002"></a><a name="dx1-120003"></a><span class="tt">\hspace</span><em><span class="remark">{</span></em><span class="emphasis"><em>length</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>   If such a space should be kept even if it falls at the end or the start of a line,
+        use <em><span class="remark">\hspace*</span></em> instead of <em><span class="remark">\hspace</span></em>. The <span class="emphasis"><em>length</em></span> in the simplest case is just a
+        number plus a unit. The most important units are listed in Table&nbsp;??.
+        <a name="dx1-120004"></a><a name="dx1-120005"></a>
+        &nbsp;This\hspace{1.5cm}is&nbsp;a&nbsp;space
+        &nbsp;of&nbsp;1.5&nbsp;cm.                         
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>This                 is a space of 1.5 cm. </p></dd></dl></div><div class="blockquote"><blockquote class="blockquote"><div class="blockquote-title"><p><b>
+            <a name="x1-1200065"></a>Table&nbsp;6.5
+        </b></p></div><p>TE X Units.</p></blockquote></div><p>
+           <a name="dx1-120007"></a>
+    </p><div class="section" lang="en"><div class="titlepage"><div><div><h5 class="title"><a name="d0e17556"></a>14.3.3.1.&nbsp;</h5></div></div></div><p>___________________________________________________
+        </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="left">
+                            <p>
+                                <span class="tt">mm</span>
+                            </p>
+                        </td><td align="left">
+                            <p>
+                                millimetre 
+                                <img src="lshort-base276x.png">
+                                &nbsp;inch    _                           
+                            </p>
+                        </td></tr><tr><td align="left">
+                            <p>
+                                <span class="tt">cm</span>
+                            </p>
+                        </td><td align="left">
+                            <p>centimetre = 10&nbsp;mm    ________                       </p>
+                        </td></tr><tr><td align="left">
+                            <p>
+                                <span class="tt">in</span>
+                            </p>
+                        </td><td align="left">
+                            <p>
+                                inch 
+                                <img src="lshort-base277x.png">
+                                25.4&nbsp;mm    ____________________                
+                            </p>
+                        </td></tr><tr><td align="left">
+                            <p>
+                                <span class="tt">pt</span>
+                            </p>
+                        </td><td align="left">
+                            <p>
+                                point 
+                                <img src="lshort-base278x.png">
+                                &nbsp;inch 
+                                <img src="lshort-base279x.png">
+                                &nbsp;mm                        
+                            </p>
+                        </td></tr><tr><td align="left">
+                            <p>
+                                <span class="tt">em</span>
+                            </p>
+                        </td><td align="left">
+                            <p>approx width of an &#8216;M&#8217; in the current font    ___</p>
+                        </td></tr><tr><td align="left">
+                            <p>
+                                <span class="tt">ex</span>
+                            </p>
+                        </td><td align="left">
+                            <p>approx height of an &#8216;x&#8217; in the current font    _  </p>
+                        </td></tr></tbody></table></div>
+        ________</div><p>   The command
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-120008"></a><a name="dx1-120009"></a><span class="tt">\stretch</span><em><span class="remark">{</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>generates a special rubber space. It stretches until all the remaining space on a
+        line is filled up. If multiple <em><span class="remark">\hspace{\stretch{</span></em><span class="emphasis"><em>n</em></span><em><span class="remark">}}</span></em> commands are issued on the
+        same line, they occupy all available space in proportion of their respective stretch
+        factors.
+        &nbsp;x\hspace{\stretch{1}}
+        &nbsp;x\hspace{\stretch{3}}x             
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>x             x                                     x
+                </p></dd></dl></div><p>   When using horizontal space together with text, it may make sense to make
+        the space adjust its size relative to the size of the current font. This can be done
+        by using the text-relative units <span class="tt">em</span> and <span class="tt">ex</span>:
+        &nbsp;{\Large{}big\hspace{1em}y}\\
+        &nbsp;{\tiny{}tin\hspace{1em}y}          
+    </p><div class="glosslist"><dl><dt><em><span class="remark">
+                </span></em>
+            </dt><dd><p>big    y
+                    tin    y 
+                </p></dd></dl></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e17738"></a>14.3.4.&nbsp;
+        <span class="abbrev">6.3.4</span><a name="x1-1210006.3.4"></a>Vertical Space
+    </h4></div></div></div><p>   The space between paragraphs, sections, subsections, &#8230;&nbsp;is determined
+        automatically by LaTeX. If necessary, additional vertical space <span class="emphasis"><em>between two
+            paragraphs
+        </em></span>
+        can be added with the command:
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-121001"></a><a name="dx1-121002"></a><span class="tt">\vspace</span><em><span class="remark">{</span></em><span class="emphasis"><em>length</em></span><em><span class="remark">}</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>   This command should normally be used between two empty lines. If
+        the space should be preserved at the top or at the bottom of a page,
+        use the starred version of the command, <em><span class="remark">\vspace*</span></em>, instead of <em><span class="remark">\vspace</span></em>.
+        <a name="dx1-121003"></a>
+    </p><p>
+           The <em><span class="remark">\stretch</span></em> command, in connection with <em><span class="remark">\pagebreak</span></em>, can be used to
+        typeset text on the last line of a page, or to centre text vertically on a
+        page.
+        
+        
+        
+    </p><div class="literallayout"><p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some&nbsp;text&nbsp;\ldots<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\vspace{\stretch{1}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;goes&nbsp;onto&nbsp;the&nbsp;last&nbsp;line&nbsp;of&nbsp;the&nbsp;page.\pagebreak<br>
+&nbsp;&nbsp;&nbsp;&nbsp;</p></div><p>
+           Additional space between two lines of <span class="emphasis"><em>the same</em></span> paragraph or within a table is
+        specified with the
+    </p><p></p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><tbody><tr><td align="left">
+                        <p>
+                            <a name="dx1-121004"></a><a name="dx1-121005"></a><span class="tt">\\</span><em><span class="remark">[</span></em><span class="emphasis"><em>length</em></span><em><span class="remark">]</span></em>
+                        </p>
+                    </td></tr><tr><td align="left">
+                        <p> </p>
+                    </td></tr></tbody></table></div><p>command.
+    </p><p>
+           With <a name="dx1-121006"></a><a name="dx1-121007"></a><span class="tt">\bigskip</span> and <a name="dx1-121008"></a><a name="dx1-121009"></a><span class="tt">\smallskip</span> you can skip a predefined amount of vertical
+        space without having to worry about exact numbers.
+    </p><p>
+    </p></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a name="ftn.d0e17433" href="#d0e17433">45</a>] </sup>
+                To indent the first paragraph after each section head, use the <a name="dx1-119010"></a><a name="dx1-119011"></a><span class="sf">indentfirst</span> package in the
+                &#8216;tools&#8217; bundle.
+            </p></div></div></div></body>
+</html>
