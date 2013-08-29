@@ -1,6 +1,6 @@
 <?php
 /**
- *   Chipotle Software(c) GPLv3 2006-2012
+ *   Chipotle Software(c) GPLv3 2006-2013
  */
 $this->set('title_for_layout', __('Welcome'));
 ?>
