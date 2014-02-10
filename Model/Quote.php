@@ -2,7 +2,7 @@
 /**
 *  Karamelo e-Learning Platform
 *  GNU Affero General Public License V3
-*  @copyright Chipotle Software(c)  2006-2012
+*  @copyright Chipotle Software(c)  2006-2014
 *  @version 0.7
 *  @package quotes
 *  @license http://www.gnu.org/licenses/agpl.html

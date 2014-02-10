@@ -2,7 +2,7 @@
 /**
 *  Karamelo e-Learning Platform
 *  GPLv3
-*  @copyright Copyright 2006-2012, Chipotle Software(c)
+*  @copyright Copyright 2006-2014, Chipotle Software(c)
 *  @version 0.7
 *  @package links
 *  @license http://www.gnu.org/licenses/gpl-3.0.html
