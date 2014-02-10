@@ -6,3 +6,6 @@ app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
 !empty
 /nbproject/private/
+webroot/js/bower
+webroot/js/bower/*.*
+webroot/js/bower/*

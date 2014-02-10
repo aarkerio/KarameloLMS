@@ -1,7 +1,7 @@
 <?php
 /**   
 *  Karamelo e-Learning Platform
-*  Chipotle Software(c) 2006-2012
+*  Chipotle Software(c) 2006-2014
 *  GNU Affero General Public License V3
 *  @version 0.7
 *  @package Karamelo

@@ -1,0 +1,22 @@
+
+ {
+  "version": "0.0.1",
+  "name": "karamelo",
+  "ignore": [
+       ".jshintrc",
+       "**/*.txt"
+     ],
+  "dependencies": {
+      "jquery-ui"           : "",
+      "modernizr"           : "",
+      "bootstrap"           : "~> 3.0",
+      "bootstrap-datepicker": "",
+      "angular-resource"    : "",
+      "angular-strap"       : "",
+      "angular-ui"          : "",
+      "ngInfiniteScroll"    : "",
+      "underscore"          : "",
+      "font-awesome"        : ""
+  }
+}
+
