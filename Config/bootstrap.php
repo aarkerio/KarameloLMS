@@ -118,7 +118,8 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
-# Load Install plugin
+
+# Karamelo Load Install plugin
 if ( !file_exists(APP . 'Config' . DS.'installed.txt') ):
      CakePlugin::load('Install');
 endif;
