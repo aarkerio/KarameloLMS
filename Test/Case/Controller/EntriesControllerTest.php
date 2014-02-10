@@ -1,6 +1,6 @@
 <?php
 /**
- *   Chipotle Software(c) 2012   GPLv3
+ *   Chipotle Software(c) 2012-2014   GPLv3
  *   File: APP/Test/Case/Controller/QuoteControllerTest.php
  */
 
