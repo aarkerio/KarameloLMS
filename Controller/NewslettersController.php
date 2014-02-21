@@ -194,9 +194,8 @@ class NewslettersController extends AppController{
                                                      'contain'    => array('Profile'),
                                                      'conditions' => array('User.active'=>1, 'Profile.newsletter'=>1),
                                                      'fields'     => array('User.name', 'User.email')
-                                                     )
-                                          ); 
-   #exit(debug($users)); 
+                                                    )
+                                          );
    $i = (int) 0;    
    foreach ($users as $user):
          $this->Email->sender      = '::Karamelo Newsletter::';
