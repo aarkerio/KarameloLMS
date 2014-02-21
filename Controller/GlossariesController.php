@@ -68,19 +68,19 @@ class GlossariesController extends AppController
            $this->request->data['Glossary']['display']  = (int) $display;
        endif;
        if ($this->Glossary->save($this->request->data)):
-             $msg = __('Data saved');
-   	         if ( $this->request->data['Glossary']['end'] == 0  && !isset($this->request->data['Glossary']['id'])):
+           $msg = __('Data saved');
+   	       if ( $this->request->data['Glossary']['end'] == 0  && !isset($this->request->data['Glossary']['id'])):
                  $id  = (int) $this->Glossary->getLastInsertID();
                  $url = (string) '/admin/glossaries/edit/'.$id;
-             elseif ( $this->request->data['Glossary']['end'] == 0  && isset($this->request->data['Glossary']['id'])):
+           elseif ( $this->request->data['Glossary']['end'] == 0  && isset($this->request->data['Glossary']['id'])):
                  $url = (string) '/admin/glossaries/edit/'.$this->request->data['Glossary']['id']; 
-             else:
+           else:
                  $url = (string) '/admin/catglossaries/items/'.$this->request->data['Glossary']['catglossary_id'];
-             endif;
-             $this->msgFlash($msg, $url);
+           endif;
+           $this->msgFlash($msg, $url);
        endif;
    elseif( $glossary_id != null && intval( $glossary_id )):
-          $this->request->data = $this->Glossary->findById($glossary_id);
+       $this->request->data = $this->Glossary->findById($glossary_id);
    endif;
  }
 
@@ -102,7 +102,8 @@ class GlossariesController extends AppController
   else:
        $conditions = array('Glossary.display >= '.$order, 'Glossary.catglossary_id'=>$catglossary_id);  # next down
        $display    =  'display ASC'; 
-  endif;  
+  endif;
+  
   $params = array(
              'conditions' => $conditions,
              'order'      => $display,
