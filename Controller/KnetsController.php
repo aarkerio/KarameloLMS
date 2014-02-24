@@ -2,7 +2,7 @@
 /**
 *  Karamelo e-Learning Platform
 *  GNU Affero General Public License V3
-*  @copyright Copyright 2006-2012, Chipotle Software, Inc. (http://www.chipotle-software.com)
+*  @copyright Copyright 2006-2014, Chipotle Software, Inc. (http://www.chipotle-software.com)
 *  @version 0.7
 *  @package knet
 *  @license http://www.gnu.org/licenses/agpl.html
@@ -46,8 +46,6 @@ class KnetsController extends AppController {
  public function index()
  {
    $knets = $this->Knet->User->findKnets();
-   #$this->set('data', $data);
-   #$this->set('kandies', $this->Knet->User->kandies);
    $this->set(compact('knets'));
  }
   
@@ -90,4 +88,6 @@ class KnetsController extends AppController {
   $this->set('data', $data);
  }
 }
+
 # ? > EOF
+
