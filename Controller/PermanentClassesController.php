@@ -133,9 +133,9 @@ class PermanentClassesController extends AppController {
       if ($this->PermanentClass->save($this->request->data)):
           $this->msgFlash(__('Data saved'), '/admin/permanent_classes/listing');
       endif;
-  elseif($permanent_class_id !=False and intval($permanent_class_id)):
+  elseif($permanent_class_id != False and intval($permanent_class_id)):
       $this->PermanentClass->id = $permanent_class_id;
-      $this->request->data = $this->PermanentClass->read();
+      $this->request->data      = $this->PermanentClass->read();
   endif;
  }
 
@@ -151,7 +151,7 @@ class PermanentClassesController extends AppController {
   if ( !empty($this->request->data['PermanentClass']) ):
       $user_id = (int) $this->Auth->user('id');
       $this->request->data['PermanentClass']['user_id'] = $user_id;
-      if ($this->PermanentClass->save($this->request->data)):
+      if ( $this->PermanentClass->save($this->request->data) ):
           $pc_id = $this->PermanentClass->getInsertID();
           if ($this->PermanentClass->addList($user_id, $this->request->data['PermanentClass']['vclassroom_id'], $pc_id)):
               $this->msgFlash(__('New list created'), '/admin/vclassrooms/members/'.$this->request->data['PermanentClass']['vclassroom_id']);
@@ -204,7 +204,6 @@ class PermanentClassesController extends AppController {
   $this->msgFlash($msg, '/admin/permanent_classes/record/'.$permanent_class_id); 
  }
 
-
 /**
  *  Remove acquaintance
  *  @access public
@@ -223,3 +222,4 @@ class PermanentClassesController extends AppController {
 }
 
 # ? > EOF
+
